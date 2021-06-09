@@ -1,0 +1,61 @@
+/* Variables */
+:root {
+}
+
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,700;1,400&display=swap');
+html {
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* Sans media */
+* { box-sizing: border-box;}
+body, h1, h2, h3, h4, h5, h6, p {margin: 0;}
+
+/* A Definir en fonction des Besoins */
+/* Smartphone */
+@media screen and ( max-width: 600px ) {
+	/* Variables */
+	:root {
+	}
+}
+
+/* PC */
+@media screen and ( min-width: 601px ) {
+	/* Variables */
+	:root {
+	}
+}
+
+
+/* A UPDATE */
+h1 {	
+	font-size: 2em;
+	font-weight: 600;
+	letter-spacing: 0.1em;
+}
+h2 {
+	font-size: 1.5em;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+}
+h3 {
+	font-size: 1.17em;
+	font-weight: 500;
+	letter-spacing: 0.1em;
+}
+h4 {
+	font-size: 1em;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+}
+h5 {
+	font-size: 0.7em;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+}
+p{
+	font-size: 0.83em;
+	font-weight: 300;
+	letter-spacing: 0.1em;
+}
