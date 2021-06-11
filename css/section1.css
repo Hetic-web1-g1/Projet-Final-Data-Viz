@@ -10,7 +10,7 @@
     height: fit-content;
 }
 
-.section1 > #speedmove{
+.section1 > #speedmove {
     position: absolute;
     top: 40vh;
     left: 10%;
@@ -31,14 +31,14 @@
     }
 }
 
-.section1 > #run{
+.section1 > #run {
     position: absolute;
     top: 40vh;
     right: 10%;
     height: fit-content;
 }
 
-.section1 > #runmove{
+.section1 > #runmove {
     position: absolute;
     top: 40vh;
     right: 10%;
