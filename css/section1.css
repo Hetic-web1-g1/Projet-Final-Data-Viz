@@ -5,57 +5,42 @@
 
 .section1 > #speed{
     position: absolute;
-    top: 40vh;
-    left: 10%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     height: fit-content;
 }
 
-.section1 > #speedmove {
-    position: absolute;
-    top: 40vh;
-    left: 10%;
-    height: fit-content;
-    animation: speedin 1s linear forwards;
+.section1 > #speed span:nth-child(1) {
+    position: relative;
+    animation: speedleft 0.8s cubic-bezier(.6,.01,.48,.15) forwards;
+    margin-right: -4px;
+}
+.section1 > #speed span:nth-child(2) {
+    position: relative;
+    animation: speedright 0.8s cubic-bezier(.6,.01,.48,.15) forwards;
+    margin-left: -4px;
 }
 
-@keyframes speedin {
-    from {
-        left: 10%;
+@keyframes speedleft {
+    0% {
+        left: -50%;
     }
-    75% {
-        left: 28%;
+    99% {
+        left:0;
     }
-
-    to {
-        left: 37.3%;
+    100%{
+        left: unset;
     }
 }
-
-.section1 > #run {
-    position: absolute;
-    top: 40vh;
-    right: 10%;
-    height: fit-content;
-}
-
-.section1 > #runmove {
-    position: absolute;
-    top: 40vh;
-    right: 10%;
-    height: fit-content;
-    animation: runin 1s linear forwards;
-    
-}
-
-@keyframes runin {
-    from {
-        right: 10%;
+@keyframes speedright {
+    0% {
+        left: 50%;
     }
-    75% {
-        right: 28%;
+    99%{
+        left: 0;
     }
-
-    to {
-        right: 37.3%;
+    100%{
+        left: unset;
     }
 }
