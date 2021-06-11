@@ -1,0 +1,23 @@
+.section3{
+    background-color: lawngreen;
+}
+
+.section3 > .demo{
+    position: relative;
+    height: fit-content;
+    text-align: center;
+    width: 33vw;
+    margin: 0px auto;
+    padding: 3em 30px 30px 30px;
+}
+
+.section3 > .twitch{
+    position: relative;
+    height: fit-content;
+    text-align: center;
+    width: 33vw;
+    margin: 0px auto;
+    padding: 5em 0 0px 0;
+}
+
+
