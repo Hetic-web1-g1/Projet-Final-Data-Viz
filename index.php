@@ -7,8 +7,8 @@
     <section class="section1">
         <h1 id="speed">Speed</h1>
         <h1 id="run">Run</h1>
+        <script src="js/section1.js"></script>
     </section>
-    <script src="js/section1.js"></script>
 
     <section class="section2">
 
