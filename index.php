@@ -21,9 +21,16 @@
         <img src="./assets/Glitch_Purple_RGB.png" alt="twitch" width="32px">
     </section>
     <section class="section4">
+        <img src="./assets/img_event/CharityStream_April2021_1920px 1.png" alt="brawlhalla">
+        <img src="./assets/img_event/image_76.png" alt="livetime">
+        <img src="./assets/img_event/image_77.png" alt="bourglarun">
         <h2 class="event">Avec la montée en popularité des GDQ de plus en plus de personnes se sont intéréssé aux stream cartitatifs allant 
         jusqu’a organiser leur propre évenement sans  forcément entrer dans la pratique du speedrun</h2>
+        <img src="./assets/img_event/image_79.png" alt="msf">
+        <img src="./assets/img_event/image_80.png" alt="speedrun4life">
+        <img src="./assets/img_event/image_81.png" alt="lfr">
 
+    </section>
     </section>
 
 </main>
