@@ -1,3 +1,61 @@
 .section1 {
-    background-color: blue;
+    display: flex;
+    position: relative;
+}
+
+.section1 > #speed{
+    position: absolute;
+    top: 40vh;
+    left: 10%;
+    height: fit-content;
+}
+
+.section1 > #speedmove{
+    position: absolute;
+    top: 40vh;
+    left: 10%;
+    height: fit-content;
+    animation: speedin 1s linear forwards;
+}
+
+@keyframes speedin {
+    from {
+        left: 10%;
+    }
+    75% {
+        left: 25%;
+    }
+
+    to {
+        left: 33%;
+    }
+}
+
+.section1 > #run{
+    position: absolute;
+    top: 40vh;
+    right: 10%;
+    height: fit-content;
+}
+
+.section1 > #runmove{
+    position: absolute;
+    top: 40vh;
+    right: 10%;
+    height: fit-content;
+    animation: runin 1s linear forwards;
+    
+}
+
+@keyframes runin {
+    from {
+        right: 10%;
+    }
+    75% {
+        right: 25%;
+    }
+
+    to {
+        right: 33%;
+    }
 }
