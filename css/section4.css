@@ -1,11 +1,29 @@
 .section4 {
     background-color:orange;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-row-gap: 20px
 }
 .section4 > h2{
     position: relative;
     height: fit-content;
     text-align: center;
-    width: 33vw;
+    /* width: 33vw; */
+    /* margin: auto; */
+    /* top: 40%; */
+    height: 149px;
+    padding: 0 28vw;
+    /* vertical-align: middle; */
+    grid-row-start: 2;
+    /* grid-column-start: 4; */
+    grid-column: span 3;
+    align-self: center;
+}
+
+
+img {
+    width: auto;
+    height: 50px;
     margin: auto;
-    top:40%;
 }
