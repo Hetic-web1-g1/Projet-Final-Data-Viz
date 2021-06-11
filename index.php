@@ -18,7 +18,6 @@
         deviens la référence du speedrunning pour mettre en avant ses prouesses</h2>
         <h2 class="twitch">L’ouverture de twitch en 2011 offre aux speedrunners un nouveau media afin de permettre de partager leur contenu, en effet 
         le principe du live permet aux spectateur de voir la “run” en direct et d’interragir avec le speedrunner via le chat</h2>
-        <img src="./assets/Glitch_Purple_RGB.png" alt="twitch" width="32px">
     </section>
     <section class="section4">
         <img src="./assets/img_event/CharityStream_April2021_1920px 1.png" alt="brawlhalla">
