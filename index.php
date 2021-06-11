@@ -3,9 +3,14 @@
     include 'header.php';
 ?>
 
-    <main>
+<main>
+    <section class="section1">
 
-    </main>
+    </section>
+    <section class="section2">
+
+    </section>
+</main>
 
 <?php
     include 'footer.php';
