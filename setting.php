@@ -8,5 +8,6 @@
 	<link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
 	<!-- Global -->
 	<link rel="stylesheet" href="css/include.css">
-	<link rel="stylesheet" href="https://use.typekit.net/uzh4rmf.css">
+  <link rel="stylesheet" href="https://use.typekit.net/uzh4rmf.css">
+	<script src="https://d3js.org/d3.v5.min.js"></script>
 </head>
