@@ -13,6 +13,8 @@
         include 'section/statgdq.php';
         include 'section/charitystreams.php';
         include 'section/solostreams.php';
+        include 'section/graphsrecolte.php';
+        include 'section/twitchevo.php';
     ?>
 
 
