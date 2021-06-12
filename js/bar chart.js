@@ -1,4 +1,4 @@
-const sample = [
+const agdq = [
     {
     event: '2012',
     value: 0.15,
@@ -41,13 +41,59 @@ const sample = [
     },
 ];
 
+const sgdq = [
+    {
+    event: '2012',
+    value: 0.05,
+    },
+    {
+    event: '2013',
+    value: 0.25,
+    },
+    {
+    event: '2014',
+    value: 0.72,
+    },
+    {
+    event: '2015',
+    value: 1.21,
+    },
+    {
+    event: '2016',
+    value: 1.29,
+    },
+    {
+    event: '2017',
+    value: 1.79,
+    },
+    {
+    event: '2018',
+    value: 2.17,
+    },
+    {
+    event: '2019',
+    value: 3.04,
+    },
+    {
+    event: '2020',
+    value: 2.34,
+    },
+];
+
+sample = agdq
+
 const margin = 60;
 const width = 1000 - 2*margin;
 const height = 600 - 2*margin;
 
-const svg_bar = d3.select('#bar_chart');
+function draw_bar_chart() {
 
-const bar_chart = svg_bar.append('g')
+    const bar_chart = d3.select('#stat_gdq') 
+    .append('svg')
+    .attr('class', 'bar_chart')
+    .attr('width', width) 
+    .attr('height', height) 
+    .append('g') 
     .attr('transform', `translate(${margin}, ${margin})`);
 
 //BAR CHART
@@ -146,15 +192,24 @@ BarreGroup
 
 // Texte
 
-svg_bar.append('text') //Légende
+bar_chart.append('text') //Légende
     .attr('x', -(height/2) - margin)
     .attr('y', margin / 2.4)
     .attr('transform', 'rotate(-90)')
     .attr('text-anchor', 'middle')
     .text('Montant récolté en Million de Dollar')
 
-svg_bar.append('text') //Titre
+bar_chart.append('text') //Titre
     .attr('x', width/2 + margin)
     .attr('y', 40)
     .attr('text-anchor', 'middle')
     .text('AGDQ')
+}
+
+function update_chart(data){
+    sample = data;
+    d3.select('.bar_chart').remove()
+    draw_bar_chart();
+}
+
+draw_bar_chart();

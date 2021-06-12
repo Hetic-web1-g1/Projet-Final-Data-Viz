@@ -48,6 +48,7 @@ var color = d3.scaleOrdinal().range(["#4e79a7","#f28e2c","#e15759","#76b7b2","#5
 
 var svg = d3.select('#pie_chart') 
   .append('svg')
+  .attr('class', 'pie')
   .attr('width', width) 
   .attr('height', height) 
   .append('g') 
@@ -136,7 +137,7 @@ legend.append('text')
 }
 
 function update(data) {
-  d3.select('svg').remove();
+  d3.select('.pie').remove();
   dataset = data;
   draw_chart();
 }

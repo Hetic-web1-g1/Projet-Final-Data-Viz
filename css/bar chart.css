@@ -7,24 +7,24 @@
     height: 1000px;
 }
   
-#bar_chart .bar {
+#stat_gdq .bar {
     fill: #42B8EA;
   }
   
-#bar_chart  text {
+#stat_gdq text {
     font-size: 12px;
     fill: #fff;
   }
   
-#bar_chart  path {
+#stat_gdq path {
     stroke: #fff;
   }
   
-#bar_chart  .grid path {
+#stat_gdq .grid path {
     stroke-width: 0;
   }
   
-#bar_chart  .grid .tick line {
+#stat_gdq  .grid .tick line {
     stroke: #fff;
     stroke-opacity: 0.3;
 }

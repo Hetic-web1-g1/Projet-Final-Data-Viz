@@ -20,7 +20,8 @@
         <p class="twitch">Twitch’s arrrival onto  the scene in 2011 offers speedrunners a new platform where they can share their content and exploits; live-streaming allows spectators to watch the run live and interact with the speedrunner via chat.</p>
     </section>
     <section id="stat_gdq">
-        <svg id='bar_chart'></svg>
+        <button onclick="update_chart(agdq)">Data 1</button>
+        <button onclick="update_chart(sgdq)">Data 2</button>
         <script src="js/bar chart.js"></script>
     </section>
     <section id="charitystreams">
