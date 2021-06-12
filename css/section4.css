@@ -1,11 +1,11 @@
-.section4 {
+#section4 {
     background-color:orange;
     display: grid;
     grid-template-columns:repeat(3,1fr);
     grid-template-rows: repeat(3,1fr);
     grid-row-gap: 20px
 }
-.section4 > h2{
+#section4 > h2{
     position: relative;
     height: fit-content;
     text-align: center;
