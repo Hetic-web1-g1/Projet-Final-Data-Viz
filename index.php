@@ -20,6 +20,10 @@
         <h2 class="demo">In the following years, speedrunning became common practice with multiple other games. The Speed Demo website then becomes the reference in terms of speedrunning content.</h2>
         <h2 class="twitch">Twitch’s arrrival onto  the scene in 2011 offers speedrunners a new platform where they can share their content and exploits; live-streaming allows spectators to watch the run live and interact with the speedrunner via chat.</h2>
     </section>
+    <section id="stat_gdq">
+        <svg id='bar_chart'></svg>
+        <script src="js/bar chart.js"></script>
+    </section>
     <section id="section4">
         <img src="./assets/img/speedons.svg" alt="speedons" tag-inviewport="scale-in">
         <img src="./assets/img/livetime.svg" alt="livetime" tag-inviewport="scale-in">
@@ -39,9 +43,6 @@
         <p>Loreum Ipsum</p>
         <span>Loreum Ipsum</span>
         <a href="">Loreum Ipsum</a>
-    </section>
-    <section id="pie chart">
-
     </section>
 
 </main>

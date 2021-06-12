@@ -1,7 +1,11 @@
-#bar_chart {
+#stat_gdq {
+  text-align: center;
+}
 
-    height: 100%;
-  }
+#stat_gdq > svg {
+    width: 100%;
+    height: 1000px;
+}
   
 #bar_chart .bar {
     fill: #42B8EA;
