@@ -1,9 +1,9 @@
-#section1 {
+#acceuil {
     display: flex;
     position: relative;
 }
 
-#section1 > #speed{
+#acceuil > #speed{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -11,12 +11,12 @@
     height: fit-content;
 }
 
-#section1 > #speed span:nth-child(1) {
+#acceuil > #speed span:nth-child(1) {
     position: relative;
     animation: speedleft 0.8s cubic-bezier(.6,.01,.48,.15) forwards;
     margin-right: -4px;
 }
-#section1 > #speed span:nth-child(2) {
+#acceuil > #speed span:nth-child(2) {
     position: relative;
     animation: speedright 0.8s cubic-bezier(.6,.01,.48,.15) forwards;
     margin-left: -4px;
