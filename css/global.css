@@ -15,7 +15,7 @@ body, h1, h2, h3, h4, h5, h6, p {margin: 0;}
 section {
 	background-color: #101820;
 	color: white;
-	height: 100vh;
+	min-height: 100vh;
 	padding: 0 10%;
 }
 
