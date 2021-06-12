@@ -1,6 +1,9 @@
 .video > video {
     width: 100%;
-    object-fit: cover;
-    overflow: hidden;
-    margin-top: 10%;
+    height: calc(80vw * (9/16));
+    margin: auto;
+}
+.video{
+    padding: 10% 0 10% 0;
+    display: flex;
 }
