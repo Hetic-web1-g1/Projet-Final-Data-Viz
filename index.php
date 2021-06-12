@@ -19,12 +19,13 @@
         <h2 class="twitch">Twitch’s arrrival onto  the scene in 2011 offers speedrunners a new platform where they can share their content and exploits; live-streaming allows spectators to watch the run live and interact with the speedrunner via chat.</h2>
     </section>
     <section class="section4">
-        <img src="./assets/img/speedons.svg" alt="speedons">
-        <img src="./assets/img/livetime.svg" alt="livetime">
-        <img src="./assets/img/bourglarun.svg" alt="bourglarun">
+        <img src="./assets/img/speedons.svg" alt="speedons" tag-inviewport="scale-in">
+        <img src="./assets/img/livetime.svg" alt="livetime" tag-inviewport="scale-in">
+        <img src="./assets/img/bourglarun.svg" alt="bourglarun" tag-inviewport="scale-in">
         <h2 class="event">Following speedrunning rise to popularity, people started to organise charity events around this phenomenon. That’s how the very first edition of Awesome Games Done Quick came to be in 2010.</h2>
-        <img src="./assets/img/speedrun4life.svg" alt="speedrun4life">
-        <img src="./assets/img/lefrenchrestream.svg" alt="lefrenchrestream">
+        <img src="./assets/img/speedrun4life.svg" alt="speedrun4life" tag-inviewport="scale-in">
+        <img src="./assets/img/lefrenchrestream.svg" alt="lefrenchrestream" tag-inviewport="scale-in">
+        <script src="js/section4.js"></script>
     </section>
     <section class="section5" style="margin: 30%;">
         <h1>Loreum Ipsum</h1>

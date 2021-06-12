@@ -14,16 +14,50 @@
     /* top: 40%; */
     height: 149px;
     padding: 0 28vw;
-    /* vertical-align: middle; */
     grid-row-start: 2;
-    /* grid-column-start: 4; */
     grid-column: span 3;
     align-self: center;
 }
-
-
 img {
     width: 12em;
     height: auto;
     margin: auto;
 }
+
+/* Animation de scale-up */
+
+[tag-inviewport="scale-in"] { 
+    transition: 2s;
+    transform: scale(0.1);
+}
+
+[tag-inviewport="scale-in"].is-inViewport { 
+transform: scale(1);
+}
+
+
+/* Animation Bounce
+ .section4 > img{  
+    background-image: url(/css/images/logo.png); 
+    background-repeat: no-repeat;
+    background-position: left top; 
+    padding-top:95px;
+    margin-bottom:60px;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+    -webkit-animation-name: bounce; 
+    animation-name: bounce; 
+} */
+/* @-webkit-keyframes bounce { 
+    0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 
+    40% {-webkit-transform: translateY(-30px);} 
+    60% {-webkit-transform: translateY(-15px);} 
+}
+ 
+@keyframes bounce { 
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+    40% {transform: translateY(-30px);} 
+    60% {transform: translateY(-15px);} 
+} */
