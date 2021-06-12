@@ -1,52 +1,44 @@
 const sample = [
     {
-    event: 'Zevent 2020',
-    value: 6.98,
+    event: '2012',
+    value: 0.15,
     },
     {
-    event: 'Zevent 2019',
-    value: 4.58,
+    event: '2013',
+    value: 0.45,
     },
     {
-    event: 'Zevent 2018',
-    value: 1.33,
+    event: '2014',
+    value: 1.03,
     },
     {
-    event: 'Zevent 2017',
-    value: 0.59,
+    event: '2015',
+    value: 1.57,
     },
     {
-    event: 'AGDQ 2020',
-    value: 3.31,
+    event: '2016',
+    value: 1.21,
     },
     {
-    event: 'AGDQ 2019',
-    value: 2.39,
-    },
-    {
-    event: 'AGDQ 2018',
-    value: 2.26,
-    },
-    {
-    event: 'AGDQ 2017',
+    event: '2017',
     value: 2.22,
     },
     {
-    event: 'SGDQ 2020',
-    value: 2.34,
+    event: '2018',
+    value: 2.26,
     },
     {
-    event: 'SGDQ 2019',
-    value: 3.03,
+    event: '2019',
+    value: 2.40,
     },
     {
-    event: 'SGDQ 2018',
-    value: 2.16,
+    event: '2020',
+    value: 3.13,
     },
     {
-    event: 'SGDQ 2017',
-    value: 1.79,
-    }
+    event: '2021',
+    value: 2.75,
+    },
 ];
 
 const margin = 60;
@@ -64,7 +56,7 @@ const bar_chart = svg_bar.append('g')
 
 const axe_yScale = d3.scaleLinear()
     .range([height, 0]) //defini la range divisée entre les values de domain
-    .domain([0,10]);
+    .domain([0,4]);
 
 bar_chart.append('g')
     .call(d3.axisLeft(axe_yScale));
@@ -165,4 +157,4 @@ svg_bar.append('text') //Titre
     .attr('x', width/2 + margin)
     .attr('y', 40)
     .attr('text-anchor', 'middle')
-    .text('Evenements caritatifs')
+    .text('AGDQ')

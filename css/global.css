@@ -1,27 +1,21 @@
 /* Variables */
-:root {
-}
+/* :root {
+} */
 
 /* Font */
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,700;1,400&display=swap');
 html {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'le-havre', 'Montserrat', sans-serif;
 }
 
 /* Sans media */
 * { box-sizing: border-box;}
 body, h1, h2, h3, h4, h5, h6, p {margin: 0;}
 
-/* A Definir en fonction des Besoins */
-/* Smartphone */
-@media screen and ( max-width: 600px ) {
-	/* Variables */
-	:root {
-	}
-}
-
 section {
-	height: 100vh;
+	background-color: #101820;
+	color: white;
+	min-height: 100vh;
+	padding: 0 10%;
 }
 
 .display {
@@ -32,49 +26,53 @@ section {
 	display: none;
 }
 
+
+/* A Definir en fonction des Besoins */
+/* Smartphone */
+@media screen and ( max-width: 600px ) {
+	/* Variables */
+	/* :root {
+	} */
+}
+
 /* PC */
 @media screen and ( min-width: 601px ) {
 	/* Variables */
-	:root {
-	}
+	/* :root {
+	} */
 }
 
 
 /* A UPDATE */
 h1 {	
-	font-size: 5em;
-	font-weight: 600;
+	font-size: 6em;
+	font-weight: 650;
+	font-style: italic;
 }
 h2 {
-	font-size: 3em;
-	font-weight: 500;
+	font-size: 3.5em;
+	font-weight: 400;
 }
 h3 {
-	font-size: 2em;
-	font-weight: 500;
-}
-h4 {
-	font-size: 1,5em;
+	font-size: 3em;
 	font-weight: 400;
+}
+/* h4 {
 }
 h5 {
-	font-size: 1em;
-	font-weight: 400;
 }
 h6 {
-	font-size: 0.7em;
-	font-weight: 400;
-}
+} */
 p{
-	font-size: 1em;
-	font-weight: 300;
+	font-size: 2em;
+	font-weight: 250;
 }
 span{
-	font-size: 1em;
-	font-weight: 300;
+	font-size: 2em;
+	font-weight: 250;
 }
 a{
-	font-size: 1em;
-	font-weight: 300;
+	font-size: 2em;
+	font-weight: 250;
 	text-decoration: none;
 }

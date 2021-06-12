@@ -1,31 +1,26 @@
-body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: #466895;
-  }
-  
-  #bar_chart {
-    width: 100%;
+#bar_chart {
+
     height: 100%;
   }
   
-  .bar {
+#bar_chart .bar {
     fill: #42B8EA;
   }
   
-  text {
+#bar_chart  text {
     font-size: 12px;
     fill: #fff;
   }
   
-  path {
+#bar_chart  path {
     stroke: #fff;
   }
   
-  .grid path {
+#bar_chart  .grid path {
     stroke-width: 0;
   }
   
-  .grid .tick line {
+#bar_chart  .grid .tick line {
     stroke: #fff;
     stroke-opacity: 0.3;
-  }
+}

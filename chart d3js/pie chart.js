@@ -1,4 +1,4 @@
-var dataset = [
+var data_age = [
     {
         label: "36+",
         count:400,
@@ -17,12 +17,31 @@ var dataset = [
     }
   ];
 
+var data_plateforme = [
+    {
+        label: "youtube",
+        count:5200,
+    },
+    {
+        label: "twitch",
+        count:13000,        
+    },
+    {
+        label: "Television",
+        count:400,          
+    },
+  ];
+
+var dataset = data_age
+
 var width = 1200;
 var height = 800;
 var radius = Math.min(width, height) / 2;
 
 var legendRectSize = 25; // Taille carré colorés de la légende
 var legendSpacing = 6; // Espace entre les carrés
+
+function draw_chart(){
 
 //color scale
 var color = d3.scaleOrdinal().range(["#4e79a7","#f28e2c","#e15759","#76b7b2","#59a14f","#edc949","#af7aa1","#ff9da7","#9c755f","#bab0ab"]);
@@ -114,3 +133,12 @@ legend.append('text')
   .attr('x', legendRectSize + legendSpacing)
   .attr('y', legendRectSize - legendSpacing)
   .text(function(d) { return d; }); // return label
+}
+
+function update(data) {
+  d3.select('svg').remove();
+  dataset = data;
+  draw_chart();
+}
+
+draw_chart();
