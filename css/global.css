@@ -12,16 +12,11 @@ html {
 * { box-sizing: border-box;}
 body, h1, h2, h3, h4, h5, h6, p {margin: 0;}
 
-/* A Definir en fonction des Besoins */
-/* Smartphone */
-@media screen and ( max-width: 600px ) {
-	/* Variables */
-	:root {
-	}
-}
-
 section {
+	background-color: #101820;
+	color: white;
 	height: 100vh;
+	padding: 0 10%;
 }
 
 .display {
@@ -30,6 +25,15 @@ section {
 
 .none {
 	display: none;
+}
+
+
+/* A Definir en fonction des Besoins */
+/* Smartphone */
+@media screen and ( max-width: 600px ) {
+	/* Variables */
+	:root {
+	}
 }
 
 /* PC */

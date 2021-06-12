@@ -1,0 +1,6 @@
+.video > video {
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    margin-top: 10%;
+}
