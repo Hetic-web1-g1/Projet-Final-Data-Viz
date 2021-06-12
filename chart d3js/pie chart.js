@@ -1,4 +1,4 @@
-var dataset = [
+var data_age = [
     {
         label: "36+",
         count:400,
@@ -16,6 +16,23 @@ var dataset = [
         count:3000,          
     }
   ];
+
+var data_plateforme = [
+    {
+        label: "youtube",
+        count:5200,
+    },
+    {
+        label: "twitch",
+        count:13000,        
+    },
+    {
+        label: "Television",
+        count:400,          
+    },
+  ];
+
+var dataset = data_age
 
 var width = 1200;
 var height = 800;
@@ -114,3 +131,60 @@ legend.append('text')
   .attr('x', legendRectSize + legendSpacing)
   .attr('y', legendRectSize - legendSpacing)
   .text(function(d) { return d; }); // return label
+
+function update(data) {
+
+  d3.select('svg').remove();
+  dataset = data;
+
+  color = d3.scaleOrdinal().range(["#4e79a7","#f28e2c","#e15759","#76b7b2","#59a14f","#edc949","#af7aa1","#ff9da7","#9c755f","#bab0ab"]);
+
+  svg = d3.select('#pie_chart') 
+  .append('svg')
+  .attr('width', width) 
+  .attr('height', height) 
+  .append('g') 
+  .attr('transform', 'translate(' + (width / 2) + ',' + (height / 2) + ')');
+
+  arc = d3.arc()
+  .innerRadius(radius - 100)
+  .outerRadius(radius); // Taille de la chart
+
+  pie = d3.pie() // Début et fin des angles des segments
+  .value(function(d) { return d.count; }) // Extrait les nombres de chaque entrée de notre data
+  .sort(null); // par default les valeurs sont triés par ordre descroissant on cancel ça en mettant a null
+
+
+  path = svg.selectAll('path')
+  .data(pie(dataset)) //Associe le set de data avec le path qu'on créé
+  .enter() //crée un placeholder pour chaque valeur
+  .append('path') // remplace les placeholders avec les elements du path
+  .attr('d', arc) // Défini 'd' avec l'arc
+  .attr('fill', function(d) { return color(d.data.label); }) //Utilise le color scale pour definir chaque couleur de segments
+  .each(function(d) { this._current - d; }); // animation sympa
+
+
+  legend = svg.selectAll('.legend') 
+  .data(color.domain()) 
+  .enter() 
+  .append('g')
+  .attr('class', 'legend')
+  .attr('transform', function(d, i) {                   
+    var height = legendRectSize + legendSpacing;     
+    var offset =  height * color.domain().length / 2; 
+    var horiz = 18 * legendRectSize; 
+    var vert = i * height - offset;               
+      return 'translate(' + horiz + ',' + vert + ')';      
+   });
+
+  legend.append('rect')                                  
+  .attr('width', legendRectSize)                        
+  .attr('height', legendRectSize)                      
+  .style('fill', color) 
+  .style('stroke', color) 
+
+  legend.append('text')                                    
+  .attr('x', legendRectSize + legendSpacing)
+  .attr('y', legendRectSize - legendSpacing)
+  .text(function(d) { return d; }); // return label
+}
