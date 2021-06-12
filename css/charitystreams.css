@@ -1,11 +1,11 @@
-#section4 {
+#charitystreams {
     background-color:orange;
     display: grid;
     grid-template-columns:repeat(3,1fr);
     grid-template-rows: repeat(3,1fr);
     grid-row-gap: 20px
 }
-#section4 > h2{
+#charitystreams > h2{
     position: relative;
     height: fit-content;
     text-align: center;
@@ -18,7 +18,8 @@
     grid-column: span 3;
     align-self: center;
 }
-img {
+
+#charitystreams > img {
     width: 12em;
     height: auto;
     margin: auto;
@@ -37,7 +38,7 @@ transform: scale(1);
 
 
 /* Animation Bounce
- .section4 > img{  
+ #charitystreams > img{  
     background-image: url(/css/images/logo.png); 
     background-repeat: no-repeat;
     background-position: left top; 
