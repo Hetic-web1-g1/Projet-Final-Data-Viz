@@ -8,7 +8,9 @@
         <h1 id="speed"><span>Speed</span><span>Run</span></h1>
         <!-- <script src="js/section1.js"></script> -->
     </section>
-
+    <section class="video">
+        <video src="./assets/video/speedrun.mp4" autoplay loop muted></video>
+    </section>
     <section class="section2">
         <h2>In 1993, ID Software releases Doom which becomes an international success. One year after its release, a website by the name of LMP Hall of Fame 
             lets players upload their gameplay clips in the hopes of obtaining “DOOM Honorifics Titles”, the goal being finishing the game with various challenges or as quick as possible. This is 
