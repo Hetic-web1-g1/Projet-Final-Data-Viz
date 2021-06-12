@@ -5,7 +5,7 @@
     grid-template-rows: repeat(3,1fr);
     grid-row-gap: 20px
 }
-#charitystreams > h2{
+#charitystreams p {
     position: relative;
     height: fit-content;
     text-align: center;

@@ -1,4 +1,4 @@
-#acceuil {
+#accueil {
     display: flex;
     position: relative;
     flex-wrap: wrap;
@@ -7,7 +7,7 @@
     justify-content: flex-end;
 }
 
-#acceuil > #speed{
+#accueil > #speed{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -15,17 +15,17 @@
     height: fit-content;
 }
 
-#acceuil > #speed span:nth-child(1) {
+#accueil > #speed span:nth-child(1) {
     position: relative;
     animation: speedleft 0.8s cubic-bezier(.6,.01,.48,.15) forwards;
     margin-right: -4px;
 }
-#acceuil > #speed span:nth-child(2) {
+#accueil > #speed span:nth-child(2) {
     position: relative;
     animation: speedright 0.8s cubic-bezier(.6,.01,.48,.15) forwards;
     margin-left: -4px;
 }
-#acceuil img {
+#accueil img {
     margin-bottom: 8em;
 }
 
