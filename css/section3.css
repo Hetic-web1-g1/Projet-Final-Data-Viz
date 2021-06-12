@@ -1,8 +1,8 @@
-.section3{
+#section3{
     background-color: lawngreen;
 }
 
-.section3 > .demo{
+#section3 > .demo{
     position: relative;
     height: fit-content;
     text-align: center;
@@ -11,7 +11,7 @@
     padding: 3em 30px 30px 30px;
 }
 
-.section3 > .twitch{
+#section3 > .twitch{
     position: relative;
     height: fit-content;
     text-align: center;
