@@ -6,8 +6,9 @@
 <main>
     <section id="acceuil">
         <h1 id="speed"><span>Speed</span><span>Run</span></h1>
+        <a href="#video"><img src="./assets/img/arrow.svg" alt="bouton fleche"></a>
     </section>
-    <section class="video">
+    <section id="video">
         <video src="./assets/video/speedrun.mp4" autoplay loop muted></video>
     </section>
     <section id="introspeedrun">

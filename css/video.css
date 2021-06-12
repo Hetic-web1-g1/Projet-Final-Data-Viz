@@ -1,9 +1,9 @@
-.video > video {
+#video > video {
     width: 100%;
     height: calc(80vw * (9/16));
     margin: auto;
 }
-.video{
+#video{
     padding: 10% 0 10% 0;
     display: flex;
 }

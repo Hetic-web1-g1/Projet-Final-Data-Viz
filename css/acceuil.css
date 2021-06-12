@@ -1,6 +1,10 @@
 #acceuil {
     display: flex;
     position: relative;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-end;
 }
 
 #acceuil > #speed{
@@ -20,6 +24,9 @@
     position: relative;
     animation: speedright 0.8s cubic-bezier(.6,.01,.48,.15) forwards;
     margin-left: -4px;
+}
+#acceuil img {
+    margin-bottom: 8em;
 }
 
 @keyframes speedleft {
