@@ -1,9 +1,9 @@
 #video > video {
     width: 100%;
-    height: calc(80vw * (9/16));
-    margin: auto;
+    max-height: 80%;
 }
 #video{
-    padding: 10% 0 10% 0;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
