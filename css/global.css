@@ -26,7 +26,10 @@ section {
 .none {
 	display: none;
 }
-
+figcaption{
+	text-align: center;
+	font-size: 1.7em;
+}
 
 /* A Definir en fonction des Besoins */
 /* Smartphone */
