@@ -3,4 +3,5 @@
     to set up and is aimed at a younger and larger audience.</p>
     <p>Thanks to Twitch’s platform succesful streamers can host their own events from their home which comes at practically no cost for themselves, 
     giving visibility to their organisation they choose to support.</p>
+    <p>Mettre en forme figma avant de finaliser</p>
 </section>

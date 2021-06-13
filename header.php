@@ -70,7 +70,7 @@
                 <h4 class="label">AVANTAGE DU STREAM CARITATIF</h4>
             </div>
             <div class="navbutton">
-                <a href="#sondage">
+                <a href="#conclusion">
                     <div class="link">
                         <div class="linkcontent"></div>
                     </div>

@@ -6,13 +6,8 @@
 }
 #charitystreams p {
     position: relative;
-    height: fit-content;
     text-align: center;
-    /* width: 33vw; */
-    /* margin: auto; */
-    /* top: 40%; */
-    height: 149px;
-    padding: 0 28vw;
+    padding: 0 33%;
     grid-row-start: 2;
     grid-column: span 3;
     align-self: center;
@@ -28,7 +23,8 @@
 
 [tag-inviewport="scale-in"] { 
     transition: 2s;
-    transform: scale(0.1);
+    /* transform: scale(0.1); */
+    transform: scale(0.7);
 }
 
 [tag-inviewport="scale-in"].is-inViewport { 
