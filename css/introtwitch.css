@@ -1,0 +1,15 @@
+#introtwitch > .demo{
+    height: fit-content;
+    text-align: center;
+    width: 33%;
+    margin: 0px auto;
+    padding-top: 10em;
+}
+
+#introtwitch > .twitch{
+    height: fit-content;
+    text-align: center;
+    width: 33%;
+    margin: 0px auto;
+    padding-top: 2em;
+}

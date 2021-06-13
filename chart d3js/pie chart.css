@@ -1,0 +1,28 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.legend {
+  font-size: 14px;
+}
+rect {
+  stroke-width: 2;
+}
+
+#pie_chart {
+  height: 800px;
+  margin: 0 auto;
+  position: relative;
+  display: block;
+  width: 1200px;
+}
+
+.tooltip {
+  background: #eee;
+  box-shadow: 0 0 5px #999999;
+  display: none;
+  font-size: 18px;
+  position: absolute;
+  text-align: center;
+  width: 80px;
+}

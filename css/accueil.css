@@ -1,0 +1,53 @@
+#accueil {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-end;
+}
+
+#accueil > #speed{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: fit-content;
+}
+
+#accueil > #speed span:nth-child(1) {
+    position: relative;
+    animation: speedleft 0.8s cubic-bezier(.6,.01,.48,.15) forwards;
+    margin-right: -4px;
+}
+#accueil > #speed span:nth-child(2) {
+    position: relative;
+    animation: speedright 0.8s cubic-bezier(.6,.01,.48,.15) forwards;
+    margin-left: -4px;
+}
+#accueil img {
+    margin-bottom: 8em;
+}
+
+@keyframes speedleft {
+    0% {
+        left: -50%;
+    }
+    99% {
+        left:0;
+    }
+    100%{
+        left: unset;
+    }
+}
+@keyframes speedright {
+    0% {
+        left: 50%;
+    }
+    99%{
+        left: 0;
+    }
+    100%{
+        left: unset;
+    }
+}
