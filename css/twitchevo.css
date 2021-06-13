@@ -4,3 +4,30 @@
     margin: 0px auto;
     padding-top: 10%;
 }
+
+#twitchevo > svg {
+    width: 80%;
+    height: 100%;
+}
+  
+#twitchevo .bar {
+    fill: #42B8EA;
+  }
+  
+#twitchevo text {
+    font-size: 20px;
+    fill: #fff;
+  }
+  
+#twitchevo path {
+    stroke: #fff;
+  }
+  
+#twitchevo .grid path {
+    stroke-width: 0;
+  }
+  
+#twitchevo .grid .tick line {
+    stroke: #fff;
+    stroke-opacity: 0.3;
+}
