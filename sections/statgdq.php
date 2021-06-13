@@ -1,4 +1,8 @@
 <section id="stat_gdq">
-        <button onclick="update_chart(agdq)">Data 1</button>
-        <button onclick="update_chart(sgdq)">Data 2</button>
+        <div class='bouton'>
+                <button onclick="update_chart(agdq)">récoltes AGDQ</button>
+                <button onclick="update_chart(sgdq)">récoltes SGDQ</button>
+                <button>tweets AGDQ</button>
+                <button>tweets SGDQ</button>
+        </div>
 </section>
