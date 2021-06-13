@@ -1,9 +1,19 @@
 @import "global.css";
 @import "nav.css";
-@import "logoassoc.css";
-@import "video.css";
-@import "bar chart.css";
+
+
+/* By Order */
 @import "accueil.css";
+@import "video.css";
 @import "introspeedrun.css";
 @import "introtwitch.css";
+@import "speedrunningandcharity.css";
+@import "statgdq.css";
 @import "charitystreams.css";
+@import "solostreams.css";
+@import "graphsrecolte.css";
+@import "twitchevo.css";
+@import "comparaison.css";
+@import "associations.css";
+@import "sondage.css";
+

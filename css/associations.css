@@ -1,5 +1,5 @@
-.logo-assoc {
-    background-color: chartreuse;
+#associations {
+    /* background-color: chartreuse; */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -7,28 +7,26 @@
     align-items: center;
 }
 
+#associations > img {
+    width: auto;
+}
 
-.cr {
+#associations > #cr {
     height: 170px;
-    width: auto;
 }
 
-.medecins {
+#associations > #medecins {
     height: 160px;
-    width: auto;
 }
 
-.save {
+#associations > #save {
     height: 100px;
-    width: auto;
 }
 
-.institut {
+#associations > #institut {
     height: 150px;
-    width: auto;
 }
 
-.prevent {
+#associations > #prevent {
     height: 150px;
-    width: auto;
 }

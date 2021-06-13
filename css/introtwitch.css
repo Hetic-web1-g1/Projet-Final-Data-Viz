@@ -1,23 +1,21 @@
 #introtwitch{
-    background-color: lawngreen;
+    /* background-color: lawngreen; */
 }
 
 #introtwitch > .demo{
-    position: relative;
     height: fit-content;
     text-align: center;
-    width: 33vw;
+    width: 33%;
     margin: 0px auto;
-    padding: 3em 30px 30px 30px;
+    padding-top: 3em;
 }
 
 #introtwitch > .twitch{
-    position: relative;
     height: fit-content;
     text-align: center;
-    width: 33vw;
+    width: 33%;
     margin: 0px auto;
-    padding: 5em 0 0px 0;
+    padding-top: 2em;
 }
 
 
