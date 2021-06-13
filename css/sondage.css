@@ -1,37 +1,37 @@
 #sondage > h3 {
-    text-align: center;
-    width: 33%;
-    margin: 0px auto;
-    padding-top: 3%;
+  text-align: center;
+  width: 33%;
+  margin: 0px auto;
+  padding-top: 3%;
 }
 
-#sondage > p{
-    text-align: center;
-    width: 33%;
-    margin: 0px auto;
-    padding-top: 3%;
+#sondage > p {
+  text-align: center;
+  width: 33%;
+  margin: 0px auto;
+  padding-top: 3%;
 }
 
 #age_pie {
-    margin: 0 auto;
-    position: relative;
-    display: block;
+  margin: 0 auto;
+  position: relative;
+  display: block;
 }
 
 #age_pie .legend {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 #age_pie rect {
-    stroke-width: 2;
+  stroke-width: 2;
 }
-  
+
 #age_pie .tooltip {
-    background: #42B8EA;
-    box-shadow: 0 0 5px #999999;
-    display: none;
-    font-size: 18px;
-    position: absolute;
-    text-align: center;
-    width: 80px;
-  }
+  background: #42b8ea;
+  box-shadow: 0 0 5px #999999;
+  display: none;
+  font-size: 18px;
+  position: absolute;
+  text-align: center;
+  width: 80px;
+}
