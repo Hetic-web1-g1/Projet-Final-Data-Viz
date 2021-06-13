@@ -4,18 +4,7 @@
     <div id="nav">
         <div id="progression">
             <div class="navbutton">
-                <a href="#accueil">
-                    <div class="link">
-                        <div class="linkcontent"></div>
-                    </div>
-                    <div class="progressbarwrap">
-                        <div class="progressbar"></div> 
-                    </div>
-                </a>
-                <h4 class="label">Accueil</h4>
-            </div>
-            <div class="navbutton">
-                <a href="#introspeedrun">
+                <a href="#">
                     <div class="link">
                         <div class="linkcontent"></div>
                     </div>
@@ -26,7 +15,7 @@
                 <h4 class="label">SPEEDRUN</h4>
             </div>
             <div class="navbutton">
-                <a href="#introtwitch">
+                <a href="#">
                     <div class="link">
                         <div class="linkcontent"></div>
                     </div>
@@ -37,7 +26,7 @@
                 <h4 class="label">LE SPEEDRUN ET TWITCH</h4>
             </div>
             <div class="navbutton">
-                <a href="#charitystreams">
+                <a href="#">
                     <div class="link">
                         <div class="linkcontent"></div>
                     </div>
@@ -48,7 +37,7 @@
                 <h4 class="label ">ESSOR DES EVENEMENTS CARITATIFS SPEEDRUN</h4>
             </div>
             <div class="navbutton">
-                <a href="#solostreams">
+                <a href="#">
                     <div class="link">
                         <div class="linkcontent"></div>
                     </div>
@@ -59,7 +48,7 @@
                 <h4 class="label">STREAMING SE DEMOCRATISE</h4>
             </div>
             <div class="navbutton">
-                <a href="#comparaison">
+                <a href="#">
                     <div class="link">
                         <div class="linkcontent"></div>
                     </div>
@@ -70,7 +59,7 @@
                 <h4 class="label">AVANTAGE DU STREAM CARITATIF</h4>
             </div>
             <div class="navbutton">
-                <a href="#conclusion">
+                <a href="#">
                     <div class="link">
                         <div class="linkcontent"></div>
                     </div>
