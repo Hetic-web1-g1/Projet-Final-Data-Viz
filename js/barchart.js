@@ -80,6 +80,45 @@ const sgdq = [
     },
 ];
 
+const zevent = [
+    {
+    event: '2017',
+    value: 0.59,
+    },
+    {
+    event: '2018',
+    value: 1.33,
+    },
+    {
+    event: '2019',
+    value: 4.28,
+    },
+    {
+    event: '2020',
+    value: 6.98,
+    },
+];
+
+const pic_zevent = [
+    {
+    event: '2017',
+    value: 109392,
+    },
+    {
+    event: '2018',
+    value: 405033,
+    },
+    {
+    event: '2019',
+    value: 592006,
+    },
+    {
+    event: '2020',
+    value: 600796,
+    },
+];
+
+
 const evo_twitch = [
     {
     event: 'Jan',
@@ -143,11 +182,49 @@ const evo_twitch = [
     }
 ]
 
+const comparaison_rentabilite = [
+    {
+    event: '2012',
+    value: 0.05,
+    },
+    {
+    event: '2013',
+    value: 0.25,
+    },
+    {
+    event: '2014',
+    value: 0.72,
+    },
+    {
+    event: '2015',
+    value: 1.21,
+    },
+    {
+    event: '2016',
+    value: 1.29,
+    },
+    {
+    event: '2017',
+    value: 1.79,
+    },
+    {
+    event: '2018',
+    value: 2.17,
+    },
+    {
+    event: '2019',
+    value: 3.04,
+    },
+    {
+    event: '2020',
+    value: 2.34,
+    },
+];
+
 sample = agdq
 
 function draw_bar_chart(nom, nomdiv) {
 
-    var domain = [0,4];
     if (sample == agdq || sample == sgdq){
         domain = [0,4];
         legende = 'Montant récolté en Million de Dollar';
@@ -155,6 +232,14 @@ function draw_bar_chart(nom, nomdiv) {
     else if (sample == evo_twitch){
         domain = [0.9,2.1];
         legende = 'Heures de vues en Milliard';
+    }
+    else if (sample == zevent){
+        domain = [0,7];
+        legende = 'Montant récolté en Million de Dollar';
+    }
+    else if (sample == pic_zevent){
+        domain = [0,650000];
+        legende = '';
     }
 
     const div = document.getElementById(nomdiv)
@@ -283,10 +368,12 @@ bar_chart.append('text') //Titre
 
 function update_chart(data, nom, nom_div){
     sample = data;
-    d3.select('.bar_chart').remove()
+    d3.selectAll('.bar_chart').remove()
     draw_bar_chart(nom, nom_div);
 }
 
-draw_bar_chart('AGDQ', 'stat_gdq', [0,4]);
+draw_bar_chart('AGDQ', 'stat_gdq');
 sample = evo_twitch
-draw_bar_chart('Evolution de twitch', 'twitchevo', [0.9,2.1]);
+draw_bar_chart('Evolution de twitch', 'twitchevo');
+sample = zevent
+draw_bar_chart('Récoltes Zevent', 'graphsrecolte');
