@@ -1,4 +1,6 @@
 #introspeedrun > p {
     padding-top: 30%;
     text-align: center;
+    margin: 0px auto;
+    width: 33%;
 }

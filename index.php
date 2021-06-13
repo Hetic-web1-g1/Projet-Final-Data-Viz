@@ -18,6 +18,7 @@
         include 'sections/comparaison.php';
         include 'sections/associations.php';
         include 'sections/sondage.php';
+        include 'sections/conclusion.php';
     ?>
 </main>
 
