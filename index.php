@@ -10,6 +10,7 @@ include './header.php';
     include './sections/introspeedrun.php';
     include './sections/introtwitch.php';
     include './sections/speedrunningandcharity.php';
+    include './sections/speedrunningrise.php';
     include './sections/statgdq.php';
     include './sections/charitystreams.php';
     include './sections/solostreams.php';

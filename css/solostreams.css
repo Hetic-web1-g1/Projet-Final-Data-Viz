@@ -39,3 +39,8 @@
   padding-top: 5%;
   font-size: 4em;
 }
+
+#solostreams > figcaption {
+	text-align: center;
+	font-size: 1.7em;
+}
