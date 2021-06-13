@@ -32,22 +32,28 @@
 @keyframes speedleft {
     0% {
         left: -50%;
+        filter: blur(1.5rem);
     }
     99% {
         left:0;
+        filter: blur(4px);
     }
     100%{
         left: unset;
+        filter: blur(0);
     }
 }
 @keyframes speedright {
     0% {
         left: 50%;
+        filter: blur(1.5rem);
     }
     99%{
         left: 0;
+        filter: blur(4px);
     }
     100%{
         left: unset;
+        filter: blur(0);
     }
 }
