@@ -1,15 +1,13 @@
-#introtwitch > .demo{
-    height: fit-content;
-    text-align: center;
-    width: 33%;
-    margin: 0px auto;
-    padding-top: 3em;
+#introtwitch {
+    flex-direction: column;
 }
 
-#introtwitch > .twitch{
+#introtwitch > p{
     height: fit-content;
     text-align: center;
-    width: 33%;
-    margin: 0px auto;
-    padding-top: 2em;
+    width: 40%;
+}
+
+#introtwitch > #twitch{
+    padding-top: 10%;
 }

@@ -8,12 +8,17 @@
     grid-row-start: 2;
     grid-column: span 3;
     align-self: center;
+    text-align: center;
 }
 
 #charitystreams > img {
+    margin: auto;
     width: 12em;
     height: auto;
-    margin: auto;
+}
+
+#charitystreams > #livetime {
+    width: 8em;
 }
 #charitystreams :nth-child(1){
     margin-bottom: -10%;

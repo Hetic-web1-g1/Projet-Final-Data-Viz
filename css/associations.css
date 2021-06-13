@@ -1,30 +1,67 @@
 #associations {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
+    position: relative;
 }
 
-#associations > img {
+#associations > p {
+    text-align: center;
+    width: 40%;
+}
+
+#associations > a {
+    position: absolute;
+}
+
+#associations > a > img {
     width: auto;
-}
-
-#associations > #cr {
-    height: 170px;
-}
-
-#associations > #medecins {
-    height: 160px;
-}
-
-#associations > #save {
     height: 100px;
 }
 
-#associations > #institut {
-    height: 150px;
+#associations > a#spa {
+    bottom: 16%;
+    left: 8%;
 }
+#associations > a#spa > img {
+    height: 180px;
+}
+
+#associations > a#croixrouge {
+    bottom: 20%;
+    right: 5%;
+}
+#associations > a#croixrouge > img {
+    height: 100px;
+}
+
+#associations > a#medecins {
+    bottom: 7%;
+    left: calc(50% - 120px);
+}
+#associations > a#medecins > img {
+    height: 120px;
+}
+
+#associations > a#savethechildren {
+    top: 24%;
+    right: 6%;
+}
+#associations > a#savethechildren > img {
+    height: 60px;
+}
+
+#associations > a#institutpasteur {
+    top: 7%;
+    left: calc(50% - 120px);
+}
+#associations > a#institutpasteur > img {
+    height: 120px;
+}
+
+#associations > a#preventcancer {
+    top: 24%;
+    left: 8%;
+}
+#associations > a#preventcancer > img {
+    height: 120px;
 
 #associations > #prevent {
     height: 150px;
