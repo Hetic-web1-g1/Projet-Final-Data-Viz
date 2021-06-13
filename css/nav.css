@@ -23,21 +23,20 @@
 }
 
 #nav > #progression > .navbutton:hover .label{
-    opacity: 0.8;
-    color: white;
+    opacity: 1;
     transform: translateX(10px);
     width: 100%;
 }
 
 #nav > #progression > .navbutton > a > .progressbarwrap {
     flex-grow: 1;
-    opacity: 0.8;
+    opacity: 0.5;
     transition: 0.3s
 }
 
 #nav > #progression > .navbutton > a > .progressbarwrap > .progressbar {
     width: 1px;
-    background-color: white;
+    background-color: black;
     height: 20px;
     margin: auto;
 }
@@ -55,8 +54,8 @@
 
 #nav > #progression > .navbutton > a > .link > .linkcontent {
     content: '';
-    background-color: white;
-    opacity: 0.8;
+    background-color: black;
+    opacity: 0.5;
     display: block;
     position: relative;
     height: 10px;
