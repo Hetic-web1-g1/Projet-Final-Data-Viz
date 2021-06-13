@@ -5,19 +5,19 @@
 
 <main>
     <?php
-        include 'section/acceuil.php';
-        include 'section/video.php';
-        include 'section/introspeedrun.php';
-        include 'section/introtwitch.php';
-        include 'section/speedrunningandcharity.php';
-        include 'section/statgdq.php';
-        include 'section/charitystreams.php';
-        include 'section/solostreams.php';
-        include 'section/graphsrecolte.php';
-        include 'section/twitchevo.php';
-        include 'section/comparaison.php';
-        include 'section/associations.php';
-        include 'section/sondage.php';
+        include 'sections/acceuil.php';
+        include 'sections/video.php';
+        include 'sections/introspeedrun.php';
+        include 'sections/introtwitch.php';
+        include 'sections/speedrunningandcharity.php';
+        include 'sections/statgdq.php';
+        include 'sections/charitystreams.php';
+        include 'sections/solostreams.php';
+        include 'sections/graphsrecolte.php';
+        include 'sections/twitchevo.php';
+        include 'sections/comparaison.php';
+        include 'sections/associations.php';
+        include 'sections/sondage.php';
     ?>
 </main>
 
