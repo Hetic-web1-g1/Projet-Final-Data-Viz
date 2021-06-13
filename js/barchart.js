@@ -188,7 +188,6 @@ const axe_xScale = d3.scaleBand()
     .range([0, width])
     .domain(sample.map((s) => s.event))
     .padding(0.2);
-    console.log(sample.map((s) => s.event))
 
 bar_chart.append('g')
     .attr('transform', `translate(0, ${height})`)
