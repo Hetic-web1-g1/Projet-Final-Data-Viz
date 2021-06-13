@@ -5,9 +5,6 @@
     grid-row-gap: 20px
 }
 #charitystreams p {
-    position: relative;
-    text-align: center;
-    padding: 0 33%;
     grid-row-start: 2;
     grid-column: span 3;
     align-self: center;
