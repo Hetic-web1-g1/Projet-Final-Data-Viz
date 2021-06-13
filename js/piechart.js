@@ -32,8 +32,9 @@ var data_plateforme = [
     },
   ];
 
-var pie_width = 1000;
-var pie_height = 600;
+const div = document.getElementById("sondage")
+const pie_width = div.offsetWidth / 2;
+const pie_height = div.offsetHeight / 2;
 var radius = Math.min(pie_width, pie_height) / 2;
 
 var legendRectSize = 25; // Taille carré colorés de la légende
@@ -49,10 +50,10 @@ var color = d3.scaleOrdinal().range(["#4e79a7","#f28e2c","#e15759","#76b7b2","#5
 var svg = d3.select(p_div) 
   .append('svg')
   .attr('class', 'pie')
-  .attr('width', pie_width) 
+  .attr('width', pie_width * 2) 
   .attr('height', pie_height) 
   .append('g') 
-  .attr('transform', 'translate(' + (pie_width / 2) + ',' + (pie_height / 2) + ')');
+  .attr('transform', `translate(${7*(pie_width/9)}, ${pie_height/2})`);
 
 var arc = d3.arc()
   .innerRadius(radius - 100)
@@ -119,7 +120,7 @@ var legend = svg.selectAll('.legend')
   .attr('transform', function(d, i) {                   
     var height = legendRectSize + legendSpacing;     
     var offset =  height * color.domain().length / 2; 
-    var horiz = 18 * legendRectSize; 
+    var horiz = 12 * legendRectSize; 
     var vert = i * height - offset;               
       return 'translate(' + horiz + ',' + vert + ')';      
    });
