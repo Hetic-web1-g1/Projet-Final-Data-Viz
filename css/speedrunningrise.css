@@ -1,0 +1,9 @@
+#speedrunningrise {
+    flex-direction: column;
+}
+
+#speedrunningrise > p{
+    text-align: center;
+    width: 50%;
+    margin-bottom: 10%;
+}
