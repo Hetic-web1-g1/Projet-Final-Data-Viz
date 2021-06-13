@@ -1,0 +1,30 @@
+#stat_gdq {
+  text-align: center;
+}
+
+#stat_gdq > svg {
+    width: 100%;
+    height: 1000px;
+}
+  
+#stat_gdq .bar {
+    fill: #42B8EA;
+  }
+  
+#stat_gdq text {
+    font-size: 12px;
+    fill: #fff;
+  }
+  
+#stat_gdq path {
+    stroke: #fff;
+  }
+  
+#stat_gdq .grid path {
+    stroke-width: 0;
+  }
+  
+#stat_gdq  .grid .tick line {
+    stroke: #fff;
+    stroke-opacity: 0.3;
+}

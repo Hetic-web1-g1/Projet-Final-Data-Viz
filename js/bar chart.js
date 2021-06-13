@@ -82,11 +82,9 @@ const sgdq = [
 
 sample = agdq
 
-const div = document.getElementById("stat_gdq")
-
 const margin = 60;
-const width = div.offsetWidth / 2;
-const height = div.offsetHeight / 2;
+const width = 1000 - 2*margin;
+const height = 600 - 2*margin;
 
 function draw_bar_chart() {
 
@@ -96,7 +94,7 @@ function draw_bar_chart() {
     .attr('width', width) 
     .attr('height', height) 
     .append('g') 
-    .attr('transform', `translate(${margin*2}, ${margin})`);
+    .attr('transform', `translate(${margin}, ${margin})`);
 
 //BAR CHART
 
@@ -195,15 +193,15 @@ BarreGroup
 // Texte
 
 bar_chart.append('text') //Légende
-    .attr('x', -(height/2) )
-    .attr('y', -margin)
+    .attr('x', -(height/2) - margin)
+    .attr('y', margin / 2.4)
     .attr('transform', 'rotate(-90)')
     .attr('text-anchor', 'middle')
     .text('Montant récolté en Million de Dollar')
 
 bar_chart.append('text') //Titre
-    .attr('x', width/2)
-    .attr('y', -40)
+    .attr('x', width/2 + margin)
+    .attr('y', 40)
     .attr('text-anchor', 'middle')
     .text('AGDQ')
 }
