@@ -1,6 +1,9 @@
+#comparaison {
+    flex-direction: column;
+}
+
 #comparaison > p{
     text-align: center;
-    width: 33%;
-    margin: 0px auto;
-    padding-top: 5%;
+    width: 80%;
+    margin-bottom: 5%;
 }

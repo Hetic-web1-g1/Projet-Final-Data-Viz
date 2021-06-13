@@ -1,6 +1,8 @@
+#twitchevo {
+    flex-direction: column;
+}
+
 #twitchevo > p{
     text-align: center;
-    width: 33%;
-    margin: 0px auto;
-    padding-top: 10%;
+    width: 50%;
 }

@@ -1,4 +1,11 @@
-#sondage > h3, p{
+#sondage > h3 {
+    text-align: center;
+    width: 33%;
+    margin: 0px auto;
+    padding-top: 3%;
+}
+
+#sondage > p{
     text-align: center;
     width: 33%;
     margin: 0px auto;
