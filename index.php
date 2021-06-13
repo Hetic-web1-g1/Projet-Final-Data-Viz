@@ -19,12 +19,8 @@
         include 'section/associations.php';
         include 'section/sondage.php';
     ?>
-
-
-
-
-
 </main>
+
 <?php
     include 'footer.php';
 ?>
