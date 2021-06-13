@@ -1,9 +1,10 @@
 #video > video {
-    width: 100%;
-    max-height: 80%;
+  width: 100%;
+  max-height: 70%;
 }
-#video{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+#video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

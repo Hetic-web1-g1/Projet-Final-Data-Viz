@@ -1,36 +1,36 @@
 var data_age = [
-    {
-        label: "36+",
-        count:400,
-    },
-    {
-        label: "24-36",
-        count:5400,        
-    },
-    {
-        label: "18-24",
-        count:11200,          
-    },
-    {
-        label: "-18",
-        count:3000,          
-    }
-  ];
+  {
+    label: "36+",
+    count: 400,
+  },
+  {
+    label: "24-36",
+    count: 5400,
+  },
+  {
+    label: "18-24",
+    count: 11200,
+  },
+  {
+    label: "-18",
+    count: 3000,
+  },
+];
 
 var data_plateforme = [
-    {
-        label: "youtube",
-        count:5200,
-    },
-    {
-        label: "twitch",
-        count:13000,        
-    },
-    {
-        label: "Television",
-        count:400,          
-    },
-  ];
+  {
+    label: "youtube",
+    count: 5200,
+  },
+  {
+    label: "twitch",
+    count: 13000,
+  },
+  {
+    label: "Television",
+    count: 400,
+  },
+];
 
 const div = document.getElementById("sondage")
 const pie_width = div.offsetWidth / 2;
@@ -138,8 +138,8 @@ legend.append('text')
 }
 
 function update(data) {
-  d3.select('.pie').remove();
+  d3.select(".pie").remove();
   draw_chart(data);
 }
 
-draw_chart(data_age, '#age_pie');
+draw_chart(data_age, "#age_pie");

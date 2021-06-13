@@ -11,7 +11,7 @@
 }
 
 #stat_gdq button {
-  background-color: #42B8EA; 
+  background-color: #42b8ea;
   border: none;
   color: white;
   padding: 16px 32px;
@@ -23,34 +23,33 @@
 }
 
 #stat_gdq button:hover {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
 }
 
-
 #stat_gdq > svg {
-    width: 80%;
-    height: 100%;
+  width: 80%;
+  height: 100%;
 }
-  
+
 #stat_gdq .bar {
-    fill: #42B8EA;
-  }
-  
+  fill: #42b8ea;
+}
+
 #stat_gdq text {
-    font-size: 20px;
-    fill: #fff;
-  }
-  
+  font-size: 20px;
+  fill: #fff;
+}
+
 #stat_gdq path {
-    stroke: #fff;
-  }
-  
+  stroke: #fff;
+}
+
 #stat_gdq .grid path {
-    stroke-width: 0;
-  }
-  
-#stat_gdq  .grid .tick line {
-    stroke: #fff;
-    stroke-opacity: 0.3;
+  stroke-width: 0;
+}
+
+#stat_gdq .grid .tick line {
+  stroke: #fff;
+  stroke-opacity: 0.3;
 }

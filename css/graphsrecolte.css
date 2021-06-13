@@ -11,7 +11,7 @@
 }
 
 #graphsrecolte button {
-  background-color: #42B8EA; 
+  background-color: #42b8ea;
   border: none;
   color: white;
   padding: 16px 32px;
@@ -23,34 +23,33 @@
 }
 
 #graphsrecolte button:hover {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
 }
 
-
 #graphsrecolte > svg {
-    width: 80%;
-    height: 100%;
+  width: 80%;
+  height: 100%;
 }
-  
+
 #graphsrecolte .bar {
-    fill: #42B8EA;
-  }
-  
+  fill: #42b8ea;
+}
+
 #graphsrecolte text {
-    font-size: 20px;
-    fill: #fff;
-  }
-  
+  font-size: 20px;
+  fill: #fff;
+}
+
 #graphsrecolte path {
-    stroke: #fff;
-  }
-  
+  stroke: #fff;
+}
+
 #graphsrecolte .grid path {
-    stroke-width: 0;
-  }
-  
-#graphsrecolte  .grid .tick line {
-    stroke: #fff;
-    stroke-opacity: 0.3;
+  stroke-width: 0;
+}
+
+#graphsrecolte .grid .tick line {
+  stroke: #fff;
+  stroke-opacity: 0.3;
 }

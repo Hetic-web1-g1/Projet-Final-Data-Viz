@@ -1,14 +1,16 @@
-const body = document.querySelector('main')
-const scrollBar = document.querySelector('#scroll')
-const nbsections = document.querySelectorAll("section").length
-const bodyHeight = nbsections * window.innerHeight + nbsections * parseInt(window.getComputedStyle(document.querySelector("section")).getPropertyValue('margin-bottom'));
+const body = document.querySelector("main");
+const scrollBar = document.querySelector("#scroll");
+const nbsections = document.querySelectorAll("section").length;
+var bodyHeight = 0;
 
+document
+  .querySelectorAll("section")
+  .forEach((element) => (bodyHeight += element.clientHeight));
 
-body.addEventListener('scroll', () => {
-    scroll = (body.scrollTop / (bodyHeight-window.innerHeight))
-    console.log(scroll*100)
-    scrollPercent = Math.round(scroll * 100);
-    scrollBar.style.height = scrollPercent + '%';
+body.addEventListener("scroll", () => {
+  scroll = body.scrollTop / (bodyHeight - window.innerHeight);
+  scrollPercent = Math.round(scroll * 100);
+  scrollBar.style.height = scrollPercent + "%";
 });
 
 // const step1 = document.querySelector('#sondage')
