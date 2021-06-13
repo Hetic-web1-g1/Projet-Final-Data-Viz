@@ -1,0 +1,56 @@
+#graphsrecolte {
+  padding-top: 10%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#graphsrecolte .bouton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#graphsrecolte button {
+  background-color: #42B8EA; 
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+#graphsrecolte button:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+#graphsrecolte > svg {
+    width: 80%;
+    height: 100%;
+}
+  
+#graphsrecolte .bar {
+    fill: #42B8EA;
+  }
+  
+#graphsrecolte text {
+    font-size: 20px;
+    fill: #fff;
+  }
+  
+#graphsrecolte path {
+    stroke: #fff;
+  }
+  
+#graphsrecolte .grid path {
+    stroke-width: 0;
+  }
+  
+#graphsrecolte  .grid .tick line {
+    stroke: #fff;
+    stroke-opacity: 0.3;
+}
