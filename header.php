@@ -2,14 +2,17 @@
 
 <header>
     <div id="nav">
+
         <div id="progression">
+            <div class="scrollgeneral" id="scroll"></div>
             <div class="navbutton">
                 <a href="#accueil">
                     <div class="link">
                         <div class="linkcontent"></div>
                     </div>
                     <div class="progressbarwrap">
-                        <div class="progressbar"></div> 
+                        <div class="progressbar"></div>
+                        <!-- <div class="scroll" id="scroll1"></div> -->
                     </div>
                 </a>
                 <h4 class="label">Accueil</h4>
