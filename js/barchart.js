@@ -80,17 +80,90 @@ const sgdq = [
     },
 ];
 
+const evo_twitch = [
+    {
+    event: 'Jan',
+    value: 0.92,
+    },
+    {
+    event: 'Fev',
+    value: 1.01,
+    },
+    {
+    event: 'Mar',
+    value: 0.99,
+    },
+    {
+    event: 'Avril',
+    value: 1.62,
+    },
+    {
+    event: 'Mai',
+    value: 1.59,
+    },
+    {
+    event: 'Juin',
+    value: 1.43,
+    },
+    {
+    event: 'Juil.',
+    value: 1.41,
+    },
+    {
+    event: 'Août',
+    value: 1.42,
+    },
+    {
+    event: 'Sep',
+    value: 1.41,
+    },
+    {
+    event: 'Oct',
+    value: 1.68,       
+    },
+    {
+    event: 'Nov',
+    value: 1.66,        
+    },
+    {
+    event: 'Dec',
+    value: 1.71,        
+    },
+    {
+    event: 'Janv',
+    value: 2.01,        
+    },
+    {
+    event: 'Fevr',
+    value: 1.88,        
+    },
+    {
+    event: 'Mars',
+    value: 2.05,        
+    }
+]
+
 sample = agdq
 
-const div = document.getElementById("stat_gdq")
+function draw_bar_chart(nom, nomdiv) {
 
-const margin = 60;
-const width = div.offsetWidth / 2;
-const height = div.offsetHeight / 2;
+    var domain = [0,4];
+    if (sample == agdq || sample == sgdq){
+        domain = [0,4];
+        legende = 'Montant récolté en Million de Dollar';
+    } 
+    else if (sample == evo_twitch){
+        domain = [0.9,2.1];
+        legende = 'Heures de vues en Milliard';
+    }
 
-function draw_bar_chart() {
+    const div = document.getElementById(nomdiv)
 
-    const bar_chart = d3.select('#stat_gdq') 
+    const margin = 60;
+    const width = div.offsetWidth / 2;
+    const height = div.offsetHeight / 2;
+
+    const bar_chart = d3.select(`#${nomdiv}`) 
     .append('svg')
     .attr('class', 'bar_chart')
     .attr('width', width) 
@@ -104,7 +177,7 @@ function draw_bar_chart() {
 
 const axe_yScale = d3.scaleLinear()
     .range([height, 0]) //defini la range divisée entre les values de domain
-    .domain([0,4]);
+    .domain(domain);
 
 bar_chart.append('g')
     .call(d3.axisLeft(axe_yScale));
@@ -152,18 +225,18 @@ BarreGroup
     .attr('height', (s) => height - axe_yScale(s.value))
     .attr('width', axe_xScale.bandwidth())
     .on('mouseenter', function (s, i) {
-    d3.select(this)
-    .transition()
-    .duration(300)
-    .attr('opacity', 0.6)
-    .attr('x', (s) => axe_xScale(s.event) - 5)
-    .attr('width', axe_xScale.bandwidth() + 10)
-    d3.select(this.parentNode).append('text')
-        .attr('class', 'value')
-        .attr('x', (s) => axe_xScale(s.event) + axe_xScale.bandwidth() / 2)
-        .attr('y', (s) => axe_yScale(s.value) + 20)
-        .attr('text-anchor', 'middle')
-        .text((s) => `${s.value}`)
+        d3.select(this)
+        .transition()
+        .duration(300)
+        .attr('opacity', 0.6)
+        .attr('x', (s) => axe_xScale(s.event) - 5)
+        .attr('width', axe_xScale.bandwidth() + 10)
+        d3.select(this.parentNode).append('text')
+            .attr('class', 'value')
+            .attr('x', (s) => axe_xScale(s.event) + axe_xScale.bandwidth() / 2)
+            .attr('y', (s) => axe_yScale(s.value) + 20)
+            .attr('text-anchor', 'middle')
+            .text((s) => `${s.value}`)
 
     
     // const y = axe_yScale(s.value)
@@ -199,19 +272,21 @@ bar_chart.append('text') //Légende
     .attr('y', -margin)
     .attr('transform', 'rotate(-90)')
     .attr('text-anchor', 'middle')
-    .text('Montant récolté en Million de Dollar')
+    .text(legende)
 
 bar_chart.append('text') //Titre
     .attr('x', width/2)
     .attr('y', -40)
     .attr('text-anchor', 'middle')
-    .text('AGDQ')
+    .text(nom)
 }
 
-function update_chart(data){
+function update_chart(data, nom, nom_div){
     sample = data;
     d3.select('.bar_chart').remove()
-    draw_bar_chart();
+    draw_bar_chart(nom, nom_div);
 }
 
-draw_bar_chart();
+draw_bar_chart('AGDQ', 'stat_gdq', [0,4]);
+sample = evo_twitch
+draw_bar_chart('Evolution de twitch', 'twitchevo', [0.9,2.1]);

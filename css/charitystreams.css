@@ -20,7 +20,29 @@
 #charitystreams > #livetime {
     width: 8em;
 }
+#charitystreams :nth-child(1){
+    margin-bottom: -10%;
 
+}
+#charitystreams :nth-child(2){
+    margin-bottom: 30%;
+
+}
+#charitystreams :nth-child(3){
+    margin-bottom: -10%;
+
+}
+#charitystreams :nth-child(5){
+    margin-top: 15%;
+
+}
+#charitystreams :nth-child(6){
+    margin-top: 25%;
+}
+#charitystreams :nth-child(7){
+    margin-top: -5%;
+
+}
 /* Animation de scale-up */
 
 [tag-inviewport="scale-in"] { 

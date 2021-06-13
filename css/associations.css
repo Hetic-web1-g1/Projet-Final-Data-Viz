@@ -62,4 +62,17 @@
 }
 #associations > a#preventcancer > img {
     height: 120px;
+
+#associations > #prevent {
+    height: 150px;
+}
+
+[tag-inviewport="scale-in"] {
+    transition: 2s;
+    transform: scale(0.1);
+}
+
+[tag-inviewport="scale-in"].in-viewport {
+    transition: 2s;
+    transform: scale(1);
 }
