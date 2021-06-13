@@ -1,6 +1,5 @@
 #accueil {
     display: flex;
-    position: relative;
     flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
