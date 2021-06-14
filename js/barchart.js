@@ -371,6 +371,10 @@ function update_chart(data, nom, nom_div) {
   draw_bar_chart(nom, nom_div);
 }
 
+window.addEventListener("resize", function () {
+  update_chart(agdq, "AGDQ", "stat_gdq");
+});
+
 draw_bar_chart("AGDQ", "stat_gdq");
 sample = evo_twitch;
 draw_bar_chart("Evolution de twitch", "twitchevo");
