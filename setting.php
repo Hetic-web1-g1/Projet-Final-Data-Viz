@@ -4,7 +4,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Projet Final Data Viz</title>
+	<title>Run Through The Screen</title>
+	<link rel="icon" type="image/png" sizes="16x16" href="./Assets/img/stickman.svg">
 	<!-- Css reset -->
 	<link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
 	<!-- Global -->
