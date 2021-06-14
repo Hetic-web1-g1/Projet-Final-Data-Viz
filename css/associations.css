@@ -4,20 +4,18 @@
 }
 
 #associations {
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-row-gap: 20px;
+  grid-template-rows: repeat(4, 1fr);
 }
 #associations p {
-  grid-row-start: 2;
-  grid-column: span 3;
   align-self: center;
+  font-size: 3.5em;
 }
 
 #associations > a {
   margin: auto;
-  width: 12em;
   height: auto;
 }
 
@@ -54,6 +52,23 @@
 #associations > a#preventcancer > img {
   height: 120px;
   margin-top: -15%;
+}
+#associations :nth-child(1){
+  margin: auto;
+  grid-row: span 2;
+}
+#associations :nth-child(n+3) {
+  grid-row: span 2;
+}
+
+#associations :nth-child(6){
+  grid-row: span 1;
+  grid-row: 4;
+  grid-column: 2;
+
+}
+#associations :nth-child(7) {
+  grid-row: span 2;
 }
 
 [tag-inviewport="scale-in"] {
