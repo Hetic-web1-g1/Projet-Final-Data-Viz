@@ -1,5 +1,14 @@
+#introspeedrun {
+  flex-direction: column;
+}
+
+#introspeedrun > h3 {
+  text-align: center;
+  padding-bottom: 5%;
+}
+
 #introspeedrun > p {
   text-align: center;
   margin: 0px auto;
-  width: 40%;
+  width: 50%;
 }
