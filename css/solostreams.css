@@ -28,16 +28,26 @@
   padding: 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  /* grid-template-rows: repeat(4, 1fr); */
 }
 
 #solostreams > p {
-  width: 60%;
+  width: 80%;
   text-align: center;
   margin: 0 auto;
+  margin-top: 20px;
 }
 
-#solostreams figcaption {
+#solostreams > div > figure > figcaption {
     text-align: center;
-    font-size: 2.3em;
+    font-size: 1.7em;
+}
+
+#m2k {
+  height: 40vh !important;
+}
+
+#solostreams > div > figure > img {
+  object-fit: cover;
+  height: 25vh;
 }
