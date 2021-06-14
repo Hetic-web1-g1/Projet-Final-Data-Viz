@@ -1,7 +1,11 @@
 #charitystreams > h3 {
   text-align: center;
-  padding-bottom: 3%;
+  padding-bottom: 1%;
   padding-top: 2%;
+}
+#charitystreams {
+  padding: 0;
+
 }
 
 #charitystreams > div {
@@ -30,13 +34,10 @@
 }
 
 #charitystreams > div > #livetime {
-  width: 5em;
+  width: 8em;
 }
 #charitystreams > div > :nth-child(1) {
   grid-row: span 2;
-}
-#charitystreams > div > :nth-child(2) {
-  margin-bottom: 30%;
 }
 #charitystreams > div > :nth-child(3) {
   grid-row: span 2;
