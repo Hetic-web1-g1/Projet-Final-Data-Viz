@@ -23,8 +23,6 @@
         </figure>
     </div>
 
-    <p>
-        Voici une liste de streameur qui à participé sans forcément créée d’évenement communautaire à l’envoie de don pour les associations
-    </p>
+    <p class="flex">Voici une liste de streameur qui à participé sans forcément créée d’évenement communautaire à l’envoie de don pour les associations.</p>
 
 </section>
