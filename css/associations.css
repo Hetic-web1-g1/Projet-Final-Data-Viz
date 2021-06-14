@@ -1,14 +1,24 @@
-#associations {
-  position: relative;
-}
-
 #associations > p {
   text-align: center;
-  width: 40%;
+  align-items: center;
+}
+
+#associations {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-row-gap: 20px;
+}
+#associations p {
+  grid-row-start: 2;
+  grid-column: span 3;
+  align-self: center;
 }
 
 #associations > a {
-  position: absolute;
+  margin: auto;
+  width: 12em;
+  height: auto;
 }
 
 #associations > a > img {
@@ -16,67 +26,42 @@
   height: 100px;
 }
 
-#associations > a#spa {
-  bottom: 16%;
-  left: 8%;
-}
 #associations > a#spa > img {
-  height: 180px;
+  margin-bottom: -35%;
+  height: 170px;
 }
 
-#associations > a#croixrouge {
-  bottom: 20%;
-  right: 5%;
-}
 #associations > a#croixrouge > img {
+  margin-bottom: 15%;
   height: 100px;
 }
 
-#associations > a#medecins {
-  bottom: 7%;
-  left: calc(50% - 120px);
-}
 #associations > a#medecins > img {
+  margin-bottom: -25%;
   height: 120px;
 }
 
-#associations > a#savethechildren {
-  top: 24%;
-  right: 6%;
-}
 #associations > a#savethechildren > img {
+  margin-top: -8%;
   height: 60px;
 }
 
-#associations > a#institutpasteur {
-  top: 7%;
-  left: calc(50% - 120px);
-}
 #associations > a#institutpasteur > img {
   height: 120px;
+  margin-top: 5%;
 }
 
-#associations > a#preventcancer {
-  top: 24%;
-  left: 8%;
-}
 #associations > a#preventcancer > img {
   height: 120px;
-}
-#associations > #prevent {
-  height: 150px;
+  margin-top: -15%;
 }
 
 [tag-inviewport="scale-in"] {
   transition: 1s;
-  transform: scale(0.5);
+  transform: scale(0.7);
 }
 
 [tag-inviewport="scale-in"].in-viewport {
   transition: 2s;
   transform: scale(1);
-}
-
-section > p {
-  align-items: center;
 }

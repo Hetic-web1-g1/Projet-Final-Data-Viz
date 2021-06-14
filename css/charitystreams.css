@@ -38,11 +38,10 @@
 #charitystreams :nth-child(7) {
   margin-top: -5%;
 }
-/* Animation de scale-up */
 
+/* Animation de scale-up */
 [tag-inviewport="scale-in"] {
   transition: 2s;
-  /* transform: scale(0.1); */
   transform: scale(0.7);
 }
 
