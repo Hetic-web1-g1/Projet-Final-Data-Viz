@@ -17,6 +17,8 @@
   grid-column: span 3;
   align-self: center;
   text-align: center;
+  width: 50%;
+  margin: 0 auto;
 }
 
 #charitystreams > div > img {
