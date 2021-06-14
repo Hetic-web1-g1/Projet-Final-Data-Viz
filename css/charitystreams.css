@@ -1,41 +1,49 @@
-#charitystreams {
+#charitystreams > h3 {
+  text-align: center;
+  padding-bottom: 5%;
+  padding-top: 2%;
+}
+
+#charitystreams > div {
+  flex-direction: column;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-row-gap: 20px;
 }
-#charitystreams p {
+ 
+#charitystreams > div > p {
   grid-row-start: 2;
   grid-column: span 3;
   align-self: center;
   text-align: center;
 }
 
-#charitystreams > img {
+#charitystreams > div > img {
   margin: auto;
-  width: 12em;
+  width: 10em;
   height: auto;
 }
 
-#charitystreams > #livetime {
-  width: 8em;
+#charitystreams > div > #livetime {
+  width: 5em;
 }
-#charitystreams :nth-child(1) {
+#charitystreams > div > :nth-child(1) {
   margin-bottom: -10%;
 }
-#charitystreams :nth-child(2) {
+#charitystreams > div > :nth-child(2) {
   margin-bottom: 30%;
 }
-#charitystreams :nth-child(3) {
+#charitystreams > div > :nth-child(3) {
   margin-bottom: -10%;
 }
-#charitystreams :nth-child(5) {
+#charitystreams > div > :nth-child(5) {
   margin-top: 10%;
 }
-#charitystreams :nth-child(6) {
+#charitystreams > div > :nth-child(6) {
   margin-top: 10%;
 }
-#charitystreams :nth-child(7) {
+#charitystreams > div > :nth-child(7) {
   margin-top: -5%;
 }
 

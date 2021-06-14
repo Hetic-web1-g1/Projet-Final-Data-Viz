@@ -1,0 +1,14 @@
+#conclusion {
+    flex-direction: column;
+  }
+  
+#conclusion > p {
+text-align: center;
+width: 80%;
+margin-bottom: 5%;
+}
+  
+#conclusion > h3 {
+text-align: center;
+padding-bottom: 5%;
+}

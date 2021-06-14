@@ -27,6 +27,7 @@
 
 #accueil > a {
   margin-bottom: 10%;
+  color: #F8B62A;
 }
 
 @keyframes speedleft {

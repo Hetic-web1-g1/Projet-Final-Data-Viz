@@ -2,10 +2,15 @@
   flex-direction: column;
 }
 
+#introtwitch > h3 {
+  text-align: center;
+  padding-bottom: 5%;
+}
+
 #introtwitch > p {
   height: fit-content;
   text-align: center;
-  width: 40%;
+  width: 50%;
 }
 
 #introtwitch > #twitch {

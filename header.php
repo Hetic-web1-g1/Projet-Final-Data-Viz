@@ -2,7 +2,6 @@
 
     <header>
         <div id="nav">
-
             <div id="progression">
                 <div class="scrollgeneral" id="scroll"></div>
                 <div class="navbutton">
@@ -15,7 +14,7 @@
                             <!-- <div class="scroll" id="scroll1"></div> -->
                         </div>
                     </a>
-                    <h4 class="label">Accueil</h4>
+                    <h4 class="label">HOME</h4>
                 </div>
                 <div class="navbutton">
                     <a href="#introspeedrun">
@@ -37,7 +36,7 @@
                             <div class="progressbar"></div>
                         </div>
                     </a>
-                    <h4 class="label">LE SPEEDRUN ET TWITCH</h4>
+                    <h4 class="label">SPEEDRUN AND TWITCH</h4>
                 </div>
                 <div class="navbutton">
                     <a href="#charitystreams">
@@ -48,7 +47,7 @@
                             <div class="progressbar"></div>
                         </div>
                     </a>
-                    <h4 class="label ">ESSOR DES EVENEMENTS CARITATIFS SPEEDRUN</h4>
+                    <h4 class="label ">RISE OF SPEEDRUN CHARITY EVENTS</h4>
                 </div>
                 <div class="navbutton">
                     <a href="#solostreams">
@@ -59,7 +58,7 @@
                             <div class="progressbar"></div>
                         </div>
                     </a>
-                    <h4 class="label">STREAMING SE DEMOCRATISE</h4>
+                    <h4 class="label">STREAMING BECOMES MAINSTREAM</h4>
                 </div>
                 <div class="navbutton">
                     <a href="#comparaison">
@@ -70,7 +69,7 @@
                             <div class="progressbar"></div>
                         </div>
                     </a>
-                    <h4 class="label">AVANTAGE DU STREAM CARITATIF</h4>
+                    <h4 class="label">ADVANTAGE OF THE CHARITY STREAM</h4>
                 </div>
                 <div class="navbutton">
                     <a href="#conclusion">

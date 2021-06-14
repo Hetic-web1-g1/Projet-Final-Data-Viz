@@ -1,8 +1,9 @@
-/* #solostreams {
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-} */
+#solostreams > div > h3 {
+  text-align: center;
+  padding-bottom: 5%;
+  padding-top: 2%;
+}
+
 #solostreams {
   padding: 0;
 }
@@ -22,23 +23,20 @@
 #solostreams :nth-child(6) {
   grid-column-start: 3;
 }
+
 #boxstreams {
   padding: 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 1fr);
 }
+
 #solostreams > p {
     width: 100%;
     /* margin-bottom: 0px; */
     padding-top: 0em;
     margin-top: -2%;
     text-align: center;
-}
-#solostreams span {
-    text-align: center;
-    padding-top: 5%;
-    font-size: 4em;
 }
 
 #solostreams figcaption {

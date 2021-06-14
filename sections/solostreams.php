@@ -4,7 +4,7 @@
             <img src="./assets/img/coro.png" alt="coro">
             <figcaption>Corobizar</figcaption>
         </figure>
-        <span>Hall of fame</span>
+        <h3>STREAMING BECOMES MAINSTREAM</h3>
         <figure>
             <img src="./assets/img/benzai.png" alt="benzai">
             <figcaption>Benzai</figcaption>
