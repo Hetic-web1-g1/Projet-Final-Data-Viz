@@ -12,3 +12,34 @@
   text-align: center;
   padding-bottom: 5%;
 }
+
+#comparaison > svg {
+  width: 80%;
+  height: 100%;
+}
+
+#comparaison .bar {
+  fill: #42b8ea;
+}
+
+#comparaison .bar_2 {
+  fill: red;
+}
+
+#comparaison text {
+  font-size: 20px;
+  fill: #fff;
+}
+
+#comparaison path {
+  stroke: #fff;
+}
+
+#comparaison .grid path {
+  stroke-width: 0;
+}
+
+#comparaison .grid .tick line {
+  stroke: #fff;
+  stroke-opacity: 0.3;
+}
