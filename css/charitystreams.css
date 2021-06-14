@@ -21,21 +21,22 @@
   grid-row: span 2;
   /* align-self: center; */
   text-align: center;
-  width: 14rem;
+  width: 30rem;
   height: 50%;
   margin: 0 auto;
-  font-size: 260%;
+  font-size: 370%;
   font-weight: 250;
 }
 
-#charitystreams > div > img {
+
+#charitystreams > div img {
   margin: auto;
-  width: 10rem;
+  width: 50%;
   height: auto;
 }
 
 #charitystreams > div > #livetime {
-  width: 8em;
+  width: 35%;
 }
 #charitystreams > div > :nth-child(1) {
   grid-row: span 2;

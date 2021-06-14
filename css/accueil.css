@@ -5,7 +5,9 @@
   align-content: center;
   justify-content: flex-end;
 }
-
+#accueil span {
+  font-size: 1.5em;
+}
 #accueil > #speed {
   position: absolute;
   top: 50%;
@@ -24,7 +26,16 @@
   animation: speedright 0.8s cubic-bezier(0.6, 0.01, 0.48, 0.15) forwards;
   margin-left: -4px;
 }
-
+#accueil > #speed span:nth-child(3) {
+  position: relative;
+  animation: speedleft 0.8s cubic-bezier(0.6, 0.01, 0.48, 0.15) forwards;
+  margin-right: -4px;
+}
+#accueil > #speed span:nth-child(4) {
+  position: relative;
+  animation: speedright 0.8s cubic-bezier(0.6, 0.01, 0.48, 0.15) forwards;
+  margin-left: -4px;
+}
 #accueil > a {
   margin-bottom: 10%;
   color: #F8B62A;
