@@ -1,4 +1,5 @@
-<section id="introtwitch" class="flex">
+<section id="introtwitch">
+    <div class="flex"></div>
     <h3>SPEEDRUN AND TWITCH</h3>
     <p>In the following years, speedrunning became common practice with multiple other games. The Speed Demo
         website then becomes the reference in terms of speedrunning content.</p>

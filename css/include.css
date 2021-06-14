@@ -18,3 +18,6 @@
 @import "sondage.css";
 @import "conclusion.css";
 @import "scrollbar.css";
+
+/*Animation bulle twitch*/
+@import "../Assets/animation/bulle/style_bulle.css";
