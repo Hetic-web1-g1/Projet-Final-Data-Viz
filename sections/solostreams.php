@@ -10,11 +10,11 @@
             <figcaption>Benzai</figcaption>
         </figure>
         <figure>
-            <img src="./assets/img/random2.png" alt="random2">
+            <img id ="m2k" src="./assets/img/mew2king.png" alt="mew2king">
             <figcaption>Mew2King</figcaption>
         </figure>
         <figure>
-            <img src="./assets/img/manuelferrara.jpg" alt="random1">
+            <img src="./assets/img/manuelferrara.jpg" alt="manuelferrara">
             <figcaption>ManuelleFerraraTV</figcaption>
         </figure>
         <figure>
