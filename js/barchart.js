@@ -183,44 +183,30 @@ const evo_twitch = [
 
 const comparaison_rentabilite = [
   {
-    event: "2012",
-    value: 0.05,
+    event: "Theleton",
+    fonds: 77,
+    couts: 19,
+    rentabilite: 24,
   },
   {
-    event: "2013",
-    value: 0.25,
+    event: "Zevent",
+    fonds: 5.7,
+    couts: 0.1,
+    rentabilite: 1.70
   },
   {
-    event: "2014",
-    value: 0.72,
+    event: "AGDQ",
+    fonds: 3.13,
+    couts: 0.25,
+    rentabilite: 7.98
   },
   {
-    event: "2015",
-    value: 1.21,
-  },
-  {
-    event: "2016",
-    value: 1.29,
-  },
-  {
-    event: "2017",
-    value: 1.79,
-  },
-  {
-    event: "2018",
-    value: 2.17,
-  },
-  {
-    event: "2019",
-    value: 3.04,
-  },
-  {
-    event: "2020",
-    value: 2.34,
+    event: "SGDQ",
+    fonds: 2.31,
+    couts: 0.08,
+    rentabilite: 3.46
   },
 ];
-
-sample = agdq;
 
 function draw_bar_chart(nom, nomdiv) {
   if (sample == agdq || sample == sgdq) {
@@ -371,12 +357,147 @@ function update_chart(data, nom, nom_div) {
   draw_bar_chart(nom, nom_div);
 }
 
+function draw_bar_chart_rent(nomdiv) {
+
+  var domain = [0, 100];
+  var sample = comparaison_rentabilite;
+
+  const div = document.getElementById(nomdiv);
+
+  const margin = 60;
+  const width = div.offsetWidth / 2;
+  const height = div.offsetHeight / 3;
+
+  const bar_chart = d3
+    .select(`#${nomdiv}`)
+    .append("svg")
+    .attr("class", `bar_chart${nomdiv}`)
+    .attr("width", width)
+    .attr("height", height)
+    .append("g")
+    .attr("transform", `translate(${margin * 2}, ${margin})`);
+
+  //Axe Y
+  const axe_yScale = d3
+    .scaleLinear()
+    .range([height, 0]) //defini la range divisée entre les values de domain
+    .domain(domain);
+
+  bar_chart.append("g").call(d3.axisLeft(axe_yScale));
+
+  //Axe X
+  const axe_xScale = d3
+    .scaleBand()
+    .range([0, width])
+    .domain(sample.map((s) => s.event))
+    .padding(0.2);
+
+  bar_chart
+    .append("g")
+    .attr("transform", `translate(0, ${height})`)
+    .call(d3.axisBottom(axe_xScale));
+
+  BarreGroup = bar_chart
+    .selectAll() //Crée un rectangle pour chaque membre de l'array
+    .data(sample) // determine quel élément du DOM doit etre modifié
+    .enter() // Pour pas que ça bug si jamais il manque des éléments si la data est plus grande que le selectAll
+    .append("g");
+
+  bar_chart
+    .append("g") //Barres Horizontales
+    .attr("class", "grid")
+    .call(
+      d3.axisLeft().scale(axe_yScale).tickSize(-width, 0, 0).tickFormat("")
+    );
+    // Barres
+
+  BarreGroup = bar_chart
+  .selectAll() //Crée un rectangle pour chaque membre de l'array
+  .data(sample) // determine quel élément du DOM doit etre modifié
+  .enter() // Pour pas que ça bug si jamais il manque des éléments si la data est plus grande que le selectAll
+  .append("g");
+
+  BarreGroup.append("rect")
+    .attr("class", "bar")
+    .attr("x", (s) => axe_xScale(s.event))
+    .attr("y", (s) => axe_yScale(100))
+    .attr("height", (s) => height - axe_yScale(100))
+    .attr("width", axe_xScale.bandwidth())
+    .on("mouseenter", function (s, i) {
+      d3.select(this)
+        .transition()
+        .duration(300)
+        .attr("opacity", 0.6)
+        .attr("x", (s) => axe_xScale(s.event) - 5)
+        .attr("width", axe_xScale.bandwidth() + 10);
+      d3.select(this.parentNode)
+        .append("text")
+        .attr("class", "value")
+        .attr("x", (s) => axe_xScale(s.event) + axe_xScale.bandwidth() / 2)
+        .attr("y", (s) => axe_yScale(100) + 20)
+        .attr("text-anchor", "middle")
+        .text((s) => `${s.fonds}`);
+      d3.select(this.parentNode)
+        .append("text")
+        .attr("class", "value")
+        .attr("x", (s) => axe_xScale(s.event) + axe_xScale.bandwidth() / 2)
+        .attr("y", (s) => axe_yScale(100) + 45)
+        .attr("text-anchor", "middle")
+        .text((s) => `${s.couts}`);
+      d3.select(this.parentNode)
+        .append("text")
+        .attr("class", "value")
+        .attr("x", (s) => axe_xScale(s.event) + axe_xScale.bandwidth() / 2)
+        .attr("y", (s) => axe_yScale(100) + 70)
+        .attr("text-anchor", "middle")
+        .text((s) => `${s.rentabilite}%`);
+
+  BarreGroup.append("rect")
+      .attr("class", "bar_2")
+      .attr("x", (s) => axe_xScale(s.event))
+      .attr("y", (s) => axe_yScale(s.rentabilite))
+      .attr("height", (s) => height - axe_yScale(s.rentabilite))
+      .attr("width", axe_xScale.bandwidth())
+    
+      // const y = axe_yScale(s.value)
+
+      // chart.append('line')
+      // .attr('class', 'limite')
+      // .attr('x1', 0)
+      // .attr('y1', y)
+      // .attr('x2', width)
+      // .attr('y2', y)
+      // .attr('stroke', 'red')
+    })
+
+    .on("mouseleave", function () {
+      d3.selectAll(".value").attr("opacity", 1);
+
+      d3.select(this)
+        .transition()
+        .duration(300)
+        .attr("opacity", 1)
+        .attr("x", (s) => axe_xScale(s.event))
+        .attr("width", axe_xScale.bandwidth());
+
+      //chart.selectAll('.limite').remove()
+      bar_chart.selectAll(".value").remove();
+    });
+}
+
 window.addEventListener("resize", function () {
-  update_chart(agdq, "AGDQ", "stat_gdq");
+  sample = agdq;
+  draw_bar_chart("AGDQ", "stat_gdq");
+  sample = evo_twitch;
+  draw_bar_chart("Evolution de twitch", "twitchevo");
+  sample = zevent;
+  draw_bar_chart("Récoltes Zevent", "graphsrecolte");
 });
 
+sample = agdq;
 draw_bar_chart("AGDQ", "stat_gdq");
 sample = evo_twitch;
 draw_bar_chart("Evolution de twitch", "twitchevo");
 sample = zevent;
 draw_bar_chart("Récoltes Zevent", "graphsrecolte");
+draw_bar_chart_rent("comparaison")
