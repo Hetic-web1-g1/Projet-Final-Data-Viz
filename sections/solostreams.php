@@ -19,7 +19,7 @@
         </figure>
         <figure>
             <img src="./assets/img/remigaillard.png" alt="remigaillard">
-            <figcaption>Rémi Gallaird</figcaption>
+            <figcaption>Rémi Gaillard</figcaption>
         </figure>
     </div>
 
