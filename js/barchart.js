@@ -246,7 +246,7 @@ function draw_bar_chart(nom, nomdiv) {
   const bar_chart = d3
     .select(`#${nomdiv}`)
     .append("svg")
-    .attr("class", "bar_chart")
+    .attr("class", `bar_chart${nomdiv}`)
     .attr("width", width)
     .attr("height", height)
     .append("g")
@@ -367,7 +367,7 @@ function draw_bar_chart(nom, nomdiv) {
 
 function update_chart(data, nom, nom_div) {
   sample = data;
-  d3.selectAll(".bar_chart").remove();
+  d3.selectAll(`.bar_chart${nom_div}`).remove();
   draw_bar_chart(nom, nom_div);
 }
 
