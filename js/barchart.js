@@ -451,13 +451,6 @@ function draw_bar_chart_rent(nomdiv) {
         .attr("y", (s) => axe_yScale(100) + 70)
         .attr("text-anchor", "middle")
         .text((s) => `${s.rentabilite}%`);
-
-  BarreGroup.append("rect")
-      .attr("class", "bar_2")
-      .attr("x", (s) => axe_xScale(s.event))
-      .attr("y", (s) => axe_yScale(s.rentabilite))
-      .attr("height", (s) => height - axe_yScale(s.rentabilite))
-      .attr("width", axe_xScale.bandwidth())
     
       // const y = axe_yScale(s.value)
 
@@ -483,15 +476,20 @@ function draw_bar_chart_rent(nomdiv) {
       //chart.selectAll('.limite').remove()
       bar_chart.selectAll(".value").remove();
     });
+
+  BarreGroup.append("rect")
+    .attr("class", "bar_2")
+    .attr("x", (s) => axe_xScale(s.event))
+    .attr("y", (s) => axe_yScale(s.rentabilite))
+    .attr("height", (s) => height - axe_yScale(s.rentabilite))
+    .attr("width", axe_xScale.bandwidth())
+
 }
 
 window.addEventListener("resize", function () {
-  sample = agdq;
-  draw_bar_chart("AGDQ", "stat_gdq");
-  sample = evo_twitch;
-  draw_bar_chart("Evolution de twitch", "twitchevo");
-  sample = zevent;
-  draw_bar_chart("Récoltes Zevent", "graphsrecolte");
+  update_chart(agdq, "AGDQ", "stat_gdq")
+  update_chart(evo_twitch, "Evolution de twitch", "twitchevo");
+  update_chart(zevent, "Récoltes Zevent", "graphsrecolte");
 });
 
 sample = agdq;
