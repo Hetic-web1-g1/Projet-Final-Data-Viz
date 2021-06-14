@@ -69,7 +69,7 @@
                             <div class="progressbar"></div>
                         </div>
                     </a>
-                    <h4 class="label">ADVANTAGE OF THE CHARITY STREAM</h4>
+                    <h4 class="label">ADVANTAGE OF CHARITY STREAMS</h4>
                 </div>
                 <div class="navbutton">
                     <a href="#conclusion">
