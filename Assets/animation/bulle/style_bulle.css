@@ -1,29 +1,10 @@
-body {
-	background: white;
-	height: 100vh;
-	margin: 0;
-	padding: 0;
-	overflow-x: hidden;
-}
-
 #background-wrap {
     bottom: 0;
 	left: 0;
 	position: fixed;
 	right: 0;
 	top: 0;
-	z-index: -1;
-}
-
-.square{
-	height:100vh;
-	margin-left: 25%;
-	margin-top: 6em;
-	width: 50%;
-	z-index: index 1;
-	font-size: 40px;
-	background:white;
-	font-family: 'Courier New', Courier, monospace;
+	z-index: 1;
 }
 
 /* KEYFRAMES */
@@ -234,6 +215,6 @@ body {
 	width: 180px;
 }
 
-img{
+#background-wrap > div > img{
 	height: 10em;
 }
