@@ -1,7 +1,7 @@
 <section id="solostreams">
     <div id="boxstreams">
         <figure>
-            <img src="./assets/img/coro.png" alt="coro">
+            <img src="./assets/img/coro.png" alt="coro" >
             <figcaption>Corobizar</figcaption>
         </figure>
         <h3>STREAMING BECOMES MAINSTREAM</h3>
@@ -14,7 +14,7 @@
             <figcaption>Mew2King</figcaption>
         </figure>
         <figure>
-            <img src="./assets/img/random1.png" alt="random1">
+            <img src="./assets/img/manuelferrara.jpg" alt="random1">
             <figcaption>ManuelleFerraraTV</figcaption>
         </figure>
         <figure>
@@ -23,6 +23,6 @@
         </figure>
     </div>
 
-    <p class="flex">Voici une liste de streameur qui à participé sans forcément créée d’évenement communautaire à l’envoie de don pour les associations.</p>
+    <p class="flex">Here's a list of streamers that were able to make charitable contributions via their own solo streaming event which shows how far a single dedicated fanbase can go in terms of potential donations.</p>
 
 </section>
