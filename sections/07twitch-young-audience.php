@@ -18,5 +18,6 @@
                 <h4>Have you ever donated on twitch?</h4>
                 <div id='sondage3'></div>
                 <h4>What are your reasons for going to a charity steam?</h4>
+                <div id='sondage4'></div>
         </div>
 </section>

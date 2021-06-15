@@ -241,6 +241,29 @@ const sondage_donate = [
   },  
 ];
 
+const sondage_reason = [
+  {
+      label: "other",
+      value: 3.2,
+  },
+  {
+      label: "content",
+      value: 80,
+  },  
+  {
+      label: "cause",
+      value: 60.8,
+  },
+  {
+      label: "event",
+      value: 81.6,
+  },
+  {
+      label: "streamer",
+      value: 90,
+  },
+];
+
 function draw_bar_chart(nom, nomdiv) {
   const div = document.getElementById(nomdiv);
   const margin = 60;
@@ -510,14 +533,14 @@ function draw_bar_chart_rent(title,nomdiv) {
         .attr("x", (s) => axe_xScale(s.event) + axe_xScale.bandwidth() / 2)
         .attr("y", (s) => axe_yScale(100) + 20)
         .attr("text-anchor", "middle")
-        .text((s) => `${s.fonds}`);
+        .text((s) => `fonds: ${s.fonds}M`);
       d3.select(this.parentNode)
         .append("text")
         .attr("class", "value")
         .attr("x", (s) => axe_xScale(s.event) + axe_xScale.bandwidth() / 2)
         .attr("y", (s) => axe_yScale(100) + 45)
         .attr("text-anchor", "middle")
-        .text((s) => `${s.couts}`);
+        .text((s) => `cout: ${s.couts}M`);
       d3.select(this.parentNode)
         .append("text")
         .attr("class", "value")
@@ -532,16 +555,6 @@ function draw_bar_chart_rent(title,nomdiv) {
         .attr("opacity", 0.6)
         .attr("x", (s) => axe_xScale(s.event) - 5)
         .attr("width", axe_xScale.bandwidth() + 10);
-      // const y = axe_yScale(s.value)
-
-      // chart.append('line')
-      // .attr('class', 'limite')
-      // .attr('x1', 0)
-      // .attr('y1', y)
-      // .attr('x2', width)
-      // .attr('y2', y)
-      // .attr('stroke', 'red')
-
     })
 
     .on("mouseleave", function (s,i) {
@@ -570,7 +583,6 @@ function draw_bar_chart_rent(title,nomdiv) {
     .attr("height", (s) => height - axe_yScale(s.rentabilite))
     .attr("width", axe_xScale.bandwidth())
     .attr('fill', color_range[1])
-
 }
 
 function draw_bar_chart_sondage(nomdiv, sample){
@@ -615,17 +627,80 @@ function draw_bar_chart_sondage(nomdiv, sample){
 
   BarreGroup
     .append("text") 
-    .attr("x", 30)
+    .attr("x", 40)
     .attr("y", 30)
     .attr("text-anchor", "middle")
     .text(sample[0].value+"%");
 
   BarreGroup
     .append("text") 
-    .attr("x", 30+width)
+    .attr("x", 40+width)
     .attr("y", 30)
     .attr("text-anchor", "middle")
     .text(sample[1].value+"%");
+}
+
+function draw_vertical_bar_chart(nomdiv) {
+
+  const div = document.getElementById(nomdiv);
+  const domain = [0,100]
+  var width = div.offsetWidth / 2;
+  var height = div.offsetHeight;
+
+  const bar_chart = d3
+    .select(`#${nomdiv}`)
+    .append("svg")
+    .attr("class", `bar_chart${nomdiv}`)
+    .attr("width", width)
+    .attr("height", height)
+    .append("g")
+  
+  //BAR CHART
+
+  //Axe Y
+
+  const axe_yScale = d3
+    .scaleBand()
+    .range([height, 0]) //defini la range divisée entre les values de domain
+    .domain(sample.map((s) => s.label))
+    .padding(0.4);
+
+  //Axe X
+
+  const axe_xScale = d3
+    .scaleLinear()
+    .range([0, width])
+    .domain(domain);
+
+  // Barres
+
+  BarreGroup = bar_chart
+    .selectAll() //Crée un rectangle pour chaque membre de l'array
+    .data(sample) // determine quel élément du DOM doit etre modifié
+    .enter() // Pour pas que ça bug si jamais il manque des éléments si la data est plus grande que le selectAll
+    .append("g");
+
+  BarreGroup.append("rect")
+    .attr("class", "bar")
+    .attr("x", 100)
+    .attr("y", (s) => axe_yScale(s.label))
+    .attr("height", axe_yScale.bandwidth())
+    .attr("width", (s) => axe_xScale(s.value))
+    .attr('fill', '#6C000D')
+
+  BarreGroup
+    .append("text") 
+    .attr("x", (s) => axe_xScale(s.value) + 10 + 100)
+    .attr("y", (s) => axe_yScale(s.label) + axe_yScale.bandwidth() - 10)
+    .attr("text-anchor", "left")
+    .text((s) => s.value+"%");
+
+  BarreGroup
+    .append("text") //legende
+    .attr("x", 0)
+    .attr("y",(s) => axe_yScale(s.label) + 25)
+    .attr("text-anchor", "left")
+    .text((s) => (s.label));
 }
 
 window.addEventListener("resize", function () {
@@ -647,3 +722,5 @@ draw_bar_chart_rent("COST/DONATIONS by events","comparaison")
 draw_bar_chart_sondage("sondage1", sondage_watch)
 draw_bar_chart_sondage("sondage2", sondage_watch_s)
 draw_bar_chart_sondage("sondage3", sondage_donate)
+sample = sondage_reason
+draw_vertical_bar_chart("sondage4")
