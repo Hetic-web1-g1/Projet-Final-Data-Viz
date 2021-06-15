@@ -5,8 +5,8 @@
                 </div>
                 <div id="stat_gdq">
                         <div class='bouton'>
-                                <button onclick="update_chart(agdq,'AGDQ', 'stat_gdq')">récoltes AGDQ</button>
-                                <button onclick="update_chart(sgdq,'SGDQ', 'stat_gdq')">récoltes SGDQ</button>
+                                <button class="button-on" onclick="update_chart(agdq,'AGDQ', 'stat_gdq')"><h4>AGDQ</h4></button>
+                                <button class="button-off" onclick="update_chart(sgdq,'SGDQ', 'stat_gdq')"><h4>SGDQ</h4></button>
                         </div>
                 </div>
                 <div class="left">
