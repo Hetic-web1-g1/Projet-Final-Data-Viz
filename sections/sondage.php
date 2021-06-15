@@ -16,6 +16,7 @@
                 <h4>Would you watch a charity stream if there was a streamer that you liked?</h4>
                 <div id='sondage2'></div>
                 <h4>Have you ever donated on twitch?</h4>
+                <div id='sondage3'></div>
                 <h4>What are your reasons for going to a charity steam?</h4>
         </div>
 

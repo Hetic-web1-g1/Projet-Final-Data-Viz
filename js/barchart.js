@@ -230,6 +230,17 @@ const sondage_watch_s = [
   },  
 ];
 
+const sondage_donate = [
+  {
+      name: "yes",
+      value: 60.6,
+  },
+  {
+      name: "no",
+      value: 39.4,
+  },  
+];
+
 function draw_bar_chart(nom, nomdiv) {
   const div = document.getElementById(nomdiv);
   const margin = 60;
@@ -626,3 +637,4 @@ draw_bar_chart("", "stat_z-event");
 draw_bar_chart_rent("comparaison")
 draw_bar_chart_sondage("sondage1", sondage_watch)
 draw_bar_chart_sondage("sondage2", sondage_watch_s)
+draw_bar_chart_sondage("sondage3", sondage_donate)
