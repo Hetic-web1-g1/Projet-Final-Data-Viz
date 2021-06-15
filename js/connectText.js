@@ -17,6 +17,7 @@ function Drawline(){
             }else if(left_text_height < right_text_height){
                 sections[i].querySelectorAll(".right .linked")[j].style.height = left_text_height + "px"
             }
+            console.log(sections[i].querySelectorAll(".right .linked")[j].style.height,right_text_height,sections[i].querySelectorAll(".right .linked")[j].style.height,left_text_height)
             left_text_height = sections[i].querySelectorAll(".left .linked")[j].offsetHeight
             document.documentElement.style.setProperty('--middle-bar-height'+text, left_text_height + 'px')
             text++
@@ -39,4 +40,4 @@ window.addEventListener("resize", function () {
     Redraw()
 });
 
-Redraw()
+setTimeout(Redraw(),500)
