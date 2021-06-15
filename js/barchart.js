@@ -534,7 +534,7 @@ function draw_bar_chart_rent(nomdiv) {
 window.addEventListener("resize", function () {
   update_chart(agdq, "AGDQ", "stat_gdq")
   update_chart(evo_twitch, "Evolution of Twitch", "twitchevo");
-  update_chart(zevent, "", "graphsrecolte");
+  update_chart(zevent, "", "stat_z-event");
 });
 
 button_callback("button_gdq")
@@ -545,5 +545,5 @@ draw_bar_chart("", "stat_gdq");
 sample = evo_twitch;
 draw_bar_chart("Evolution of Twitch", "twitchevo");
 sample = zevent;
-draw_bar_chart("", "graphsrecolte");
+draw_bar_chart("", "stat_z-event");
 draw_bar_chart_rent("comparaison")
