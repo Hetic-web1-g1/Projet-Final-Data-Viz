@@ -66,3 +66,43 @@
 #questionsondage > h4 {
   margin-bottom: 25px;
 }
+
+#sondage1 {
+  width: 100%;
+  height: 10vh;
+}
+
+#sondage1 .button_gdq:hover {
+  background-color: white;
+  color: black;
+}
+
+#sondage1 > svg {
+  width: 62%;
+  height: auto;
+}
+
+#sondage1 text {
+  font-size: 20px;
+  fill: #fff;
+}
+
+#sondage2 {
+  width: 100%;
+  height: 10vh;
+}
+
+#sondage2 .button_gdq:hover {
+  background-color: white;
+  color: black;
+}
+
+#sondage2 > svg {
+  width: 62%;
+  height: auto;
+}
+
+#sondage2 text {
+  font-size: 20px;
+  fill: #fff;
+}
