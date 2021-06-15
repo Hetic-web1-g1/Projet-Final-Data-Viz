@@ -1,14 +1,15 @@
 <section id="growth-of-events">
-    <div class="content-margins flex">
+    <div class="content-margins flex margin-bottom">
         <div class="left">
             <h3>Growth of Events</h3>
             <p class="linked">As the event grew throughout the years, AGDQ split itself into two : AGDQ and SGDQ ( Summers Games Done Quick ). As of today they’ve gained considerable traction.
             </p>
         </div>
         <div class="barre"></div>
-        <div class="right margin-bottom">
+        <div class="right">
             <p class="linked">Whereas speedrunning was generally considered niche, it became more mainstream thanks to its contribution during big charity streaming events.</p>
         </div>
+        <div class="animation-to-right inactive"></div>
     </div>
     <div class="content-margins">
         <div class="space-between bottom">

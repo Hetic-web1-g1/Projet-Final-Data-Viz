@@ -34,6 +34,7 @@ section {
 }
 
 .content-margins{
+  position: relative;
   max-width: 1440px;
   margin: 0 auto;
   padding-inline: 10px;
