@@ -15,4 +15,9 @@
                         <a id="preventcancer" href="https://www.preventcancer.org/" target="_blank"><img src="./assets/img/preventcancer.svg" alt="" tag-inviewport="scale-in"></a>
                 </div>
         </div>
+        <div class="content-margins" id="disclaimer"> 
+                <p>"Ce site a été réalisé à des fins pédagogiques dans le cadre du cursus Grande Ecole de l’école HETIC. Les 
+                contenus et données présentés n'ont pas fait l'objet d'une demande de droit d'utilisation. Ce site ne sera en 
+                aucun cas exploité à des fins commerciales”</p>
+        </div>
 </section>

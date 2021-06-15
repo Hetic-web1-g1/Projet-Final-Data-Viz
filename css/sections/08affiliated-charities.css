@@ -1,7 +1,22 @@
- #spa > img {
+#disclaimer {
+    bottom: -52vh;
+}
+
+#disclaimer p {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    max-width: inherit;
+    font-size: 18px;
+    font-weight: 275;
+    color: var(--grey);
+}
+
+
+#spa > img {
     padding-top: 40px;
 }
 
 #savethechildren > img {
     padding-top: 60px;
 }
+
