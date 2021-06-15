@@ -248,7 +248,7 @@ function draw_bar_chart(nom, nomdiv) {
   var height = div.offsetHeight / 2;
 
   if (sample == agdq || sample == sgdq) {
-    height = div.offsetHeight / 2.2;
+    height = div.offsetHeight / 1.8;
     domain = [0, 4];
     legende = "Amount raised in millions of dollars";
     color_range = ["#5D353A","#6C000D"]

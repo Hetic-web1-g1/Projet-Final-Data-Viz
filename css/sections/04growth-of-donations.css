@@ -4,11 +4,16 @@
 
 #stat_gdq, #stat_z-event {
   width: 100%;
-  height: 46vh;
+  height: 550px;
   padding-top: 5%;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-evenly;
+}
+
+#stat_gdq > svg, #stat_z-event svg {
+  width: 60%;
+  height: 550px;
 }
 
 .bouton_zevent {
@@ -97,11 +102,6 @@
 .button_gdq:hover {
   background-color: #530707;
   color: white;
-}
-
-#stat_gdq > svg, #stat_z-event svg {
-  width: 60%;
-  height: auto;
 }
 
 #stat_gdq text, #stat_z-event text {
