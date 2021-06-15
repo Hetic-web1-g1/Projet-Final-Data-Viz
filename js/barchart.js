@@ -347,6 +347,7 @@ function draw_bar_chart(nom, nomdiv) {
 
   bar_chart
     .append("text") //Légende
+    .attr("class", "legende")
     .attr("x", -(height / 2))
     .attr("y", -margin)
     .attr("transform", "rotate(-90)")
