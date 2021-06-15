@@ -1,4 +1,4 @@
-<section id="streamers">
+<section id="streaming-becomes-mainstream">
         <div class="content-margins grid-streamers">
                 <div class="left">
                         <h3>STREAMING BECOMES MAINSTREAM</h3>

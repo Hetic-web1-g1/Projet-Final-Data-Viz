@@ -1,4 +1,4 @@
-<section id="video">
+<section id="events">
         <div class="content-margins flex">
                 <div class="left">
                         <h3>EVENTS</h3>

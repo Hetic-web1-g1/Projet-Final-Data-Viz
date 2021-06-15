@@ -56,16 +56,16 @@ p.linked {
     background-color: white;
   }
 
-  #introduction .barre::after {
+  #speedrun .barre::after {
     height: var(--middle-bar-height1);
   }
-  #introspeedrun .barre::after {
+  /* #introspeedrun .barre::after {
     height: var(--middle-bar-height2);
-  }
-  #events .barre::after {
+  } */
+  #growth-of-events .barre::after {
     height: var(--middle-bar-height3);
   }
-  #streams-costs .barre::after {
+  #streaming-costs .barre::after {
     height: var(--middle-bar-height4);
   }
 }

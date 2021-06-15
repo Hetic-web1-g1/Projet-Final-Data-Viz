@@ -1,4 +1,4 @@
-<section id="age-graph">
+<section id="twitch-young-audience">
         <h3>Twitch's young audience</h3>
         <div class="content-margins flex2">
                 <div class="flex">
@@ -16,5 +16,4 @@
                 <h4>Have you ever donated on twitch?</h4>
                 <h4>What are your reasons for going to a charity steam?</h4>
         </div>
-
 </section>

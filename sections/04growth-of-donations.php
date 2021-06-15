@@ -1,8 +1,8 @@
-<section id="gdq-stats">
+<section id="growth-of-donations">
         <h3>Growth of Donations</h3>
         <div class="content-margins flex">
                 <div class="left">
-                        <h3>worldwide : gdq</h3>
+                        <h3 class="space">worldwide : gdq</h3>
                 </div>
                 <div id="stat_gdq">
                         <div class='bouton'>
