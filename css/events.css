@@ -5,40 +5,70 @@
 
 
 #events img{
-    width: 200px;
+    max-width: 200px;
 }
 #events .top{
+    height: 250px;
     border-top: 1px solid var(--smooth_white);
-    padding-top: 10%;
-    margin-top: 10%;
+    padding-top: 5%;
+    margin-top: 5%;
 }
 
 #events .bottom{
+    height: 250px;
     border-bottom: 1px solid var(--smooth_white);
-    padding-bottom: 10%;
-    margin-bottom: 10%;
+    padding-bottom: 5%;
+    margin-bottom: 5%;
 }
 
-#events p{
+#events .space-between span{
     position: relative;
 }
-#events .description p::before{
+
+#events .space-between.bottom span::before{
     content: '';
     position: absolute;
     right: 50%;
-    transform: translateY(-130%);
-    height: 90px;
+    bottom: 0;
+    transform: translateY(100%);
+    height: 40%;
     width: 1px;
     background-color: var(--smooth_white);
 }
 
-#events .description p::after{
+#events .space-between.top span::before{
     content: '';
     position: absolute;
     right: 50%;
-    transform: translateY(30%);
-    height: 90px;
+    top: 0;
+    transform: translateY(-100%);
+    height: 40%;
     width: 1px;
+    background-color: var(--smooth_white);
+}
+
+#events .space-between span:nth-child(2)::before{
+    height: 60%;
+}
+
+#events .space-between.top span:nth-child(2)::after{
+    content: "";
+    position: absolute;
+    right: 50%;
+    bottom: 160%;
+    transform: translateX(50%);
+    height: 1px;
+    width: 90px;
+    background-color: var(--smooth_white);
+}
+#events .space-between.bottom span:nth-child(2)::after{
+    content: "";
+    position: absolute;
+    right: 50%;
+    top: 160%;
+    transform: translateX(50%);
+    height: 1px;
+    width: 90px;
     background-color: var(--smooth_white);
 }
 
