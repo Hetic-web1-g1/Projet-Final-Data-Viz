@@ -11,7 +11,6 @@ include './header.php';
     include './sections/statgdq.php';
     include './sections/statszevent.php';
     include './sections/solostreams.php';
-    include './sections/twitchevo.php';
     include './sections/streams-costs.php';
     include './sections/sondage.php';
     include './sections/associations.php';

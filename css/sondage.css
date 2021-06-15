@@ -1,5 +1,5 @@
 #sondage{
-  width: 100%;
+  width: 78%;
   height: 50vh;
 }
 #sondage > h3 {
@@ -42,4 +42,14 @@
 #age_pie text{
   fill: white;
 }
-
+.flex2{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.flex2 p{
+  width: 36%;
+}
+#age-graph{
+  padding-top:60px;
+}
