@@ -21,3 +21,8 @@
         grid-row-gap: 100px;
     }
 }
+@media screen and (max-width: 848px) {
+    .grid-streamers{
+        grid-template-columns: 1fr 1fr;
+    }
+}
