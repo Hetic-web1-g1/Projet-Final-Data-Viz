@@ -12,6 +12,6 @@
         <div class="left">
             <p class="linked">In the following years, speedrunning became common practice with multiple other games. The Speed Demo website then became the reference in terms of speedrunning content.</p>
         </div>
-        <img src="../Assets/img/twitch-logo.svg" alt="twitch-logo" class="twitch-logo">
+        <img src="./Assets/img/twitch-logo.svg" alt="twitch-logo" class="twitch-logo">
     </div>
 </section>
