@@ -64,6 +64,11 @@
   fill: #fff;
 }
 
+#graphsrecolte .legende {
+  font-size: 15px;
+  fill: #fff;
+}
+
 #graphsrecolte path {
   stroke: #fff;
 }

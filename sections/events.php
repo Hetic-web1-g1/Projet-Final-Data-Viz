@@ -22,9 +22,9 @@
             </p>
         </div>
         <div class="space-between top">
-        <span><img src="./assets/img/speedrun4life.svg" alt="speedrun4life" tag-inviewport="scale-in" class="is-inViewport"></span>
-        <span><img src="./assets/img/livetime.svg" alt="livetime" tag-inviewport="scale-in" class="is-inViewport"></span>
-        <span><img src="./assets/img/lefrenchrestream.svg" alt="lefrenchrestream" tag-inviewport="scale-in" class="is-inViewport"></span>
+          <span><img src="./assets/img/speedrun4life.svg" alt="speedrun4life" tag-inviewport="scale-in" class="is-inViewport"></span>
+          <span><img id="livetime" src="./assets/img/livetime.svg" alt="livetime" tag-inviewport="scale-in" class="is-inViewport"></span>
+          <span><img src="./assets/img/lefrenchrestream.svg" alt="lefrenchrestream" tag-inviewport="scale-in" class="is-inViewport"></span>
         </div>
     </div>
 </section>

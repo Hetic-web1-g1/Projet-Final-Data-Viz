@@ -39,17 +39,30 @@
   letter-spacing: 0.15em;
   text-transform: uppercase;
 }
+
 #age_pie text{
   fill: white;
 }
+
 .flex2{
   display: flex;
   align-items: center;
-  flex-direction: row;
 }
+
 .flex2 p{
   width: 36%;
+  margin-left: 5%;
 }
+
 #age-graph{
   padding-top:60px;
+}
+
+#questionsondage {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+#questionsondage > h4 {
+  margin-bottom: 25px;
 }
