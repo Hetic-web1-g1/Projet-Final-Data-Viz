@@ -4,10 +4,10 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background-color: #101820;
+  background-color: var(--smooth_black);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #F8B62A;
+  background: var(--red);
 }

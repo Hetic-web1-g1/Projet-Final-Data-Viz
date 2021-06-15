@@ -1,5 +1,12 @@
-#twitchevo {
+#twitchevo,#age_pie {
+  width: 100%;
+  height: 70vh;
   flex-direction: column;
+}
+
+#age_pie{
+  margin-top: 150px;
+  margin-bottom: 150px;
 }
 
 #twitchevo > p{

@@ -1,32 +1,43 @@
-const body = document.querySelector("main");
-const scrollBar = document.querySelector("#scroll");
-const nbsections = document.querySelectorAll("section").length;
-var bodyHeight = 0;
+const sections = document.querySelectorAll("section");
+const nav = document.querySelector("nav");
+var sections_scroll;
 
-document
-  .querySelectorAll("section")
-  .forEach((element) => (bodyHeight += element.clientHeight));
+for (let i = 0; i < sections.length; i++) {
+  nav.appendChild(
+    document
+      .createRange()
+      .createContextualFragment(
+        `<a href="#${sections[i].id}"><div class="navbutton ${sections[i].id}"></div></a>`
+      )
+  );
+}
 
-body.addEventListener("scroll", () => {
-  scroll = body.scrollTop / (bodyHeight - window.innerHeight);
-  scrollPercent = Math.round(scroll * 100);
-  scrollBar.style.height = scrollPercent + "%";
+resetSectionSize();
+verifScroll();
+
+function resetSectionSize() {
+  sections_scroll = [];
+  for (let i = 0; i < sections.length; i++) {
+    sections_scroll.push([
+      sections[i],
+      sections[i].getBoundingClientRect().top,
+    ]);
+  }
+}
+
+function verifScroll() {
+  var scroll = document.querySelector("main").scrollTop;
+  for (let i = 0; i < sections_scroll.length; i++) {
+    if (scroll+30 >= sections_scroll[i][1]) {
+      var buttons = document.querySelectorAll("nav .navbutton");
+      for (let j = 0; j < sections_scroll.length; j++) {
+        buttons[j].classList.remove("active");
+      }
+      buttons[i].classList.add("active");
+    }
+  }
+}
+
+window.addEventListener("resize", function () {
+  resetSectionSize();
 });
-
-// const step1 = document.querySelector('#sondage')
-// const scrollBar1 = document.querySelector('#scroll1')
-
-// const step2 = document.querySelector('#conclusion')
-// const scrollBar2 = document.querySelector('#scroll2')
-
-// window.addEventListener('scroll', () => {
-//     let scroll1 = window.scrollY / (step1.clientHeight - window.innerHeight);
-//     let scrollPercent1 = Math.round(scroll1 * 100);
-//     scrollBar1.style.height = scrollPercent1 + '%';
-// });
-
-// window.addEventListener('scroll', () => {
-//     let scroll2 = window.scrollY / (step2.clientHeight - window.innerHeight);
-//     let scrollPercent2 = Math.round(scroll2 * 100);
-//     scrollBar2.style.height = scrollPercent2 + '%';
-// });

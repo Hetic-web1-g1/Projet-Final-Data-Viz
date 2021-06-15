@@ -1,71 +1,44 @@
-#accueil {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-content: center;
-  justify-content: flex-end;
-}
-#accueil span {
-  font-size: 1.5em;
-}
-#accueil > #speed {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: fit-content;
+.title{
+    margin-bottom: 100px;
 }
 
-#accueil > #speed span:nth-child(1) {
-  position: relative;
-  animation: speedleft 0.8s cubic-bezier(0.6, 0.01, 0.48, 0.15) forwards;
-  margin-right: -4px;
-}
-#accueil > #speed span:nth-child(2) {
-  position: relative;
-  animation: speedright 0.8s cubic-bezier(0.6, 0.01, 0.48, 0.15) forwards;
-  margin-left: -4px;
-}
-#accueil > #speed span:nth-child(3) {
-  position: relative;
-  animation: speedleft 0.8s cubic-bezier(0.6, 0.01, 0.48, 0.15) forwards;
-  margin-right: -4px;
-}
-#accueil > #speed span:nth-child(4) {
-  position: relative;
-  animation: speedright 0.8s cubic-bezier(0.6, 0.01, 0.48, 0.15) forwards;
-  margin-left: -4px;
-}
-#accueil > a {
-  margin-bottom: 10%;
-  color: #F8B62A;
+h1{
+    margin-bottom: 30px;
 }
 
-@keyframes speedleft {
-  0% {
-    left: -50%;
-    filter: blur(1rem);
-  }
-  99% {
-    left: 0;
-    filter: blur(4px);
-  }
-  100% {
-    left: unset;
-    filter: blur(0);
-  }
+h1>span{
+    margin-bottom: 20px;
 }
-@keyframes speedright {
-  0% {
-    left: 50%;
-    filter: blur(1rem);
-  }
-  99% {
-    left: 0;
-    filter: blur(4px);
-  }
-  100% {
-    left: unset;
-    filter: blur(0);
-  }
+
+h1>span:nth-child(1){
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 96px;
+}
+
+h1>span:nth-child(1)::before {
+    content: "";
+    position: absolute;
+    width: 60%;
+    top: 100%;
+    background-color: var(--smooth_white);
+    height: 1px;
+}
+
+h1>span:nth-child(3){
+    font-family: 'Swanky and Moo Moo', cursive;
+    font-size: 48px;
+    line-height: 60px;
+}
+
+#accueil .caption{
+    align-self: flex-start;
+}
+
+
+.twitch-logo{
+    margin-top: 10%;
+    width: 100%;
 }

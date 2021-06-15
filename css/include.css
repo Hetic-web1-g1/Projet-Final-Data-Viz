@@ -1,13 +1,12 @@
 @import "global.css";
-@import "nav.css";
 
 /* By Order Sections*/
 @import "accueil.css";
 @import "video.css";
-@import "introspeedrun.css";
-@import "introtwitch.css";
-@import "speedrunningandcharity.css";
-@import "speedrunningrise.css";
+@import "events.css";
+@import "grid.css";
+@import "textElements.css";
+@import "nav.css";
 @import "statgdq.css";
 @import "charitystreams.css";
 @import "solostreams.css";

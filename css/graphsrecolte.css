@@ -1,4 +1,6 @@
 #graphsrecolte {
+  width: 100%;
+  height: 70vh;
   padding-top: 10%;
   display: flex;
   flex-direction: row-reverse;
