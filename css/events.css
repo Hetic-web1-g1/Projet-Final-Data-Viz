@@ -1,3 +1,9 @@
+#introevents > .content-margins{
+    height: 80vh;
+    justify-content: center;
+}
+
+
 #events img{
     width: 200px;
 }
@@ -12,10 +18,11 @@
     padding-bottom: 10%;
     margin-bottom: 10%;
 }
+
 #events p{
     position: relative;
 }
-#events p::before{
+#events .description p::before{
     content: '';
     position: absolute;
     right: 50%;
@@ -25,7 +32,7 @@
     background-color: var(--smooth_white);
 }
 
-#events p::after{
+#events .description p::after{
     content: '';
     position: absolute;
     right: 50%;

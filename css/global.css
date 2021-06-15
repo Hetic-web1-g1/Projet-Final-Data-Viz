@@ -7,11 +7,14 @@
   --smooth_white: #F5F3F4;
   --red: #6D000D;
   --grey: #888888;
-  --middle-bar-height1:0px;
-  --middle-bar-height2:0px;
-  --middle-bar-height3:0px;
-  --middle-bar-height4:0px;
-  --side-bar-width:0px;
+  --middle-bar-height1: 0px;
+  --middle-bar-height2: 0px;
+  --middle-bar-height3: 0px;
+  --middle-bar-height4: 0px;
+  --side-bar-width: 0px;
+}
+::selection{
+  background-color: var(--red);
 }
 
 /* Sans media */
@@ -22,12 +25,12 @@
 }
 
 section {
-  background-color: var(--smooth_black);
   color: var(--smooth_white);
-  min-height: 100vh;
+  min-height: 120vh;
   scroll-snap-align: start;
   position: relative;
   padding-top: 150px;
+  padding-bottom: 150px;
 }
 
 .content-margins{
@@ -56,10 +59,10 @@ section {
 
 /* A Definir en fonction des Besoins */
 /* Smartphone */
-@media screen and (max-width: 600px) {
-  /* Variables */
-  /* :root {
-	} */
+@media screen and (max-width: 1440px) {
+  nav{
+    display: none;
+  }
 }
 
 /* PC
@@ -124,6 +127,7 @@ p,text{
 
 body {
   overflow: overlay;
+  background-color: var(--smooth_black);
 }
 
 main {
