@@ -5,8 +5,8 @@
                 </div>
                 <div id="stat_gdq">
                         <div class='bouton'>
-                                <button onclick="update_chart(zevent,'Récolte Zevent', 'graphsrecolte')">récoltes Zevent</button>
-                                <button onclick="update_chart(pic_zevent,'Pic spectateurs Zevent', 'graphsrecolte')">Pic viewer Zevent</button>
+                                <button onclick="update_chart(agdq,'AGDQ', 'stat_gdq')">récoltes AGDQ</button>
+                                <button onclick="update_chart(sgdq,'SGDQ', 'stat_gdq')">récoltes SGDQ</button>
                         </div>
                 </div>
                 <div class="left">
