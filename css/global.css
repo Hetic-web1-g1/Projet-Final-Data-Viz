@@ -92,7 +92,15 @@ h3::before {
   background-color: var(--smooth_white);
   height: 1px;
 }
-
+.bar-title{
+  font-family: 'Poppins', sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 25px;
+  width: 100%;
+  text-transform: uppercase;
+}
 h4{
   position: relative;
   font-family: 'Poppins', sans-serif;

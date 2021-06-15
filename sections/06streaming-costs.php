@@ -1,5 +1,5 @@
 <section id="streaming-costs">
-        <div class="content-margins flex">
+        <div class="content-margins flex margin-bottom">
                 <div class="left">
                         <h3>Streaming costs
                         </h3>
@@ -14,7 +14,6 @@
                 <div class="animation-to-right inactive"></div>
         </div>
         <div class="content-margins flex">
-                <h3 class="graph-title">COST/donations</h3>
                 <div id="comparaison" class="flex">
                 </div>
         </div>
