@@ -583,6 +583,26 @@ function draw_bar_chart_rent(title,nomdiv) {
     .attr("height", (s) => height - axe_yScale(s.rentabilite))
     .attr("width", axe_xScale.bandwidth())
     .attr('fill', color_range[1])
+
+  var legend = bar_chart.selectAll('.legend') 
+    .data(["funds raised","cost"]) 
+    .enter() 
+    .append('g')
+    .attr('class', 'legend')
+    .attr('transform', function(d, i ){
+      var vert = i * height/3;
+      return  `translate(${width+width/10}, ${height/2.5+vert/2})`;
+    });
+  
+  legend.append('rect')                                  
+    .attr('width', 25)                        
+    .attr('height', 25)                      
+    .style('fill', function(d, i ){ return color_range[i]});
+  
+  legend.append('text')                                    
+    .attr('x', 30)
+    .attr('y', 20)
+    .text(function(d) { return d; }); // return label
 }
 
 function draw_bar_chart_sondage(nomdiv, sample){
