@@ -1,0 +1,17 @@
+.grid-streamers{
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fill,minmax(40%,1fr));
+    grid-row-gap: 30px;
+    grid-column-gap: 20px;
+}
+.org-grid{
+    margin-top: 100px;
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-template-rows: repeat(2,20px);
+    grid-row-gap: 300px;
+    grid-column-gap: 200px;
+    justify-content: center;
+}

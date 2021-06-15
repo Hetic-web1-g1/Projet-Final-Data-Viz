@@ -1,4 +1,6 @@
 #comparaison {
+  width: 100%;
+  height: 70vh;
   flex-direction: column;
 }
 

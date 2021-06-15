@@ -1,10 +1,17 @@
-/* Variables */
-/* :root {
-} */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Swanky+and+Moo+Moo&display=swap');
 
-/* Font */
-html {
-  font-family: "le-havre", "Montserrat", sans-serif;
+/* Variables */
+:root {
+  --smooth_black: #111111;
+  --smooth_white: #F5F3F4;
+  --red: #6D000D;
+  --grey: #888888;
+  --middle-bar-height1:0px;
+  --middle-bar-height2:0px;
+  --middle-bar-height3:0px;
+  --middle-bar-height4:0px;
+  --side-bar-width:0px;
 }
 
 /* Sans media */
@@ -15,20 +22,30 @@ html {
 }
 
 section {
-  background-color: #101820;
-  color: white;
-  height: 100vh;
-  padding: 0 10%;
+  background-color: var(--smooth_black);
+  color: var(--smooth_white);
+  min-height: 100vh;
   scroll-snap-align: start;
   position: relative;
+  padding-top: 150px;
+}
+
+.content-margins{
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-inline: 10px;
 }
 
 .flex {
   display: flex;
   align-items: center;
-  justify-content: center;
+  flex-direction: column;
 }
-
+.space-between{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 .display {
   display: block;
 }
@@ -45,41 +62,68 @@ section {
 	} */
 }
 
-/* PC */
+/* PC
 @media screen and (min-width: 601px) {
   /* Variables */
   /* :root {
 	} */
-}
 
 /* A UPDATE */
-h1 {
-  font-size: 6em;
-  font-weight: 650;
-  font-style: italic;
-  font-family: Montserrat;
-  color: #F8B62A;
+h3{
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 25px;
+  width: 100%;
+  text-transform: uppercase;
 }
-h2 {
-  font-size: 3.5em;
-  font-weight: 400;
+
+h3::before {
+  content: "";
+  position: absolute;
+  width: 20%;
+  top: 120%;
+  background-color: var(--smooth_white);
+  height: 1px;
 }
-h3 {
-  font-size: 3em;
-  font-weight: 250;
+
+h4{
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 25px;
+  width: 100%;
+  text-transform: uppercase;
 }
-p {
-  font-size: 2.5em;
-  font-weight: 250;
+
+h4:first-child{
+  margin-bottom: 15px;
 }
-span {
-  font-size: 2.5em;
-  font-weight: 250;
+
+p,text{
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--smooth_white);
+  max-width: 400px;
+  line-height: 25px;
 }
-a {
-  font-size: 2.5em;
-  font-weight: 250;
-  text-decoration: none;
+
+.caption{
+  max-width: inherit;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 275;
+  color: var(--grey);
+  margin-bottom: 20px;
+}
+
+body {
+  overflow: overlay;
 }
 
 main {
@@ -88,6 +132,10 @@ main {
   height: 100vh;
   scroll-snap-type: y mandatory;
 }
-body {
-  overflow: overlay;
+
+div.left{
+  align-self: flex-start;
+}
+div.right{
+  align-self: flex-end;
 }

@@ -1,0 +1,23 @@
+@import "global.css";
+@import "nav.css";
+
+/* By Order Sections*/
+@import "accueil.css";
+@import "video.css";
+@import "introspeedrun.css";
+@import "introtwitch.css";
+@import "speedrunningandcharity.css";
+@import "speedrunningrise.css";
+@import "statgdq.css";
+@import "charitystreams.css";
+@import "solostreams.css";
+@import "graphsrecolte.css";
+@import "twitchevo.css";
+@import "comparaison.css";
+@import "associations.css";
+@import "sondage.css";
+@import "conclusion.css";
+@import "scrollbar.css";
+
+/*Animation bulle twitch*/
+@import "../Assets/animation/bulle/style_bulle.css";

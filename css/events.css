@@ -1,0 +1,40 @@
+#events img{
+    width: 200px;
+}
+#events .top{
+    border-top: 1px solid var(--smooth_white);
+    padding-top: 10%;
+    margin-top: 10%;
+}
+
+#events .bottom{
+    border-bottom: 1px solid var(--smooth_white);
+    padding-bottom: 10%;
+    margin-bottom: 10%;
+}
+#events p{
+    position: relative;
+}
+#events p::before{
+    content: '';
+    position: absolute;
+    right: 50%;
+    transform: translateY(-130%);
+    height: 90px;
+    width: 1px;
+    background-color: var(--smooth_white);
+}
+
+#events p::after{
+    content: '';
+    position: absolute;
+    right: 50%;
+    transform: translateY(30%);
+    height: 90px;
+    width: 1px;
+    background-color: var(--smooth_white);
+}
+
+#stat-gdq{
+    width: 100%;
+}
