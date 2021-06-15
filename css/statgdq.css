@@ -22,7 +22,7 @@ h3.graph-title{
   justify-content: center;
 }
 
-#stat_gdq .button-on {
+#stat_gdq .button_gdq.on {
   all: unset;
   background-color: white;
   border: 1px solid white;
@@ -36,12 +36,12 @@ h3.graph-title{
   cursor: pointer;
 }
 
-#stat_gdq .button-on:hover {
+#stat_gdq .button_gdq.on:hover {
   background-color: black;
   color: white;
 }
 
-#stat_gdq .button-off {
+#stat_gdq .button_gdq {
   all: unset;
   background-color: black;
   border: 1px solid white;
@@ -55,7 +55,7 @@ h3.graph-title{
   cursor: pointer;
 }
 
-#stat_gdq .button-off:hover {
+#stat_gdq .button_gdq:hover {
   background-color: white;
   color: black;
 }

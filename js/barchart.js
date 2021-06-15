@@ -368,16 +368,37 @@ function update_chart(data, nom, nom_div) {
   draw_bar_chart(nom, nom_div);
 }
 
+function button_callback(button_class){
+  var button = document.getElementsByClassName(button_class);
+  console.log(button)
+
+  function addSelectClass(){
+    removeSelectClass();
+    this.classList.add('on');	
+  }
+
+  function removeSelectClass(){
+    for (var i =0; i < button.length; i++) {
+      button[i].classList.remove('on')
+    }
+  }
+    
+  for (var i =0; i < button.length; i++) {
+    button[i].addEventListener("click",addSelectClass);
+  }
+}
+
 function draw_bar_chart_rent(nomdiv) {
 
   var domain = [0, 100];
   var sample = comparaison_rentabilite;
+  var color_range = ["#555555","#6C000D"]
 
   const div = document.getElementById(nomdiv);
 
   const margin = 60;
   const width = div.offsetWidth / 2;
-  const height = div.offsetHeight / 3;
+  const height = div.offsetHeight / 2;
 
   const bar_chart = d3
     .select(`#${nomdiv}`)
@@ -386,7 +407,7 @@ function draw_bar_chart_rent(nomdiv) {
     .attr("width", width)
     .attr("height", height)
     .append("g")
-    .attr("transform", `translate(${margin * 2}, ${margin})`);
+    .attr("transform", `translate(${margin * 6}, ${margin})`);
 
   //Axe Y
   const axe_yScale = d3
@@ -434,6 +455,7 @@ function draw_bar_chart_rent(nomdiv) {
     .attr("y", (s) => axe_yScale(100))
     .attr("height", (s) => height - axe_yScale(100))
     .attr("width", axe_xScale.bandwidth())
+    .attr('fill', color_range[0])
     .on("mouseenter", function (s, i) {
       d3.select(this)
         .transition()
@@ -494,6 +516,7 @@ function draw_bar_chart_rent(nomdiv) {
     .attr("y", (s) => axe_yScale(s.rentabilite))
     .attr("height", (s) => height - axe_yScale(s.rentabilite))
     .attr("width", axe_xScale.bandwidth())
+    .attr('fill', color_range[1])
 
 }
 
@@ -502,6 +525,9 @@ window.addEventListener("resize", function () {
   update_chart(evo_twitch, "Evolution of Twitch", "twitchevo");
   update_chart(zevent, "", "graphsrecolte");
 });
+
+button_callback("button_gdq")
+button_callback("button_zevent")
 
 sample = agdq;
 draw_bar_chart("", "stat_gdq");
