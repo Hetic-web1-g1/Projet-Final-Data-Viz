@@ -128,3 +128,18 @@
     font-size: 20px;
     fill: #fff;
 }
+
+#sondage4 {
+  width: 100%;
+  height: 30vh;
+}
+
+#sondage4 svg {
+  width: 60%;
+  height: auto;
+}
+
+#sondage4 text {
+  font-size: 20px;
+  fill: #fff;
+}
