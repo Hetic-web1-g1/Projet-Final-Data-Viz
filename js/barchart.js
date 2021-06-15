@@ -391,6 +391,7 @@ function draw_bar_chart(nom, nomdiv) {
     .append("text") //Titre
     .attr("x", width / 2)
     .attr("y", -40)
+    .attr("class","bar-title") 
     .attr("text-anchor", "middle")
     .text(nom);
 }
@@ -420,7 +421,7 @@ function button_callback(button_class){
   }
 }
 
-function draw_bar_chart_rent(nomdiv) {
+function draw_bar_chart_rent(title,nomdiv) {
 
   var domain = [0, 100];
   var sample = comparaison_rentabilite;
@@ -440,7 +441,15 @@ function draw_bar_chart_rent(nomdiv) {
     .attr("height", height)
     .append("g")
     .attr("transform", `translate(${margin * 6}, ${margin})`);
-
+  
+    bar_chart
+    .append("text") //Titre
+    .attr("x", width / 2)
+    .attr("y", -40)
+    .attr("class","bar-title") 
+    .attr("text-anchor", "middle")
+    .text(title);
+    
   //Axe Y
   const axe_yScale = d3
     .scaleLinear()
@@ -532,6 +541,7 @@ function draw_bar_chart_rent(nomdiv) {
       // .attr('x2', width)
       // .attr('y2', y)
       // .attr('stroke', 'red')
+
     })
 
     .on("mouseleave", function (s,i) {
@@ -619,21 +629,21 @@ function draw_bar_chart_sondage(nomdiv, sample){
 }
 
 window.addEventListener("resize", function () {
-  update_chart(agdq, "AGDQ", "stat_gdq")
+  update_chart(agdq, "Statistiques GDQ", "stat_gdq")
   update_chart(evo_twitch, "Evolution of Twitch", "twitchevo");
-  update_chart(zevent, "", "stat_z-event");
+  update_chart(zevent, "Statistiques Z-Event", "stat_z-event");
 });
 
 button_callback("button_gdq")
 button_callback("button_zevent")
 
 sample = agdq;
-draw_bar_chart("", "stat_gdq");
+draw_bar_chart("Statistiques GDQ", "stat_gdq");
 sample = evo_twitch;
 draw_bar_chart("Evolution of Twitch", "twitchevo");
 sample = zevent;
-draw_bar_chart("", "stat_z-event");
-draw_bar_chart_rent("comparaison")
+draw_bar_chart("Statistiques Z-Event", "stat_z-event");
+draw_bar_chart_rent("COST/DONATIONS by events","comparaison")
 draw_bar_chart_sondage("sondage1", sondage_watch)
 draw_bar_chart_sondage("sondage2", sondage_watch_s)
 draw_bar_chart_sondage("sondage3", sondage_donate)
