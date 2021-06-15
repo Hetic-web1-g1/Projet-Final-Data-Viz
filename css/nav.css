@@ -24,3 +24,55 @@ nav{
     width: 30px;
     border-top: 1px solid var(--red);
 }
+#home-button{
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+    transition: 0.5s;
+}
+#Menu{
+width: 100%;
+position: fixed;
+min-height: 40vh;
+top: -100%;
+transition: 0.5s;
+background-color: var(--smooth_black);
+z-index: 998;
+filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.05));
+color: var(--smooth_white);
+}
+#Menu a{
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+#Menu p{
+    max-width: 100%;
+}
+#Menu h3{
+    text-align: center;
+    line-height: 200%;
+    margin-bottom: inherit;
+}
+#Menu h3::before{
+    content: "";
+    width: 0;
+}
+#Menu::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--smooth_white);
+    height: 1px;
+}
+
+@media screen and (max-width: 1440px) {
+    #home-button{
+        display: block;
+    }
+}

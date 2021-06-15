@@ -1,9 +1,12 @@
-p.linked{
-    position: relative;
+p.linked {
+  position: relative;
 }
-
-div.left p.linked::after{
-    content: '';
+.margin-bottom{
+    margin-bottom: 100px;
+}
+@media (min-width: 950px) {
+  div.left p.linked::after {
+    content: "";
     position: absolute;
     left: 110%;
     top: 50%;
@@ -11,9 +14,9 @@ div.left p.linked::after{
     height: 90px;
     width: 1px;
     background-color: var(--smooth_white);
-}
-div.left p.linked::before{
-    content: '';
+  }
+  div.left p.linked::before {
+    content: "";
     position: absolute;
     left: 110%;
     top: 50%;
@@ -21,10 +24,10 @@ div.left p.linked::before{
     height: 1px;
     width: var(--side-bar-width);
     background-color: var(--smooth_white);
-}
+  }
 
-div.right p.linked::after{
-    content: '';
+  div.right p.linked::after {
+    content: "";
     position: absolute;
     right: 110%;
     top: 50%;
@@ -32,10 +35,10 @@ div.right p.linked::after{
     height: 90px;
     width: 1px;
     background-color: var(--smooth_white);
-}
+  }
 
-div.right p.linked::before{
-    content: '';
+  div.right p.linked::before {
+    content: "";
     position: absolute;
     right: 110%;
     top: 50%;
@@ -43,25 +46,47 @@ div.right p.linked::before{
     height: 1px;
     width: var(--side-bar-width);
     background-color: var(--smooth_white);
-}
+  }
 
-.barre::after{
-    content: '';
+  .barre::after {
+    content: "";
     position: absolute;
     transform: translateY(-50%);
     width: 1px;
     background-color: white;
-}
+  }
 
-#introduction .barre::after{
+  #introduction .barre::after {
     height: var(--middle-bar-height1);
-}
-#introspeedrun .barre::after{
+  }
+  #introspeedrun .barre::after {
     height: var(--middle-bar-height2);
-}
-#introevents .barre::after{
+  }
+  #events .barre::after {
     height: var(--middle-bar-height3);
-}
-#streams-costs .barre::after{
+  }
+  #streams-costs .barre::after {
     height: var(--middle-bar-height4);
+  }
+}
+@media screen and (max-width: 950px) {
+  p.linked {
+    margin-bottom: 50px;
+  }
+  .barre {
+    display: none;
+  }
+  div ::after {
+    display: none;
+  }
+  div p.linked::before {
+    content: "";
+    position: absolute;
+    top:     110%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 1px;
+    background-color: var(--smooth_white);
+  }
 }

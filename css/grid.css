@@ -1,9 +1,10 @@
 .grid-streamers{
     display: grid;
     grid-auto-rows: auto;
-    grid-template-columns: repeat(auto-fill,minmax(40%,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
     grid-row-gap: 30px;
     grid-column-gap: 20px;
+    justify-content: center;
 }
 .org-grid{
     margin-top: 100px;
@@ -14,4 +15,9 @@
     grid-row-gap: 300px;
     grid-column-gap: 200px;
     justify-content: center;
+}
+@media screen and (max-width: 1024px) {
+    .org-grid{
+        grid-row-gap: 100px;
+    }
 }
