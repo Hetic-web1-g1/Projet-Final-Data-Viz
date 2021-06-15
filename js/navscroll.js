@@ -26,7 +26,7 @@ function resetSectionSize() {
   }
 }
 
-function verifScroll() {
+function refreshNavbar(){
   var scroll = document.querySelector("main").scrollTop;
   for (let i = 0; i < sections_scroll.length; i++) {
     if (scroll+30 >= sections_scroll[i][1]) {
@@ -37,6 +37,20 @@ function verifScroll() {
       buttons[i].classList.add("active");
     }
   }
+}
+
+function testAnimations(){
+  let animations_container = document.querySelectorAll("div.animation-to-right,div.animation-to-left")
+  for(let i = 0; i < animations_container.length; i++){
+      if(animations_container[i].getBoundingClientRect().top < window.innerHeight){
+        animations_container[i].classList.remove("inactive")
+      }
+  }
+}
+
+function verifScroll() {
+  refreshNavbar()
+  testAnimations()
 }
 
 window.addEventListener("resize", function () {

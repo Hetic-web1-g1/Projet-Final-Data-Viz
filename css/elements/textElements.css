@@ -62,11 +62,67 @@ p.linked {
   /* #introspeedrun .barre::after {
     height: var(--middle-bar-height2);
   } */
+
   #growth-of-events .barre::after {
     height: var(--middle-bar-height3);
   }
   #streaming-costs .barre::after {
     height: var(--middle-bar-height4);
+  }
+  div.animation-to-right{
+    width: calc(100% - 882px - 20px);
+    bottom: 0;
+    height: 100%;
+    position: absolute;
+    right: 451px;
+    transition: 1s;
+    background-color: var(--smooth_black);
+    animation: text_to_right 3s ease forwards;
+  }
+  div.animation-to-left{
+    width: calc(100% - 883px - 20px);
+    bottom: 0;
+    height: 100%;
+    position: absolute;
+    left: 452px;
+    transition: 1s;
+    background-color: var(--smooth_black);
+    animation: text_to_left 3s ease forwards 4s;
+  }
+  div.inactive{
+    animation: none;
+  }
+}
+
+@keyframes text_to_right {
+  0%{
+    width: calc(100% - 882px - 20px);
+    height: 100%;
+  }33%{
+    width: calc((100% - 882px - 20px)/2);
+    height: 100%;
+  }66%{
+    width: calc((100% - 882px - 20px)/2);
+    height: 30%;
+  }100%{
+    width: 0;
+    height: 30%;
+  }
+}
+
+@keyframes text_to_left {
+  0%{
+    width: calc(100% - 883px - 20px);
+    height: 100%;
+  }33%{
+    width: calc((100% - 883px - 20px)/2);
+    height: 100%;
+  }66%{
+    width: calc((100% - 883px - 20px)/2);
+    height: 30%;
+  }100%{
+    width: 0;
+    height: 30%;
   }
 }
 @media screen and (max-width: 950px) {

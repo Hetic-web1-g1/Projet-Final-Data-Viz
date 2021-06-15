@@ -11,6 +11,9 @@
                         <p class="linked">Thanks to Twitch’s platform succesful streamers can host their own events from their home which comes at practically no cost for themselves, giving visibility to the organisation they choose to support.
                         </p>
                 </div>
+                <div class="animation-to-right inactive"></div>
+        </div>
+        <div class="content-margins flex">
                 <h3 class="graph-title">COST/donations</h3>
                 <div id="comparaison" class="flex">
                 </div>
