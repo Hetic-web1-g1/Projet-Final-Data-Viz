@@ -533,14 +533,14 @@ function draw_bar_chart_rent(title,nomdiv) {
         .attr("x", (s) => axe_xScale(s.event) + axe_xScale.bandwidth() / 2)
         .attr("y", (s) => axe_yScale(100) + 20)
         .attr("text-anchor", "middle")
-        .text((s) => `fonds: ${s.fonds}M`);
+        .text((s) => `funds: ${s.fonds}M`);
       d3.select(this.parentNode)
         .append("text")
         .attr("class", "value")
         .attr("x", (s) => axe_xScale(s.event) + axe_xScale.bandwidth() / 2)
         .attr("y", (s) => axe_yScale(100) + 45)
         .attr("text-anchor", "middle")
-        .text((s) => `cout: ${s.couts}M`);
+        .text((s) => `cost: ${s.couts}M`);
       d3.select(this.parentNode)
         .append("text")
         .attr("class", "value")
