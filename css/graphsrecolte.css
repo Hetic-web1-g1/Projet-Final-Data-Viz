@@ -17,7 +17,7 @@
   justify-content: center;
 }
 
-#graphsrecolte .button-on {
+#graphsrecolte .button_zevent.on {
   all: unset;
   background-color: white;
   border: 1px solid white;
@@ -31,12 +31,12 @@
   cursor: pointer;
 }
 
-#graphsrecolte .button-on:hover {
+#graphsrecolte .button_zevent.on:hover {
   background-color: black;
   color: white;
 }
 
-#graphsrecolte .button-off {
+#graphsrecolte .button_zevent {
   all: unset;
   background-color: black;
   border: 1px solid white;
@@ -50,7 +50,7 @@
   cursor: pointer;
 }
 
-#graphsrecolte .button-off:hover {
+#graphsrecolte .button_zevent:hover {
   background-color: white;
   color: black;
 }

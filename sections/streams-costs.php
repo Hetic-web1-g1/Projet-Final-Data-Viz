@@ -13,16 +13,6 @@
                 </div>
                 <h3 class="graph-title">COST/donations</h3>
                 <div id="comparaison" class="flex">
-                        <div class="legend1">
-                                <div>
-                                        <p class="caption">Funds Raised</p>
-                                </div>
-                        </div>
-                        <div class="legend2">
-                                <div>
-                                        <p class="caption">Cost</p>
-                                </div>
-                        </div>
                 </div>
         </div>
 </section>

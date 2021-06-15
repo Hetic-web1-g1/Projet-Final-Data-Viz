@@ -1,0 +1,28 @@
+#comparaison {
+    width: 100%;
+    height: 70vh;
+    padding-top: 10%;
+  }
+
+#comparaison > svg {
+    width: 100%;
+    height: 100%;
+}
+  
+#comparaison text {
+    font-size: 20px;
+    fill: #fff;
+}
+  
+#comparaison path {
+    stroke: #fff;
+}
+  
+#comparaison .grid path {
+    stroke-width: 0;
+}
+  
+#comparaison .grid .tick line {
+    stroke: #fff;
+    stroke-opacity: 0.3;
+}
