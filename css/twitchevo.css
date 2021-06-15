@@ -1,0 +1,44 @@
+#twitchevo,#age_pie {
+  width: 100%;
+  height: 70vh;
+  flex-direction: column;
+}
+
+#age_pie{
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+#twitchevo > p{
+  text-align: center;
+  width: 50%;
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+
+#twitchevo > svg {
+  width: 80%;
+  height: 100%;
+}
+
+#twitchevo .bar {
+  fill: #42b8ea;
+}
+
+#twitchevo text {
+  font-size: 20px;
+  fill: #fff;
+}
+
+#twitchevo path {
+  stroke: #fff;
+}
+
+#twitchevo .grid path {
+  stroke-width: 0;
+}
+
+#twitchevo .grid .tick line {
+  stroke: #fff;
+  stroke-opacity: 0.3;
+}
