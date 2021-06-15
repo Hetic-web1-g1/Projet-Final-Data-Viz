@@ -7,6 +7,12 @@
 #events img{
     width: 200px;
 }
+
+
+#livetime {
+    width: 150px !important;
+}
+
 #events .top{
     border-top: 1px solid var(--smooth_white);
     padding-top: 10%;
