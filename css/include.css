@@ -1,4 +1,5 @@
 @import "global.css";
+@import "scrollbar.css";
 
 /* By Order Sections*/
 @import "introduction.css";
@@ -12,11 +13,9 @@
 @import "solostreams.css";
 @import "graphsrecolte.css";
 @import "twitchevo.css";
-@import "comparaison.css";
+@import "streams-costs.css";
 @import "associations.css";
 @import "sondage.css";
-@import "conclusion.css";
-@import "scrollbar.css";
 
 /*Animation bulle twitch*/
 @import "../Assets/animation/bulle/style_bulle.css";
