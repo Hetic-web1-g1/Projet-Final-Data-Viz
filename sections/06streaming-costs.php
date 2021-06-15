@@ -1,5 +1,5 @@
 <section id="streaming-costs">
-        <div class="content-margins flex">
+        <div class="content-margins flex margin-bottom">
                 <div class="left">
                         <h3>Streaming costs
                         </h3>
