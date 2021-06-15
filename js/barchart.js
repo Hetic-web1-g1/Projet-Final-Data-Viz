@@ -302,7 +302,7 @@ function draw_bar_chart(nom, nomdiv) {
     .attr("y", (s) => axe_yScale(s.value))
     .attr("height", (s) => height - axe_yScale(s.value))
     .attr("width", axe_xScale.bandwidth())
-    .attr('fill', function(d,i) {console.log(color(i)); return color(i);})
+    .attr('fill', function(d,i) {return color(i);})
     .on("mouseenter", function (s, i) {
       d3.select(this)
         .transition()
