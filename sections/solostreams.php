@@ -25,6 +25,27 @@
                         <p>$121,000</p>
                         <p>Against suicide</p>
                 </div>
+                <div class="card">
+                        <img src="./Assets/img/charlo.png" alt="charles white">
+                        <h4>Moistcr1tikal</h4>
+                        <p>2021</p>
+                        <p>$150,000</p>
+                        <p>Cure Rare Disease</p>
+                </div>
+                <div class="card">
+                        <img src="./Assets/img/nick.png" alt="nick28t">
+                        <h4>Nick28T</h4>
+                        <p>2014-2021</p>
+                        <p>~ $1,000,000</p>
+                        <p>Cure Cancer Foundations</p>
+                </div>
+                <div class="card">
+                        <img src="./Assets/img/pestily.png" alt="pestily">
+                        <h4>Pestily</h4>
+                        <p>2020</p>
+                        <p>$933,765.24</p>
+                        <p>Starlight Children's Foundation</p>
+                </div>
         </div>
         <div class="content-margins">
                 <div id="twitchevo" class="flex">
