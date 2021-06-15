@@ -13,7 +13,7 @@
                 </div>
                 <div class="card">
                         <img src="./Assets/img/grandpoobear.jpg" alt="grandpoobear">
-                        <h4>gran dpoo bear</h4>
+                        <h4>GrandPooBear</h4>
                         <p>2019</p>
                         <p>$186,771</p>
                         <p>Direct Relief</p>
@@ -23,7 +23,7 @@
                         <h4>Ninja</h4>
                         <p>2018</p>
                         <p>$121,000</p>
-                        <p>against sucide</p>
+                        <p>Against suicide</p>
                 </div>
         </div>
 </section>
