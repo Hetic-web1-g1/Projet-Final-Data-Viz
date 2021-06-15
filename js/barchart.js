@@ -209,18 +209,23 @@ const comparaison_rentabilite = [
 ];
 
 function draw_bar_chart(nom, nomdiv) {
+  
   if (sample == agdq || sample == sgdq) {
     domain = [0, 4];
     legende = "Amount raised in millions of dollars";
+    color_range = ["#5D353A","#6C000D"]
   } else if (sample == evo_twitch) {
     domain = [0.9, 2.1];
     legende = "Viewing hours in billions";
+    color_range = ["#5D3993", "#6229B8"]
   } else if (sample == zevent) {
     domain = [0, 7];
     legende = "Amount raised in millions of dollars";
+    color_range = ["#303E55","#001F55"]
   } else if (sample == pic_zevent) {
     domain = [0, 650000];
     legende = "";
+    color_range = ["#303E55","#001F55"]
   }
 
   const div = document.getElementById(nomdiv);
@@ -238,6 +243,10 @@ function draw_bar_chart(nom, nomdiv) {
     .append("g")
     .attr("transform", `translate(${margin * 2}, ${margin})`);
 
+  var color = d3.scaleLinear()
+    .domain(domain)
+    .range(color_range)
+  
   //BAR CHART
 
   //Axe Y
@@ -293,6 +302,7 @@ function draw_bar_chart(nom, nomdiv) {
     .attr("y", (s) => axe_yScale(s.value))
     .attr("height", (s) => height - axe_yScale(s.value))
     .attr("width", axe_xScale.bandwidth())
+    .attr('fill', function(d,i) {return color(i);})
     .on("mouseenter", function (s, i) {
       d3.select(this)
         .transition()
@@ -337,6 +347,7 @@ function draw_bar_chart(nom, nomdiv) {
 
   bar_chart
     .append("text") //Légende
+    .attr("class", "legende")
     .attr("x", -(height / 2))
     .attr("y", -margin)
     .attr("transform", "rotate(-90)")
