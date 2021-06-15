@@ -23,7 +23,7 @@
                         <h4>Ninja</h4>
                         <p>2018</p>
                         <p>$121,000</p>
-                        <p>Against suicide</p>
+                        <p>Suicide Prevention</p>
                 </div>
                 <div class="card">
                         <img src="./Assets/img/charlo.png" alt="charles white">
