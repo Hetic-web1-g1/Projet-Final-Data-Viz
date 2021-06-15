@@ -484,7 +484,13 @@ function draw_bar_chart_rent(nomdiv) {
         .attr("y", (s) => axe_yScale(100) + 70)
         .attr("text-anchor", "middle")
         .text((s) => `${s.rentabilite}%`);
-    
+        console.log(i)
+      d3.select(this.parentNode).select(".bar_2")
+        .transition()
+        .duration(300)
+        .attr("opacity", 0.6)
+        .attr("x", (s) => axe_xScale(s.event) - 5)
+        .attr("width", axe_xScale.bandwidth() + 10);
       // const y = axe_yScale(s.value)
 
       // chart.append('line')
@@ -496,7 +502,7 @@ function draw_bar_chart_rent(nomdiv) {
       // .attr('stroke', 'red')
     })
 
-    .on("mouseleave", function () {
+    .on("mouseleave", function (s,i) {
       d3.selectAll(".value").attr("opacity", 1);
 
       d3.select(this)
@@ -505,7 +511,12 @@ function draw_bar_chart_rent(nomdiv) {
         .attr("opacity", 1)
         .attr("x", (s) => axe_xScale(s.event))
         .attr("width", axe_xScale.bandwidth());
-
+      d3.select(this.parentNode).select(".bar_2")
+        .transition()
+        .duration(300)
+        .attr("opacity", 1)
+        .attr("x", (s) => axe_xScale(s.event))
+        .attr("width", axe_xScale.bandwidth());
       //chart.selectAll('.limite').remove()
       bar_chart.selectAll(".value").remove();
     });
