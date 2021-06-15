@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Run Through The Screen</title>
+	<link rel="icon" type="image/png" sizes="16x16" href="./Assets/img/stickmanorange.svg">
+	<!-- Css reset -->
+	<link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+	<!-- Global -->
+	<link rel="stylesheet" href="css/include.css">
+	<link rel="stylesheet" href="https://use.typekit.net/uzh4rmf.css">
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+        </nav>
+    </header>
+    <div id="home-button" onclick="openMenu()">
+        <svg preserveAspectRatio="none" width="40" height="24" viewBox="0 0 40 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line y1="1.5" x2="40" y2="1.5" stroke="var(--smooth_white)" stroke-width="3"></line>
+            <line y1="12" x2="40" y2="12" stroke="var(--smooth_white)" stroke-width="3"></line>
+            <line y1="22.5" x2="40" y2="22.5" stroke="var(--smooth_white)" stroke-width="3"></line>
+        </svg>
+    </div>
+    <div id="Menu">
+        <h3>Menu</h3>
+        <a href="#introduction"><p>Home</p></a>
+        <a href="#introspeedrun"><p>Le Speedrun</p></a>
+        <a href="#video"><p>Events</p></a>
+        <a href="#gdq-stats"><p>Stastistiques Events</p></a>
+        <a href="#streamers"><p>Streamers Solos</p></a>
+        <a href="#twitchgraph"><p>Stastistiques Twitch</p></a>
+        <a href="#organizations"><p>Organizations</p></a>
+    </div>
+
+	<!-- Section 1 -->
+	<section id="speedrun">
+        <div class="content-margins flex margin-bottom">
+                <div class="title">
+                <h1><span>SPEEDRUNS</span><br><span>& Charity</span></h1>
+                <p class="caption">A project by HETIC students</p>
+                </div>
+        </div>
+        <div class="content-margins flex margin-bottom">
+                <div class="left"><p class="linked">In 1993, ID Software releases Doom which becomes an international success. One year after its release, a website by the name of LMP Hall of Fame lets players upload their gameplay clips in the hopes of obtaining “DOOM Honorifics Titles”, the goal being finishing the game with various challenges or as quick as possible.</p></div>
+                <div class="barre"></div>
+                <div class="right"><p class="linked" id="doomsupport"><img id="doomguy" src="./Assets/img/doomguy.png" alt="">This is how speedrunning was born. In November of the same year the COMPET-N website was created and becomes the cornerstone of the DOOM speedruning community.</p></div>
+                <div class="animation-to-right inactive"></div>
+        </div>         
+        <div class="content-margins flex margin-bottom">
+        <div class="right">
+            <h3>SPEEDRUN</h3>
+            <p class="linked">In 1993, ID Software releases Doom which becomes an international success. One year after its release, a website by
+                the name of LMP Hall of Fame lets players upload their gameplay clips in the hopes of obtaining “DOOM Honorifics
+                Titles”, the goal being finishing the game with various challenges or as quick as possible. This is how speedrunning
+                was born. In November of the same year the COMPET-N website was created and becomes the cornerstone of the DOOM speedruning
+                community. </p>
+        </div>
+        <div class="barre"></div>
+        <div class="left">
+            <p class="linked">In the following years, speedrunning became common practice with multiple other games. The Speed Demo website then became the reference in terms of speedrunning content.</p>
+        </div>
+        <div class="animation-to-left inactive"></div>
+        </div>
+        <div class="content-margins flex margin-bottom">
+        <img src="./Assets/img/twitch-logo.svg" alt="twitch-logo" class="twitch-logo">
+        </div>
+    </div>
+	</section>
+	<!-- Section 2 -->
+	<section id="events">
+        <div class="content-margins">
+                <div class="left">
+                        <h3>EVENTS</h3>
+                        <p>Following speedrunning rise to popularity, people started to organize charity events around this phenomenon. That’s how the very first edition of Awesome Games Done Quick came to be in 2010.</p>
+                </div>
+                <div><video src="./assets/video/speedrun.mp4" autoplay loop muted></video>
+                        <p class="caption">Some hyped moments durings twitch charity events</p>
+                </div>
+        </div>
+	</section>
+	<!-- Section 3 -->
+	<section id="growth-of-events">
+		<div class="content-margins flex margin-bottom">
+			<div class="left">
+				<h3>Growth of Events</h3>
+				<p class="linked">As the event grew throughout the years, AGDQ split itself into two : AGDQ and SGDQ ( Summers Games Done Quick ). As of today they’ve gained considerable traction.
+				</p>
+			</div>
+			<div class="barre"></div>
+			<div class="right">
+				<p class="linked">Whereas speedrunning was generally considered niche, it became more mainstream thanks to its contribution during big charity streaming events.</p>
+			</div>
+			<div class="animation-to-right inactive"></div>
+		</div>
+		<div class="content-margins">
+			<div class="space-between bottom">
+				<span><img class="imgpadding" src="./assets/img/zevent.svg" alt="zevent" tag-inviewport="scale-in" class="is-inViewport"></span>
+				<span><img class="imgpadding" src="./assets/img/speedons.svg" alt="speedons" tag-inviewport="scale-in" class="is-inViewport"></span>
+				<span><img class="imgpadding" src="./assets/img/bourglarun.svg" alt="bourglarun" tag-inviewport="scale-in" class="is-inViewport"></span>
+			</div>
+			<div class="flex description">
+				<p>
+					With GDQ’s events rise in popularity more and more people became interested in charity live streams, going as far as organizing their own events without necessarily using speedrunning as their main attraction.
+				</p>
+			</div>
+			<div class="space-between top">
+			  <span><img src="./assets/img/speedrun4life.svg" alt="speedrun4life" tag-inviewport="scale-in" class="is-inViewport"></span>
+			  <span><img id="livetime" src="./assets/img/livetime.svg" alt="livetime" tag-inviewport="scale-in" class="is-inViewport"></span>
+			  <span><img src="./assets/img/lefrenchrestream.svg" alt="lefrenchrestream" tag-inviewport="scale-in" class="is-inViewport"></span>
+			</div>
+		</div>
+	</section>
+	<!-- Section 4 -->
+	<section id="growth-of-donations">
+        <div class="content-margins flex">
+                <div class="left">
+                <h3>Growth of Donations</h3>
+                        <h3 class="space">worldwide : gdq</h3>
+                </div>
+                <div id="stat_gdq">
+                        <div class='bouton'>
+                        <button class="button_gdq on" onclick="update_chart(agdq,'Statistics GDQ', 'stat_gdq')"><h4>AGDQ</h4></button>
+                        <br>
+                        <button class="button_gdq" onclick="update_chart(sgdq,'Statistics GDQ', 'stat_gdq')"><h4>SGDQ</h4></button>
+                        </div>
+                </div>
+                <div class="left">
+                        <p class="caption">Rise of donations durings charity streams through years.</p>
+                </div>
+        </div>
+        <div class="content-margins flex" id="margin-top">
+                <div class="left">
+                        <h3>French case : Z-event</h3>
+                </div>
+                <div id="stat_z-event">
+                        <div class='bouton'>
+                        <button class="button_zevent on" onclick="update_chart(zevent,'Statistics Z-Event', 'stat_z-event')"><h4>Donations</h4></button>
+                        <br>
+                        <button class="button_zevent" onclick="update_chart(pic_zevent,'Statistics Z-Event', 'stat_z-event')"><h4>Viewers</h4></button>
+                        </div>
+                </div>
+                <div class="left">
+                        <p class="caption">Rise of donations durings Z-Events streams through years.</p>
+                </div>
+                <div class="left margin-bottom">
+                        <p>Z-event is a francophone charity project created in 2017 by Zerator. It gathers a group of streamers to rally for the same cause over a weekend. As of today it has raised more than any other charity streaming event. </p>
+                </div>
+        </div>
+	</section>
+	<!-- Section 5 -->
+	<section id="streaming-becomes-mainstream">
+        <div class="content-margins grid-streamers">
+                <div class="left">
+                        <h3>STREAMING BECOMES MAINSTREAM</h3>
+                        <p>With streaming rising to fame in mainstream media, streamers started their own solo charity events. They are now able to raise significant funds which shows how far a single dedicated fanbase can go in terms of contributions to a given charity.</p>
+                </div>
+                <div class="card">
+                        <img src="./Assets/img/drlupo.jpg" alt="drlupo">
+                        <h4>DRLUPO</h4>
+                        <p>2020</p>
+                        <p>$2,339,943</p>
+                        <p>St. Jude Research Hospital</p>
+                </div>
+                <div class="card">
+                        <img src="./Assets/img/grandpoobear.jpg" alt="grandpoobear">
+                        <h4>GrandPooBear</h4>
+                        <p>2019</p>
+                        <p>$186,771</p>
+                        <p>Direct Relief</p>
+                </div>
+                <div class="card">
+                        <img src="./Assets/img/ninja.jpg" alt="ninja">
+                        <h4>Ninja</h4>
+                        <p>2018</p>
+                        <p>$121,000</p>
+                        <p>Suicide Prevention</p>
+                </div>
+                <div class="card">
+                        <img src="./Assets/img/nick.png" alt="nick28t">
+                        <h4>Nick28T</h4>
+                        <p>2014-2021</p>
+                        <p>~ $1,000,000</p>
+                        <p>Cure Cancer Foundations</p>
+                </div>
+                <div class="card">
+                        <img src="./Assets/img/pestily.png" alt="pestily">
+                        <h4>Pestily</h4>
+                        <p>2020</p>
+                        <p>$933,765.24</p>
+                        <p>Starlight Children's Foundation</p>
+                </div>
+        </div>
+        <div class="content-margins">
+                <div id="twitchevo" class="flex">
+                </div>
+        </div>
+	</section>
+	<!-- Section 6 -->
+	<section id="streaming-costs">
+        <div class="content-margins flex margin-bottom">
+                <div class="left">
+                        <h3>Streaming costs
+                        </h3>
+                        <p class="linked">These charity live streaming events aren’t in competition with televised fundraisers but rather another outlet that is less costly, easier to set up and is aimed at a younger and larger audience.
+                        </p>
+                </div>
+                <div class="barre"></div>
+                <div class="right">
+                        <p class="linked">Thanks to Twitch’s platform succesful streamers can host their own events from their home which comes at practically no cost for themselves, giving visibility to the organisation they choose to support.
+                        </p>
+                </div>
+                <div class="animation-to-right inactive"></div>
+        </div>
+        <div class="content-margins flex">
+                <div id="comparaison" class="flex">
+                </div>
+        </div>
+	</section>
+	<!-- Section 7 -->
+	<section id="twitch-young-audience">
+        <h3>Twitch's young audience</h3>
+        <div class="content-margins flextwitch">
+                <div class="flex">
+                <h4 class="pie-title">viewers age on twitch</h4>
+                <p>As opposed to televised charity fundraisers, charity live streams reach a younger audience that is more invested in what they are watching.</p>
+                </div>
+                <div id="sondage">
+                        <div id="age_pie">
+                        </div>
+                </div>
+        </div>
+        <div id="questionsondage">
+                <h4>Have you ever watched Z-event or events like that?</h4>
+                <div id='sondage1'></div>
+                <h4>Would you watch a charity stream if there was a streamer that you liked?</h4>
+                <div id='sondage2'></div>
+                <h4>Have you ever donated on twitch?</h4>
+                <div id='sondage3'></div>
+                <h4>What are your reasons for going to a charity steam?</h4>
+                <div id='sondage4'></div>
+        </div>
+	</section>
+	<!-- Section 8 -->
+	<section id="affiliated-charities">
+        <div class="content-margins flex">
+                <div class="left">
+                        <h3>Affiliated charities</h3>
+                        <p>Its also millions of euros collected to help these non-profit organizations.</p>
+                </div>
+        </div>
+        <div class="content-margins">
+                <div class="org-grid">
+                        <a id="spa" href="https://www.la-spa.fr/nos-missions" target="_blank"><img src="./assets/img/spa.svg" alt="" tag-inviewport="scale-in"></a>
+                        <a id="croixrouge" href="https://paris.croix-rouge.fr/paris-1er-2e" target="_blank"><img src="./assets/img/croixrouge.svg" alt="" tag-inviewport="scale-in"></a>
+                        <a id="medecins" href="https://www.msf.fr/agir/soutenir-nos-actions/faire-un-don-en-ligne?cid=87&reserved_field=W**W00001&esv_source=Google&esv_medium=SEA_Brand&esv_campaign=W**W00001&reserved_tracking_iraiser=adwords&esv_term=m%C3%A9decins%20sans%20fronti%C3%A8res&gclid=CjwKCAjwtpGGBhBJEiwAyRZX2rL6ve_74sfnH0KQErrgRNTlQJNPVanLcCvYsyC_NHwcSZEMsBytehoCGCgQAvD_BwE" target="_blank"><img src="./assets/img/medecinssf.svg" alt="" tag-inviewport="scale-in"></a>
+                        <a id="savethechildren" href="https://donate.savethechildren.org/en?utm_source=google&utm_medium=cpc&utm_campaign=gsn%20west%20brand%20care%20exact&utm_term=save%20the%20children&gclid=CjwKCAjwtpGGBhBJEiwAyRZX2hyY8OEnTFSnAAYdL9oDscXNXu3wjciHn7pehgEGYkz5RfsL7TcY4BoCwYUQAvD_BwE" target="_blank"><img src="./assets/img/savetc.svg" alt="" tag-inviewport="scale-in"></a>
+                        <a id="institutpasteur" href="https://www.pasteur.fr/fr" target="_blank"><img src="./assets/img/institutpasteur.svg" alt="" tag-inviewport="scale-in"></a>
+                        <a id="preventcancer" href="https://www.preventcancer.org/" target="_blank"><img src="./assets/img/preventcancer.svg" alt="" tag-inviewport="scale-in"></a>
+                </div>
+        </div>
+        <div class="content-margins" id="disclaimer"> 
+                <p>"Ce site a été réalisé à des fins pédagogiques dans le cadre du cursus Grande Ecole de l’école HETIC. Les 
+                contenus et données présentés n'ont pas fait l'objet d'une demande de droit d'utilisation. Ce site ne sera en 
+                aucun cas exploité à des fins commerciales”</p>
+        </div>
+	</section>
+
+	<footer>
+		<script src="./js/navscroll.js"></script>
+		<script src="./js/barchart.js"></script>
+		<script src="./js/charitystreams.js"></script>
+		<script src="./js/piechart.js"></script>
+		<script src="./js/connectText.js"></script>
+	</footer>
+</body>
+</html> 
