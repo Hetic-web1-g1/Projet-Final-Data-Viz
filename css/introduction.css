@@ -37,6 +37,15 @@ h1>span:nth-child(3){
     align-self: flex-start;
 }
 
+#doomsupport {
+    position: relative;
+}
+
+#doomguy {
+    position: absolute;
+    top: -270px;
+    left: -60px;
+}
 
 .twitch-logo{
     margin-top: 10%;
