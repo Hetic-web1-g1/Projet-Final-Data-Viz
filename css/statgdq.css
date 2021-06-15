@@ -3,26 +3,31 @@ h3.graph-title{
   text-align: center;
 }
 
-#stat_gdq h4 {
+#gdq-stats > h3 {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+#stat_gdq h4, #stat_z-event h4 {
   margin-bottom: 0;
 }
 
-#stat_gdq {
+#stat_gdq, #stat_z-event {
   width: 100%;
-  height: 65vh;
-  padding-top: 10%;
+  height: 46vh;
+  padding-top: 5%;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-evenly;
 }
 
-#stat_gdq .bouton {
+.bouton {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-#stat_gdq .button_gdq.on {
+.button-on {
   all: unset;
   background-color: white;
   border: 1px solid white;
@@ -36,12 +41,12 @@ h3.graph-title{
   cursor: pointer;
 }
 
-#stat_gdq .button_gdq.on:hover {
+.button-on:hover {
   background-color: black;
   color: white;
 }
 
-#stat_gdq .button_gdq {
+.button-off {
   all: unset;
   background-color: black;
   border: 1px solid white;
@@ -55,35 +60,39 @@ h3.graph-title{
   cursor: pointer;
 }
 
-#stat_gdq .button_gdq:hover {
+.button-off:hover {
   background-color: white;
   color: black;
 }
 
-#stat_gdq > svg {
-  width: 62%;
+#stat_gdq > svg, #stat_z-event svg {
+  width: 60%;
   height: auto;
 }
 
-#stat_gdq text {
+#stat_gdq text, #stat_z-event text {
   font-size: 20px;
   fill: #fff;
 }
 
-#stat_gdq .legende {
+.legende {
   font-size: 15px;
   fill: #fff;
 }
 
-#stat_gdq path {
+#stat_gdq path, #stat_z-event path {
   stroke: #fff;
 }
 
-#stat_gdq .grid path {
+#stat_gdq .grid path, #stat_z-event .grid path {
   stroke-width: 0;
 }
 
-#stat_gdq .grid .tick line {
+#stat_gdq .grid .tick line, #stat_z-event .grid .tick line {
   stroke: #fff;
   stroke-opacity: 0.3;
+}
+
+#margin-top {
+  margin-top: 5%;
 }

@@ -1,7 +1,13 @@
+#age-graph > h3 {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 #sondage{
   width: 78%;
   height: 50vh;
 }
+
 #sondage > h3 {
   text-align: center;
   width: 33%;
@@ -46,12 +52,11 @@
 
 .flex2{
   display: flex;
-  align-items: center;
+  margin-top: 50px;
 }
 
 .flex2 p{
-  width: 36%;
-  margin-left: 5%;
+  margin-left: 14%;
 }
 
 #age-graph{
@@ -105,4 +110,9 @@
 #sondage2 text {
   font-size: 20px;
   fill: #fff;
+
+.pie-title {
+  text-align: center;
+  margin-bottom: 50px;
+
 }

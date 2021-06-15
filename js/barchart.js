@@ -506,7 +506,13 @@ function draw_bar_chart_rent(nomdiv) {
         .attr("y", (s) => axe_yScale(100) + 70)
         .attr("text-anchor", "middle")
         .text((s) => `${s.rentabilite}%`);
-    
+        console.log(i)
+      d3.select(this.parentNode).select(".bar_2")
+        .transition()
+        .duration(300)
+        .attr("opacity", 0.6)
+        .attr("x", (s) => axe_xScale(s.event) - 5)
+        .attr("width", axe_xScale.bandwidth() + 10);
       // const y = axe_yScale(s.value)
 
       // chart.append('line')
@@ -518,7 +524,7 @@ function draw_bar_chart_rent(nomdiv) {
       // .attr('stroke', 'red')
     })
 
-    .on("mouseleave", function () {
+    .on("mouseleave", function (s,i) {
       d3.selectAll(".value").attr("opacity", 1);
 
       d3.select(this)
@@ -527,7 +533,12 @@ function draw_bar_chart_rent(nomdiv) {
         .attr("opacity", 1)
         .attr("x", (s) => axe_xScale(s.event))
         .attr("width", axe_xScale.bandwidth());
-
+      d3.select(this.parentNode).select(".bar_2")
+        .transition()
+        .duration(300)
+        .attr("opacity", 1)
+        .attr("x", (s) => axe_xScale(s.event))
+        .attr("width", axe_xScale.bandwidth());
       //chart.selectAll('.limite').remove()
       bar_chart.selectAll(".value").remove();
     });
@@ -600,7 +611,7 @@ function draw_bar_chart_sondage(nomdiv, sample){
 window.addEventListener("resize", function () {
   update_chart(agdq, "AGDQ", "stat_gdq")
   update_chart(evo_twitch, "Evolution of Twitch", "twitchevo");
-  update_chart(zevent, "", "graphsrecolte");
+  update_chart(zevent, "", "stat_z-event");
 });
 
 button_callback("button_gdq")
@@ -611,7 +622,7 @@ draw_bar_chart("", "stat_gdq");
 sample = evo_twitch;
 draw_bar_chart("Evolution of Twitch", "twitchevo");
 sample = zevent;
-draw_bar_chart("", "graphsrecolte");
+draw_bar_chart("", "stat_z-event");
 draw_bar_chart_rent("comparaison")
 draw_bar_chart_sondage("sondage1", sondage_watch)
 draw_bar_chart_sondage("sondage2", sondage_watch_s)

@@ -11,13 +11,13 @@ function Drawline(){
             for(let j = 0; j< sections[i].querySelectorAll(".left .linked").length;j++){
             let left_text_height = sections[i].querySelectorAll(".left .linked")[j].offsetHeight
             let right_text_height = sections[i].querySelectorAll(".right .linked")[j].offsetHeight
-            console.log(left_text_height,right_text_height)
+            // console.log(left_text_height,right_text_height)
             if(left_text_height > right_text_height){
                 sections[i].querySelectorAll(".left .linked")[j].style.height = right_text_height + "px"
             }else if(left_text_height < right_text_height){
                 sections[i].querySelectorAll(".right .linked")[j].style.height = left_text_height + "px"
             }
-            console.log(sections[i].querySelectorAll(".right .linked")[j].style.height,right_text_height,sections[i].querySelectorAll(".right .linked")[j].style.height,left_text_height)
+            // console.log(sections[i].querySelectorAll(".right .linked")[j].style.height,right_text_height,sections[i].querySelectorAll(".right .linked")[j].style.height,left_text_height)
             left_text_height = sections[i].querySelectorAll(".left .linked")[j].offsetHeight
             document.documentElement.style.setProperty('--middle-bar-height'+text, left_text_height + 'px')
             text++
