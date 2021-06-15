@@ -208,6 +208,39 @@ const comparaison_rentabilite = [
   },
 ];
 
+const sondage_watch = [
+  {
+      name: "yes",
+      value: 89.4,
+  },
+  {
+      name: "no",
+      value: 10.6,
+  },  
+];
+
+const sondage_watch_s = [
+  {
+      name: "yes",
+      value: 93.8,
+  },
+  {
+      name: "no",
+      value: 6.2,
+  },  
+];
+
+const sondage_donate = [
+  {
+      name: "yes",
+      value: 60.6,
+  },
+  {
+      name: "no",
+      value: 39.4,
+  },  
+];
+
 function draw_bar_chart(nom, nomdiv) {
   const div = document.getElementById(nomdiv);
   const margin = 60;
@@ -531,6 +564,61 @@ function draw_bar_chart_rent(nomdiv) {
 
 }
 
+function draw_bar_chart_sondage(nomdiv, sample){
+
+  var sample = sample;
+  var color_range = ["#555555","#6C000D"];
+
+  const div = document.getElementById(nomdiv);
+
+  const width = div.offsetWidth / 2;
+  const height = div.offsetHeight;
+
+  const bar_chart = d3
+    .select(`#${nomdiv}`)
+    .append("svg")
+    .attr("class", `bar_chart${nomdiv}`)
+    .attr("width", width)
+    .attr("height", height)
+    .append("g")
+
+  BarreGroup = bar_chart
+  .selectAll() //Crée un rectangle pour chaque membre de l'array
+  .data(sample) // determine quel élément du DOM doit etre modifié
+  .enter() // Pour pas que ça bug si jamais il manque des éléments si la data est plus grande que le selectAll
+  .append("g");
+
+  BarreGroup.append("rect")
+    .attr("class", "bar")
+    .attr("x", 0)
+    .attr("y", 0)
+    .attr("height", 50)
+    .attr("width", sample[0].value/100*width)
+    .attr('fill', color_range[0])
+
+  BarreGroup.append("rect")
+    .attr("class", "bar_2")
+    .attr("x", sample[0].value/100*width)
+    .attr("y", 0)
+    .attr("height", 50)
+    .attr("width", sample[1].value/100*width)
+    .attr('fill', color_range[1])
+
+  BarreGroup
+    .append("text") 
+    .attr("x", 30)
+    .attr("y", 30)
+    .attr("text-anchor", "middle")
+    .text(sample[0].value+"%");
+
+  BarreGroup
+    .append("text") 
+    .attr("x", 30+width)
+    .attr("y", 30)
+    .attr("text-anchor", "middle")
+    .text(sample[1].value+"%");
+}
+
 window.addEventListener("resize", function () {
   update_chart(agdq, "AGDQ", "stat_gdq")
   update_chart(evo_twitch, "Evolution of Twitch", "twitchevo");
@@ -547,3 +635,6 @@ draw_bar_chart("Evolution of Twitch", "twitchevo");
 sample = zevent;
 draw_bar_chart("", "stat_z-event");
 draw_bar_chart_rent("comparaison")
+draw_bar_chart_sondage("sondage1", sondage_watch)
+draw_bar_chart_sondage("sondage2", sondage_watch_s)
+draw_bar_chart_sondage("sondage3", sondage_donate)
