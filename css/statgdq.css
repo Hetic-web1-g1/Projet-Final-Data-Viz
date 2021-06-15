@@ -39,10 +39,6 @@ h3.graph-title{
   height: 100%;
 }
 
-#stat_gdq .bar {
-  fill: #42b8ea;
-}
-
 #stat_gdq text {
   font-size: 20px;
   fill: #fff;
