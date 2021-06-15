@@ -3,7 +3,7 @@ h3.graph-title{
   text-align: center;
 }
 
-#gdq-stats > h3 {
+#growth-of-donations > h3 {
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -95,4 +95,8 @@ h3.graph-title{
 
 #margin-top {
   margin-top: 5%;
+}
+
+.space {
+  margin: 5%;
 }

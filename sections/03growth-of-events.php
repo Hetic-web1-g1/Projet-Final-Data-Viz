@@ -1,7 +1,7 @@
-<section id="events">
+<section id="growth-of-events">
     <div class="content-margins flex">
         <div class="left">
-            <h3>GROWTH of Events</h3>
+            <h3>Growth of Events</h3>
             <p class="linked">As the event grew throughout the years, AGDQ split itself into two : AGDQ and SGDQ ( Summers Games Done Quick ). As of today they’ve gained considerable traction.
             </p>
         </div>

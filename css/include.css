@@ -1,21 +1,17 @@
 @import "global.css";
-@import "scrollbar.css";
 
-/* By Order Sections*/
-@import "introduction.css";
-@import "video.css";
-@import "events.css";
-@import "grid.css";
-@import "textElements.css";
-@import "nav.css";
-@import "statgdq.css";
-@import "charitystreams.css";
-@import "solostreams.css";
-@import "graphsrecolte.css";
-@import "twitchevo.css";
-@import "streams-costs.css";
-@import "associations.css";
-@import "sondage.css";
+/* By Order Sections */
+@import "./sections/01speedrun.css";
+@import "./sections/02events.css";
+@import "./sections/03growth-of-events.css";
+@import "./sections/04growth-of-donations.css";
+@import "./sections/05streaming-becomes-mainstream.css";
+@import "./sections/06streaming-costs.css";
+@import "./sections/07twitch-young-audience.css";
+@import "./sections/08affiliated-charities.css";
 
-/*Animation bulle twitch*/
-@import "../Assets/animation/bulle/style_bulle.css";
+/* Elements */
+@import "./elements/textElements.css";
+@import "./elements/nav.css";
+@import "./elements/scrollbar.css";
+@import "./elements/grid.css";
