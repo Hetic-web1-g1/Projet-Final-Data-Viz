@@ -6,6 +6,7 @@
                 <div id="graphsrecolte">
                         <div class='bouton'>
                                 <button class="button-on" onclick="update_chart(zevent,'', 'graphsrecolte')"><h4>Donations</h4></button>
+                                <br>
                                 <button class="button-off" onclick="update_chart(pic_zevent,'', 'graphsrecolte')"><h4>Viewers</h4></button>
                         </div>
                 </div>

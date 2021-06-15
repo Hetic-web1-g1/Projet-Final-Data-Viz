@@ -209,12 +209,17 @@ const comparaison_rentabilite = [
 ];
 
 function draw_bar_chart(nom, nomdiv) {
-  
+  const div = document.getElementById(nomdiv);
+  const margin = 60;
+  var width = div.offsetWidth / 2;
+  const height = div.offsetHeight / 2;
+
   if (sample == agdq || sample == sgdq) {
     domain = [0, 4];
     legende = "Amount raised in millions of dollars";
     color_range = ["#5D353A","#6C000D"]
   } else if (sample == evo_twitch) {
+    width = div.offsetWidth / 1.2;
     domain = [0.9, 2.1];
     legende = "Viewing hours in billions";
     color_range = ["#5D3993", "#6229B8"]
@@ -226,13 +231,7 @@ function draw_bar_chart(nom, nomdiv) {
     domain = [0, 650000];
     legende = "";
     color_range = ["#303E55","#001F55"]
-  }
-
-  const div = document.getElementById(nomdiv);
-
-  const margin = 60;
-  const width = div.offsetWidth / 2;
-  const height = div.offsetHeight / 2;
+  }  
 
   const bar_chart = d3
     .select(`#${nomdiv}`)
@@ -504,7 +503,7 @@ window.addEventListener("resize", function () {
 });
 
 sample = agdq;
-draw_bar_chart("AGDQ", "stat_gdq");
+draw_bar_chart("", "stat_gdq");
 sample = evo_twitch;
 draw_bar_chart("Evolution of Twitch", "twitchevo");
 sample = zevent;
