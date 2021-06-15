@@ -9,7 +9,6 @@ include './header.php';
     include './sections/video.php';
     include './sections/events.php';
     include './sections/statgdq.php';
-    include './sections/statszevent.php';
     include './sections/solostreams.php';
     include './sections/streams-costs.php';
     include './sections/sondage.php';
