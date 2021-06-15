@@ -1,13 +1,8 @@
-#twitchevo,#age_pie {
+#twitchevo {
   width: 100%;
   height: 70vh;
   flex-direction: column;
   justify-content: center;
-}
-
-#age_pie{
-  margin-top: 150px;
-  margin-bottom: 150px;
 }
 
 #twitchevo > p{

@@ -120,8 +120,7 @@ h3.graph-title{
 }
 
 .legende {
-  font-size: 15px;
-  fill: #fff;
+  font-size: 15px !important;
 }
 
 #stat_gdq path, #stat_z-event path {

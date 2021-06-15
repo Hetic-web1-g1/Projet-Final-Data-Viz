@@ -13,9 +13,9 @@
     </div>
     <div class="content-margins">
         <div class="space-between bottom">
-            <span><img src="./assets/img/zevent.svg" alt="zevent" tag-inviewport="scale-in" class="is-inViewport"></span>
-            <span><img src="./assets/img/speedons.svg" alt="speedons" tag-inviewport="scale-in" class="is-inViewport"></span>
-            <span><img src="./assets/img/bourglarun.svg" alt="bourglarun" tag-inviewport="scale-in" class="is-inViewport"></span>
+            <span><img class="imgpadding" src="./assets/img/zevent.svg" alt="zevent" tag-inviewport="scale-in" class="is-inViewport"></span>
+            <span><img class="imgpadding" src="./assets/img/speedons.svg" alt="speedons" tag-inviewport="scale-in" class="is-inViewport"></span>
+            <span><img class="imgpadding" src="./assets/img/bourglarun.svg" alt="bourglarun" tag-inviewport="scale-in" class="is-inViewport"></span>
         </div>
         <div class="flex description">
             <p>

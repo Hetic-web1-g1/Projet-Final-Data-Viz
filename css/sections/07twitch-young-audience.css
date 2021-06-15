@@ -13,12 +13,6 @@
   margin-bottom: 5%;
 }
 
-#age_pie {
-  margin-top: 5%;
-  position: relative;
-  display: block;
-}
-
 #age_pie .legend {
   font-size: 14px;
 }
@@ -48,13 +42,18 @@
   fill: white;
 }
 
-.flex2{
+.pie-title {
+  text-align: center;
+}
+
+.flextwitch{
   display: flex;
   margin-top: 50px;
 }
 
-.flex2 p{
+.flextwitch p{
   margin-left: 14%;
+  margin-top: 50px;
 }
 
 #age-graph{
@@ -128,9 +127,4 @@
 #sondage3 text {
     font-size: 20px;
     fill: #fff;
-}
-
-.pie-title {
-  text-align: center;
-  margin-bottom: 50px;
 }

@@ -3,11 +3,13 @@
     justify-content: center;
 }
 
-
 #growth-of-events img{
     max-width: 200px;
 }
 
+#growth-of-events .imgpadding {
+    padding-top: 60px;
+}
 
 #livetime {
     width: 150px !important;

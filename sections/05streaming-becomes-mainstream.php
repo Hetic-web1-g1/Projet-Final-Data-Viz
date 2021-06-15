@@ -25,13 +25,13 @@
                         <p>$121,000</p>
                         <p>Suicide Prevention</p>
                 </div>
-                <div class="card">
+                <!-- <div class="card">
                         <img src="./Assets/img/charlo.png" alt="charles white">
                         <h4>Moistcr1tikal</h4>
                         <p>2021</p>
                         <p>$150,000</p>
                         <p>Cure Rare Disease</p>
-                </div>
+                </div> -->
                 <div class="card">
                         <img src="./Assets/img/nick.png" alt="nick28t">
                         <h4>Nick28T</h4>
