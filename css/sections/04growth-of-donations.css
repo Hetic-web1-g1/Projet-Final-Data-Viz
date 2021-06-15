@@ -21,13 +21,13 @@ h3.graph-title{
   justify-content: space-evenly;
 }
 
-.bouton {
+.bouton_zevent {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.button-on {
+.button_zevent.on {
   all: unset;
   background-color: white;
   border: 1px solid white;
@@ -41,12 +41,12 @@ h3.graph-title{
   cursor: pointer;
 }
 
-.button-on:hover {
-  background-color: black;
+.button_zevent.on:hover {
+  background-color: #530707;
   color: white;
 }
 
-.button-off {
+.button_zevent {
   all: unset;
   background-color: black;
   border: 1px solid white;
@@ -60,9 +60,53 @@ h3.graph-title{
   cursor: pointer;
 }
 
-.button-off:hover {
+.button_zevent:hover {
+  background-color: #530707;
+  color: white;
+}
+
+.bouton_gdq {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.button_gdq.on {
+  all: unset;
   background-color: white;
+  border: 1px solid white;
   color: black;
+  padding: 14px 20px;
+  width: 150px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button_gdq.on:hover {
+  background-color: #530707;
+  color: white;
+}
+
+.button_gdq {
+  all: unset;
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+  padding: 14px 20px;
+  width: 150px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button_gdq:hover {
+  background-color: #530707;
+  color: white;
 }
 
 #stat_gdq > svg, #stat_z-event svg {

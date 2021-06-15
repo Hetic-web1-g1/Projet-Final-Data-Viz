@@ -403,7 +403,6 @@ function update_chart(data, nom, nom_div) {
 
 function button_callback(button_class){
   var button = document.getElementsByClassName(button_class);
-  console.log(button)
 
   function addSelectClass(){
     removeSelectClass();

@@ -6,9 +6,9 @@
                 </div>
                 <div id="stat_gdq">
                         <div class='bouton'>
-                        <button class="button-on" onclick="update_chart(agdq,'', 'stat_gdq')"><h4>AGDQ</h4></button>
+                        <button class="button_gdq on" onclick="update_chart(agdq,'', 'stat_gdq')"><h4>AGDQ</h4></button>
                         <br>
-                        <button class="button-off" onclick="update_chart(sgdq,'', 'stat_gdq')"><h4>SGDQ</h4></button>
+                        <button class="button_gdq" onclick="update_chart(sgdq,'', 'stat_gdq')"><h4>SGDQ</h4></button>
                         </div>
                 </div>
                 <div class="left">
@@ -21,9 +21,9 @@
                 </div>
                 <div id="stat_z-event">
                         <div class='bouton'>
-                        <button class="button-on" onclick="update_chart(zevent,'', 'stat_z-event')"><h4>Donations</h4></button>
+                        <button class="button_zevent on" onclick="update_chart(zevent,'', 'stat_z-event')"><h4>Donations</h4></button>
                         <br>
-                        <button class="button-off" onclick="update_chart(pic_zevent,'', 'stat_z-event')"><h4>Viewers</h4></button>
+                        <button class="button_zevent" onclick="update_chart(pic_zevent,'', 'stat_z-event')"><h4>Viewers</h4></button>
                         </div>
                 </div>
                 <div class="left">
