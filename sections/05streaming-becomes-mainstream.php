@@ -48,7 +48,6 @@
                 </div>
         </div>
         <div class="content-margins">
-                <h3>Evolution of Twitch</h3>
                 <div id="twitchevo" class="flex">
                 </div>
         </div>
