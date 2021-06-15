@@ -1,7 +1,7 @@
 @import "global.css";
 
 /* By Order Sections*/
-@import "accueil.css";
+@import "introduction.css";
 @import "video.css";
 @import "events.css";
 @import "grid.css";

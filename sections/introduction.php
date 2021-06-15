@@ -1,4 +1,4 @@
-<section id="accueil">
+<section id="introduction">
         <div class="content-margins flex">
                 <div class="title">
                 <h1><span>SPEEDRUNS</span><br><span>& Charity</span></h1>
