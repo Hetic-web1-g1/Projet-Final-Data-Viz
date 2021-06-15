@@ -120,63 +120,63 @@ const pic_zevent = [
 
 const evo_twitch = [
   {
-    event: "Jan",
+    event: "01/20",
     value: 0.92,
   },
   {
-    event: "Fev",
+    event: "02/20",
     value: 1.01,
   },
   {
-    event: "Mar",
+    event: "03/20",
     value: 0.99,
   },
   {
-    event: "Avril",
+    event: "04/20",
     value: 1.62,
   },
   {
-    event: "Mai",
+    event: "05/20",
     value: 1.59,
   },
   {
-    event: "Juin",
+    event: "06/20",
     value: 1.43,
   },
   {
-    event: "Juil.",
+    event: "07/20.",
     value: 1.41,
   },
   {
-    event: "Août",
+    event: "08/20",
     value: 1.42,
   },
   {
-    event: "Sep",
+    event: "09/20",
     value: 1.41,
   },
   {
-    event: "Oct",
+    event: "10/20",
     value: 1.68,
   },
   {
-    event: "Nov",
+    event: "11/20",
     value: 1.66,
   },
   {
-    event: "Dec",
+    event: "12/20",
     value: 1.71,
   },
   {
-    event: "Janv",
+    event: "01/21",
     value: 2.01,
   },
   {
-    event: "Fevr",
+    event: "02/21",
     value: 1.88,
   },
   {
-    event: "Mars",
+    event: "03/21",
     value: 2.05,
   },
 ];
@@ -212,15 +212,15 @@ function draw_bar_chart(nom, nomdiv) {
   
   if (sample == agdq || sample == sgdq) {
     domain = [0, 4];
-    legende = "Montant récolté en Million de Dollar";
+    legende = "Amount raised in millions of dollars";
     color_range = ["#5D353A","#6C000D"]
   } else if (sample == evo_twitch) {
     domain = [0.9, 2.1];
-    legende = "Heures de vues en Milliard";
+    legende = "Viewing hours in billions";
     color_range = ["#5D3993", "#6229B8"]
   } else if (sample == zevent) {
     domain = [0, 7];
-    legende = "Montant récolté en Million de Dollar";
+    legende = "Amount raised in millions of dollars";
     color_range = ["#303E55","#001F55"]
   } else if (sample == pic_zevent) {
     domain = [0, 650000];
@@ -499,14 +499,14 @@ function draw_bar_chart_rent(nomdiv) {
 
 window.addEventListener("resize", function () {
   update_chart(agdq, "AGDQ", "stat_gdq")
-  update_chart(evo_twitch, "Evolution de twitch", "twitchevo");
-  update_chart(zevent, "Récoltes Zevent", "graphsrecolte");
+  update_chart(evo_twitch, "Evolution of Twitch", "twitchevo");
+  update_chart(zevent, "", "graphsrecolte");
 });
 
 sample = agdq;
 draw_bar_chart("AGDQ", "stat_gdq");
 sample = evo_twitch;
-draw_bar_chart("Evolution de twitch", "twitchevo");
+draw_bar_chart("Evolution of Twitch", "twitchevo");
 sample = zevent;
-draw_bar_chart("Récoltes Zevent", "graphsrecolte");
+draw_bar_chart("", "graphsrecolte");
 draw_bar_chart_rent("comparaison")

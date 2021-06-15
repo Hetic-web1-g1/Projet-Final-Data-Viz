@@ -34,7 +34,7 @@ var data_plateforme = [
 
 const div = document.getElementById("sondage")
 const pie_width = div.offsetWidth / 2;
-const pie_height = div.offsetHeight / 2;
+const pie_height = div.offsetHeight / 1.4;
 var radius = Math.min(pie_width, pie_height) / 2;
 
 var legendRectSize = 25; // Taille carré colorés de la légende
@@ -45,7 +45,7 @@ function draw_chart(data, p_div){
 var dataset = data
 
 //color scale
-var color = d3.scaleOrdinal().range(["#4e79a7","#f28e2c","#e15759","#76b7b2","#59a14f","#edc949","#af7aa1","#ff9da7","#9c755f","#bab0ab"]);
+var color = d3.scaleOrdinal().range(["#BBE1FA","#3282B8","#0F4C75","#243A46"]);
 
 var svg = d3.select(p_div) 
   .append('svg')
