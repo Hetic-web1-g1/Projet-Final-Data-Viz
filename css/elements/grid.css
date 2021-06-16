@@ -15,11 +15,17 @@
     grid-row-gap: 300px;
     grid-column-gap: 200px;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 950px) {
     .org-grid{
-        grid-row-gap: 100px;
-    }
+        grid-row-gap: 0px;
+        display: flex;
+        margin-top: 0;       
+        flex-direction: column;
+        align-items: center;
+        }
 }
+    
+
 @media screen and (max-width: 848px) {
     .grid-streamers{
         grid-template-columns: 1fr 1fr;
