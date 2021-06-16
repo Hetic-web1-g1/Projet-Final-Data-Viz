@@ -11,7 +11,7 @@
                 </div>
         </div>
         <div class="content-margins">
-                <h4>Have you ever watched Z-event or events like that?</h4>
+                <h4>Have you ever watched Z-event or events like that ?</h4>
                 <div id='sondage1'></div>
                 <h4>Would you watch a charity stream if there was a streamer that you liked ?</h4>
                 <div id='sondage2'></div>
@@ -19,6 +19,6 @@
                 <div id='sondage3'></div>
                 <h4>What are your reasons for watching a charity stream ?</h4>
                 <div id='sondage4'></div>
-                <p class="source">a 133 people survey.</p>
+                <p class="source">A 133 people survey.</p>
         </div>
 </section>
