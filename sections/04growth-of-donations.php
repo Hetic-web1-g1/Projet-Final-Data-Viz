@@ -20,17 +20,20 @@
                         <h3>French case : Z-event</h3>
                 </div>
                 <div id="stat_z-event">
-                        <div class='bouton'>
+                        <div class="bouton">
+                        <div class="coms">
+                        <p>Z-event is a francophone charity project created in 2017 by Zerator. It gathers a group of streamers to rally for the same cause over a weekend. As of today it has raised more than any other charity streaming event.</p>
+                        </div>
+                        <div class="buttons">
                         <button class="button_zevent on" onclick="update_chart(zevent,'Statistics Z-Event', 'stat_z-event')"><h4>Donations</h4></button>
                         <br>
                         <button class="button_zevent" onclick="update_chart(pic_zevent,'Statistics Z-Event', 'stat_z-event')"><h4>Viewers</h4></button>
+                        </div>
                         </div>
                 </div>
                 <div class="left">
                         <p class="caption">Rise of donations durings Z-Events streams through years.</p>
                 </div>
-                <div class="left margin-bottom">
-                        <p class="not-linked">Z-event is a francophone charity project created in 2017 by Zerator. It gathers a group of streamers to rally for the same cause over a weekend. As of today it has raised more than any other charity streaming event. </p>
-                </div>
+
         </div>
 </section>
