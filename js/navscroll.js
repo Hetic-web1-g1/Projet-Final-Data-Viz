@@ -42,8 +42,10 @@ function refreshNavbar(){
 function testAnimations(){
   let animations_container = document.querySelectorAll("div.animation-to-right,div.animation-to-left")
   for(let i = 0; i < animations_container.length; i++){
-      if(animations_container[i].getBoundingClientRect().top < window.innerHeight){
+      if(animations_container[i].getBoundingClientRect().top > 0 && animations_container[i].getBoundingClientRect().top < window.innerHeight){
         animations_container[i].classList.remove("inactive")
+      }else{
+        animations_container[i].classList.add("inactive")
       }
   }
 }
