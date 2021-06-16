@@ -54,25 +54,29 @@ section {
   display: block;
 }
 
-.none {
-  display: none;
-}
-
-/* A Definir en fonction des Besoins */
-/* Smartphone */
+/* Screen */
 @media screen and (max-width: 1440px) {
+  /* Variables */
+  /* :root {
+	} */
   nav{
     display: none;
   }
 }
 
-/* PC
-@media screen and (min-width: 601px) {
+@media only screen and (max-width: 1000px) {
   /* Variables */
   /* :root {
 	} */
+  .none {
+    display: none;
+  }
+  section {
+    min-height: 60vh;
+  }
+}
 
-/* A UPDATE */
+
 h3{
   position: relative;
   font-family: 'Poppins', sans-serif;

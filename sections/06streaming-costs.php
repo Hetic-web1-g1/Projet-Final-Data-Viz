@@ -14,7 +14,7 @@
                 <div class="animation-to-right inactive"></div>
         </div>
         <div class="content-margins flex">
-                <div id="comparaison" class="flex">
+                <div id="comparaison" class="flex none">
                 </div>
         </div>
 </section>
