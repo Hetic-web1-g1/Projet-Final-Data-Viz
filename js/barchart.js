@@ -293,7 +293,7 @@ function draw_bar_chart(nom, nomdiv) {
   const bar_chart = d3
     .select(`#${nomdiv}`)
     .append("svg")
-    .attr("class", `bar_chart${nomdiv}`)
+    .attr("class", `bar_chart`)
     .attr("width", width)
     .attr("height", height)
     .append("g")
@@ -307,10 +307,10 @@ function draw_bar_chart(nom, nomdiv) {
 
   //Axe Y
 
-  const axe_yScale = d3
+  var axe_yScale = d3
     .scaleLinear()
     .range([height, 0]) //defini la range divisée entre les values de domain
-    .domain(domain);
+    .domain(domain)
 
   bar_chart.append("g").call(d3.axisLeft(axe_yScale));
 
@@ -399,6 +399,13 @@ function draw_bar_chart(nom, nomdiv) {
       bar_chart.selectAll(".value").remove();
     });
 
+  // if (sample == zevent){
+  //   bar_chart.select('axe_y')    
+  //   .scalePoint()
+  //   .range([height, 0]) 
+  //   .domain([0,1,2,3,4,5,6, 7]);
+  // }
+
   // Texte
 
   bar_chart
@@ -417,12 +424,6 @@ function draw_bar_chart(nom, nomdiv) {
     .attr("class","bar-title") 
     .attr("text-anchor", "middle")
     .text(nom);
-}
-
-function update_chart(data, nom, nom_div) {
-  sample = data;
-  d3.selectAll(`.bar_chart${nom_div}`).remove();
-  draw_bar_chart(nom, nom_div);
 }
 
 function button_callback(button_class){
@@ -459,7 +460,7 @@ function draw_bar_chart_rent(title,nomdiv) {
   const bar_chart = d3
     .select(`#${nomdiv}`)
     .append("svg")
-    .attr("class", `bar_chart${nomdiv}`)
+    .attr("class", `bar_chart`)
     .attr("width", width)
     .attr("height", height)
     .append("g")
@@ -607,7 +608,7 @@ function draw_bar_chart_rent(title,nomdiv) {
 function draw_bar_chart_sondage(nomdiv, sample){
 
   var sample = sample;
-  var color_range = ["#555555","#6C000D"];
+  var color_range = ["#6C000D","#555555"];
 
   const div = document.getElementById(nomdiv);
 
@@ -617,7 +618,7 @@ function draw_bar_chart_sondage(nomdiv, sample){
   const bar_chart = d3
     .select(`#${nomdiv}`)
     .append("svg")
-    .attr("class", `bar_chart${nomdiv}`)
+    .attr("class", `bar_chart`)
     .attr("width", width)
     .attr("height", height)
     .append("g")
@@ -669,7 +670,7 @@ function draw_vertical_bar_chart(nomdiv) {
   const bar_chart = d3
     .select(`#${nomdiv}`)
     .append("svg")
-    .attr("class", `bar_chart${nomdiv}`)
+    .attr("class", `bar_chart`)
     .attr("width", width)
     .attr("height", height)
     .append("g")
@@ -722,24 +723,31 @@ function draw_vertical_bar_chart(nomdiv) {
     .text((s) => (s.label));
 }
 
+function update_chart() {
+  d3.selectAll(`.bar_chart`).remove();
+  draw_all_chart();
+}
+
 window.addEventListener("resize", function () {
-  update_chart(agdq, "Statistics GDQ", "stat_gdq")
-  update_chart(evo_twitch, "Evolution of Twitch", "twitchevo");
-  update_chart(zevent, "Statistics Z-Event", "stat_z-event");
+    update_chart();
 });
 
 button_callback("button_gdq")
 button_callback("button_zevent")
 
-sample = agdq; 
-draw_bar_chart("Statistics GDQ", "stat_gdq");
-sample = evo_twitch;
-draw_bar_chart("Evolution of Twitch", "twitchevo");
-sample = zevent;
-draw_bar_chart("Statistics Z-Event", "stat_z-event");
-draw_bar_chart_rent("COST/DONATIONS by events","comparaison")
-draw_bar_chart_sondage("sondage1", sondage_watch)
-draw_bar_chart_sondage("sondage2", sondage_watch_s)
-draw_bar_chart_sondage("sondage3", sondage_donate)
-sample = sondage_reason
-draw_vertical_bar_chart("sondage4")
+function draw_all_chart(){
+  sample = agdq; 
+  draw_bar_chart("Statistics GDQ", "stat_gdq");
+  sample = evo_twitch;
+  draw_bar_chart("Evolution of Twitch", "twitchevo");
+  sample = zevent;
+  draw_bar_chart("Statistics Z-Event", "stat_z-event");
+  draw_bar_chart_rent("COST/DONATIONS by events","comparaison")
+  draw_bar_chart_sondage("sondage1", sondage_watch)
+  draw_bar_chart_sondage("sondage2", sondage_watch_s)
+  draw_bar_chart_sondage("sondage3", sondage_donate)
+  sample = sondage_reason
+  draw_vertical_bar_chart("sondage4")
+}
+
+draw_all_chart();
