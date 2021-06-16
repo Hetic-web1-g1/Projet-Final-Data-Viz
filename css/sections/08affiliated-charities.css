@@ -24,3 +24,16 @@
     text-decoration: underline;
     color: var(--smooth_white);
 }
+@media screen and (max-width:950px) {
+
+    .org-grid img {
+        width: 80%;
+    }
+    #affiliated-charities{
+        padding-bottom: 0;
+    }
+    #disclaimer {
+        bottom: -5vh;
+    }
+    
+}
