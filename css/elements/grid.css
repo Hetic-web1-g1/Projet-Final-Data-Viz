@@ -5,6 +5,7 @@
     grid-row-gap: 30px;
     grid-column-gap: 20px;
     justify-content: center;
+    margin-bottom: 100px;
 }
 .org-grid{
     margin-top: 100px;

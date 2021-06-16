@@ -737,7 +737,7 @@ button_callback("button_zevent")
 
 function draw_all_chart(){
   sample = agdq; 
-  draw_bar_chart("Statistics GDQ", "stat_gdq");
+  draw_bar_chart("Statistics AGDQ", "stat_gdq");
   sample = evo_twitch;
   draw_bar_chart("Evolution of Twitch", "twitchevo");
   sample = zevent;

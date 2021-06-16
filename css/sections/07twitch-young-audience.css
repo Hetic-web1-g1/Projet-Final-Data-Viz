@@ -131,7 +131,7 @@
 
 #sondage4 {
   width: 100%;
-  height: 30vh;
+  height: 18vh;
 }
 
 #sondage4 svg {
@@ -142,4 +142,15 @@
 #sondage4 text {
   font-size: 20px;
   fill: #fff;
+}
+
+.source {
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 25px;
+  width: 100%;
+  text-transform: uppercase;
 }
