@@ -2,7 +2,9 @@
         <div class="content-margins flex">
                 <div class="left">
                         <h3>Affiliated charities</h3>
-                        <p>It is also millions of dollar collected to help these non-profit organizations.</p>
+                        <p>These events are millions of dollars worth of funds that are collected to help these non-profit 
+                                organizations. Don't hesitate to become a donor yourself ! Here are a couple links to some 
+                                of the most renowned charitable institutions.</p>
                 </div>
         </div>
         <div class="content-margins">
