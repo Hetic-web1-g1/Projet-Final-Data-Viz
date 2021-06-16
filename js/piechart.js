@@ -142,8 +142,4 @@ function update(data) {
   draw_chart(data);
 }
 
-window.addEventListener("resize", function () {
-  update_chart(zevent, "Récolte Zevent", "graphsrecolte");
-});
-
 draw_chart(data_age, "#age_pie");
