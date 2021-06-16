@@ -80,11 +80,3 @@
     background-color: var(--smooth_white);
 }
 
-#stat-gdq{
-    width: 100%;
-}
-.bouton{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
