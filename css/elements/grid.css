@@ -29,5 +29,11 @@
 @media screen and (max-width: 848px) {
     .grid-streamers{
         grid-template-columns: 1fr 1fr;
+
+    }
+}
+@media screen and (max-width:500px){
+    .grid-streamers{
+        grid-template-columns: 1fr;
     }
 }
