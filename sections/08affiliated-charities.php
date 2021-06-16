@@ -2,7 +2,7 @@
         <div class="content-margins flex">
                 <div class="left">
                         <h3>Affiliated charities</h3>
-                        <p>Its also millions of euros collected to help these non-profit organizations.</p>
+                        <p>It's also millions of euros collected to help these non-profit organizations.</p>
                 </div>
         </div>
         <div class="content-margins">
