@@ -10,20 +10,39 @@ nav{
     top: 20px;
 }
 
-.navbutton{
+div.navbutton{
     height: 20px;
     width: 20px;
     border-top: 1px solid var(--smooth_white);
-    transition: 0.5s;
+    transition: 0.2s;
 }
-.navbutton:hover{
+div.navbutton:hover{
     width: 30px;
 }
 
-.active{
+div.navbutton.active{
     width: 30px;
     border-top: 1px solid var(--red);
 }
+
+nav h4{
+    position: absolute;
+    left: 30px;
+    color: var(--smooth_white);
+    top: 0px;
+    width: auto;
+    margin-bottom: 0;
+    opacity: 0;
+    transition: 0.2s;
+    background-color: var(--smooth_black);
+    padding: 5px;
+    border: 1px solid var(--smooth_white);
+}
+nav h4.active{
+    opacity: 1;
+    transform: translateX(30px);
+}
+
 #home-button{
     display: none;
     position: fixed;
@@ -46,6 +65,7 @@ color: var(--smooth_white);
 #Menu a{
     width: 100%;
     text-align: center;
+    text-decoration: none;
 }
 #Menu p{
     max-width: 100%;
