@@ -723,7 +723,7 @@ function draw_vertical_bar_chart(nomdiv) {
 }
 
 window.addEventListener("resize", function () {
-  update_chart(agdq, "Statistics GDQ", "stat_gdq")
+  update_chart(agdq, "Statistics AGDQ", "stat_gdq")
   update_chart(evo_twitch, "Evolution of Twitch", "twitchevo");
   update_chart(zevent, "Statistics Z-Event", "stat_z-event");
 });
@@ -732,7 +732,7 @@ button_callback("button_gdq")
 button_callback("button_zevent")
 
 sample = agdq; 
-draw_bar_chart("Statistics GDQ", "stat_gdq");
+draw_bar_chart("Statistics AGDQ", "stat_gdq");
 sample = evo_twitch;
 draw_bar_chart("Evolution of Twitch", "twitchevo");
 sample = zevent;

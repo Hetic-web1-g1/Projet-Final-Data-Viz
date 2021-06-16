@@ -19,5 +19,6 @@
                 <div id='sondage3'></div>
                 <h4>What are your reasons for going to a charity steam?</h4>
                 <div id='sondage4'></div>
+                <p>a 133 people survey.</p>
         </div>
 </section>
