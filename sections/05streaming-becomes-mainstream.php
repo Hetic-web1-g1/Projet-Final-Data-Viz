@@ -48,7 +48,12 @@
                 </div>
         </div>
         <div class="content-margins">
+                
                 <div id="twitchevo" class="flex">
+                        <div class="left"><h3>Twitch's viewership skyrocketed due to Covid.</h3>
+                        <p>Twitch's viewership spiked significantly which in turn brought new viewers and potential donors which correlates to/explains the rise of the funds collected during these streaming events.</p>
+                
+                </div>
                 </div>
         </div>
 </section>
