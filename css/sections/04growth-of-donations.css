@@ -139,3 +139,11 @@
 #stat_gdq{
   align-items: center;
 }
+#stat-gdq{
+  width: 100%;
+}
+.bouton{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
