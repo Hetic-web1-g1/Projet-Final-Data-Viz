@@ -1,4 +1,4 @@
-<h1>Speedruns & Charity</h1>
+<h1>Speedruns & Charity 🦩</h1>
  
  ![bret](https://user-images.githubusercontent.com/78922154/122249732-626d2300-cec9-11eb-8ef1-61293994158c.PNG)
 <h2>Project presentation</h2>
