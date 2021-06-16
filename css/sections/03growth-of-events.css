@@ -80,3 +80,19 @@
     background-color: var(--smooth_white);
 }
 
+=======
+#stat-gdq{
+    width: 100%;
+}
+@media screen and (max-width: 950px) {
+    #growth-of-events .bottom, #growth-of-events .top{
+        height: inherit;
+        width: 50%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+    #growth-of-events .space-between.bottom span::before,#growth-of-events .space-between.top span::before{
+        height: 0;
+        width: 0;
+    }
+}
