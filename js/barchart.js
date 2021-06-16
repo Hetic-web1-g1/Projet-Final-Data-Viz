@@ -548,7 +548,6 @@ function draw_bar_chart_rent(title,nomdiv) {
         .attr("y", (s) => axe_yScale(100) + 70)
         .attr("text-anchor", "middle")
         .text((s) => `${s.rentabilite}%`);
-        console.log(i)
       d3.select(this.parentNode).select(".bar_2")
         .transition()
         .duration(300)
