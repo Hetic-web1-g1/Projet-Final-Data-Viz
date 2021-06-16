@@ -647,17 +647,17 @@ function draw_bar_chart_sondage(nomdiv, sample){
 
   BarreGroup
     .append("text") 
-    .attr("x", 40)
+    .attr("x", 10)
     .attr("y", 30)
-    .attr("text-anchor", "middle")
-    .text(sample[0].value+"%");
+    .attr("text-anchor", "left")
+    .text(`Yes : ${sample[0].value}%`);
 
-  BarreGroup
-    .append("text") 
-    .attr("x", 40+width)
-    .attr("y", 30)
-    .attr("text-anchor", "middle")
-    .text(sample[1].value+"%");
+  // BarreGroup
+  //   .append("text") 
+  //   .attr("x", 40+width)
+  //   .attr("y", 30)
+  //   .attr("text-anchor", "middle")
+  //   .text(sample[1].value+"%");
 }
 
 function draw_vertical_bar_chart(nomdiv) {
@@ -737,7 +737,7 @@ button_callback("button_zevent")
 
 function draw_all_chart(){
   sample = agdq; 
-  draw_bar_chart("Statistics AGDQ", "stat_gdq");
+  draw_bar_chart("Statistics GDQ", "stat_gdq");
   sample = evo_twitch;
   draw_bar_chart("Evolution of Twitch", "twitchevo");
   sample = zevent;
