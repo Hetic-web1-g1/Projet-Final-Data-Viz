@@ -1,4 +1,4 @@
-<section id="growth-of-donations">
+<section id="growth-of-donations" class="none">
         <div class="content-margins flex">
                 <div class="left">
                 <h3>Growth of Donations</h3>
@@ -20,11 +20,11 @@
                 </div>
                 <div id="stat_z-event">
                         <div class="coms">
-                        <p>Z-event is a francophone charity project created in 2017 by Zerator. It gathers a group of streamers to rally for the same cause over a weekend. As of today it has raised more than any other charity streaming event.</p>
-                        </div>
-                        <div class="bouton">
-                        <button class="button_zevent on" onclick="update_chart(zevent,'Statistics Z-Event', 'stat_z-event')"><h4>Donations</h4></button>
-                        <button class="button_zevent" onclick="update_chart(pic_zevent,'Statistics Z-Event', 'stat_z-event')"><h4>Viewers</h4></button>
+                                <p>Z-event is a francophone charity project created in 2017 by Zerator. It gathers a group of streamers to rally for the same cause over a weekend. As of today it has raised more than any other charity streaming event.</p>
+                                <div class="bouton">
+                                <button class="button_zevent on" onclick="update_chart(zevent,'Statistics Z-Event', 'stat_z-event')"><h4>Donations</h4></button>
+                                <button class="button_zevent" onclick="update_chart(pic_zevent,'Statistics Z-Event', 'stat_z-event')"><h4>Viewers</h4></button>
+                                </div>
                         </div>
                 </div>
                 <div class="left">

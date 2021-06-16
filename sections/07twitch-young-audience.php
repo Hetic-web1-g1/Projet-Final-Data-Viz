@@ -19,8 +19,8 @@
                 <div id='sondage2'></div>
                 <h4>Have you ever donated on twitch ?</h4>
                 <div id='sondage3'></div>
-                <h4>What are your reasons for watching a charity stream ?</h4>
-                <div id='sondage4'></div>
+                <h4 class="none">What are your reasons for watching a charity stream ?</h4>
+                <div id='sondage4' class="none"></div>
                 <p class="source">A 133 people survey.</p>
         </div>
 </section>

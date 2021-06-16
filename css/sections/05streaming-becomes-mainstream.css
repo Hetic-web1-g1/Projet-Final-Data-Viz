@@ -35,3 +35,13 @@
   stroke: #fff;
   stroke-opacity: 0.3;
 }
+
+@media only screen and (max-width: 1000px) {
+  #twitchevo > svg {
+    display: none;
+  }
+  #twitchevo {
+    height: 10vh;
+  }
+  
+}

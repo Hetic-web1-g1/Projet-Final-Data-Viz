@@ -79,11 +79,6 @@
   color: black;
 }
 
-#sondage1 > svg {
-  width: 62%;
-  height: auto;
-}
-
 #sondage1 text {
   font-size: 20px;
   fill: #fff;
@@ -99,11 +94,6 @@
   color: black;
 }
 
-#sondage2 > svg {
-  width: 62%;
-  height: auto;
-}
-
 #sondage2 text {
   font-size: 20px;
   fill: #fff;
@@ -112,17 +102,12 @@
 #sondage3 {
     width: 100%;
     height: 10vh;
-  }
+}
   
 #sondage3 .button_gdq:hover {
     background-color: white;
     color: black;
-  }
-  
-#sondage3 > svg {
-    width: 62%;
-    height: auto;
-  }
+}
   
 #sondage3 text {
     font-size: 20px;
@@ -156,8 +141,26 @@
 }
 
 @media only screen and (max-width: 1000px) {
-  .flextwitch{
+  .flextwitch {
     flex-direction: column;
   }
-
+  #sondage {
+    padding-top: 20px;
+  }
+  #twitch-young-audience h4 {
+    font-size: 14px;
+  }
+  #sondage1 {
+    width: 100%;
+    height: 5vh;
+  }
+  
+  #sondage2 {
+    width: 100%;
+    height: 5vh;
+  }
+  #sondage3 {
+      width: 100%;
+      height: 5vh;
+  }
 }

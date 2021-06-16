@@ -54,11 +54,6 @@ section {
   display: block;
 }
 
-.none {
-  display: none;
-}
-
-
 /* Screen */
 @media screen and (max-width: 1440px) {
   /* Variables */
@@ -69,17 +64,16 @@ section {
   }
 }
 
-/* Smartphone */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1000px) {
   /* Variables */
   /* :root {
 	} */
-}
-/* Tablette */
-@media only screen and (max-width: 768px) {
-  /* Variables */
-  /* :root {
-	} */
+  .none {
+    display: none;
+  }
+  section {
+    min-height: 60vh;
+  }
 }
 
 
@@ -149,12 +143,12 @@ body {
   background-color: var(--smooth_black);
 }
 
-/* main {
+main {
   overflow-y: scroll;
   overflow-x: hidden;
   height: 100vh;
   scroll-snap-type: y mandatory;
-} */
+}
 
 div.left{
   align-self: flex-start;
