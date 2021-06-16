@@ -1,11 +1,14 @@
 p.linked {
   position: relative;
 }
+p.not-linked {
+  position: relative;
+}
 .margin-bottom{
     margin-bottom: 100px;
 }
 @media (min-width: 950px) {
-  div.left p.linked::after {
+  div.left p.linked::after,div.left p.not-linked::after{
     content: "";
     position: absolute;
     left: 110%;
@@ -15,7 +18,7 @@ p.linked {
     width: 1px;
     background-color: var(--smooth_white);
   }
-  div.left p.linked::before {
+  div.left p.linked::before{
     content: "";
     position: absolute;
     left: 110%;
@@ -26,7 +29,7 @@ p.linked {
     background-color: var(--smooth_white);
   }
 
-  div.right p.linked::after {
+  div.right p.linked::after,div.right p.not-linked::after{
     content: "";
     position: absolute;
     right: 110%;
@@ -37,7 +40,7 @@ p.linked {
     background-color: var(--smooth_white);
   }
 
-  div.right p.linked::before {
+  div.right p.linked::before{
     content: "";
     position: absolute;
     right: 110%;
@@ -144,5 +147,8 @@ p.linked {
     width: 150px;
     height: 1px;
     background-color: var(--smooth_white);
+  }
+  div.right{
+    align-self: flex-start;
   }
 }
