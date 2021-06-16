@@ -46,7 +46,6 @@ color: var(--smooth_white);
 #Menu a{
     width: 100%;
     text-align: center;
-    text-decoration: none;
 }
 #Menu p{
     max-width: 100%;
