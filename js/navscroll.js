@@ -1,5 +1,6 @@
 const sections = document.querySelectorAll("section");
 const nav = document.querySelector("nav");
+const menu = document.querySelector("#Menu")
 var sections_scroll;
 
 for (let i = 0; i < sections.length; i++) {
@@ -7,9 +8,57 @@ for (let i = 0; i < sections.length; i++) {
     document
       .createRange()
       .createContextualFragment(
-        `<a href="#${sections[i].id}"><div class="navbutton ${sections[i].id}"></div></a>`
+        `<a href="#${sections[i].id}" onmouseenter="navshow(${i})" onmouseout="navhide(${i})"><div class="navbutton ${sections[i].id}"></div></a>`
       )
   );
+}
+
+for (let i = 0; i < sections.length; i++) {
+  if(i==0){
+  nav.appendChild(
+    document
+      .createRange()
+      .createContextualFragment(
+        `<h4>Home</h4>`
+      )
+  );
+  menu.appendChild(
+    document
+      .createRange()
+      .createContextualFragment(
+        `<a href="#${sections[i].id}"><p>Accueil</p></a>`
+      )
+  );
+  }else{
+    nav.appendChild(
+      document
+        .createRange()
+        .createContextualFragment(
+          `<h4>${sections[i].id}</h4>`
+        )
+    );
+    let title = sections[i].id
+    title = title.split("")
+    title[0] = title[0].toUpperCase()
+    title = title.join("")
+    menu.appendChild(
+      document
+        .createRange()
+        .createContextualFragment(
+          `<a href="#${sections[i].id}"><p>${title}</p></a>`
+        )
+    );
+  }
+}
+
+const nav_title = document.querySelectorAll("nav h4");
+
+function navshow(i){
+  nav_title[i].classList.add("active")
+}
+
+function navhide(i){
+  nav_title[i].classList.remove("active")
 }
 
 resetSectionSize();

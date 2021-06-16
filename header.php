@@ -12,11 +12,4 @@
     </div>
     <div id="Menu">
         <h3>Menu</h3>
-        <a href="#introduction"><p>Home</p></a>
-        <a href="#introspeedrun"><p>Le Speedrun</p></a>
-        <a href="#video"><p>Events</p></a>
-        <a href="#gdq-stats"><p>Stastistiques Events</p></a>
-        <a href="#streamers"><p>Streamers Solos</p></a>
-        <a href="#twitchgraph"><p>Stastistiques Twitch</p></a>
-        <a href="#organizations"><p>Organizations</p></a>
     </div>
