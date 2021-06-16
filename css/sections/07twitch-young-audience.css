@@ -164,3 +164,24 @@
       height: 5vh;
   }
 }
+
+@media only screen and (max-width: 850px) {
+  /* Variables */
+  /* :root {
+	} */
+  .none {
+    display: none;
+  }
+  section {
+    min-height: 60vh;
+  }
+  #sondage {
+    display: none;
+  }
+  .flextwitch p {
+    margin-bottom: 50px;
+  }
+  .pie-title {
+    display: none;
+  }
+}
