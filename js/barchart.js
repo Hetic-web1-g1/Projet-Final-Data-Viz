@@ -293,7 +293,7 @@ function draw_bar_chart(nom, nomdiv) {
   const bar_chart = d3
     .select(`#${nomdiv}`)
     .append("svg")
-    .attr("class", `bar_chart`)
+    .attr("class", `bar_chart${nomdiv} bar_chart`)
     .attr("width", width)
     .attr("height", height)
     .append("g")
@@ -426,25 +426,6 @@ function draw_bar_chart(nom, nomdiv) {
     .text(nom);
 }
 
-function button_callback(button_class){
-  var button = document.getElementsByClassName(button_class);
-
-  function addSelectClass(){
-    removeSelectClass();
-    this.classList.add('on');	
-  }
-
-  function removeSelectClass(){
-    for (var i =0; i < button.length; i++) {
-      button[i].classList.remove('on')
-    }
-  }
-    
-  for (var i =0; i < button.length; i++) {
-    button[i].addEventListener("click",addSelectClass);
-  }
-}
-
 function draw_bar_chart_rent(title,nomdiv) {
 
   var domain = [0, 100];
@@ -465,7 +446,7 @@ function draw_bar_chart_rent(title,nomdiv) {
     .attr("height", height)
     .append("g")
     .attr("transform", `translate(${margin * 6}, ${margin})`);
-  
+
     bar_chart
     .append("text") //Titre
     .attr("x", width / 2)
@@ -728,9 +709,34 @@ function update_chart() {
   draw_all_chart();
 }
 
+function change_chart(data, titre, nomdiv ) {
+  d3.selectAll(`.bar_chart${nomdiv}`).remove();
+  sample = data;
+  draw_bar_chart(titre, nomdiv);
+}
+
 window.addEventListener("resize", function () {
     update_chart();
 });
+
+function button_callback(button_class){
+  var button = document.getElementsByClassName(button_class);
+
+  function addSelectClass(){
+    removeSelectClass();
+    this.classList.add('on');	
+  }
+
+  function removeSelectClass(){
+    for (var i =0; i < button.length; i++) {
+      button[i].classList.remove('on')
+    }
+  }
+    
+  for (var i =0; i < button.length; i++) {
+    button[i].addEventListener("click",addSelectClass);
+  }
+}
 
 button_callback("button_gdq")
 button_callback("button_zevent")
