@@ -1,4 +1,4 @@
-<section id="affiliated-charities" name="Mabite">
+<section id="affiliated-charities">
         <div class="content-margins flex">
                 <div class="left">
                         <h3>Affiliated charities</h3>
